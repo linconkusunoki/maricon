@@ -2,32 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .btn {
+    @apply px-4 py-3 bg-bronze text-beige font-primary;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.slick-slide {
+  @apply transition-all duration-300 scale-75;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.slick-active {
+  @apply scale-100;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #203730;
 }
