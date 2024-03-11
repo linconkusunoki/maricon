@@ -2,7 +2,20 @@ import Link from "next/link";
 
 export function OurHistory() {
   return (
-    <section className="flex flex-col gap-4 px-4 pb-16 text-center pt-28 bg-beige">
+    <section className="flex flex-col gap-4 px-4 pt-8 pb-16 text-center bg-beige">
+      <div className="flex justify-center w-full mb-8 -mt-28">
+        <img
+          src="/card-sun.svg"
+          alt="card sun"
+          className="z-20 translate-x-4 -translate-y-4 w-28"
+        />
+        <img
+          src="/card-moon.svg"
+          alt="card moon"
+          className="z-10 -translate-x-4 w-28"
+        />
+      </div>
+
       <h2 className="text-3xl font-secondary text-earth">
         Love is free. In time, in peace.
       </h2>

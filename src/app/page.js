@@ -36,18 +36,6 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="absolute bottom-0 flex justify-center w-full -translate-x-1/2 translate-y-1/2 left-1/2">
-          <img
-            src="/card-sun.svg"
-            alt="card sun"
-            className="z-20 translate-x-4 -translate-y-4 w-28"
-          />
-          <img
-            src="/card-moon.svg"
-            alt="card moon"
-            className="z-10 -translate-x-4 w-28"
-          />
-        </div>
         <img
           src="/star-1.svg"
           alt="star"
