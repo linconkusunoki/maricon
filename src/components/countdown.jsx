@@ -39,21 +39,21 @@ export function CountdownTimer({ futureDate }) {
             <div className="flex gap-1">
               <CountdownNumber value={days} />
             </div>
-            <span className="mt-1 text-xs">DIAS</span>
+            <span className="mt-1 text-xs xl:mt-2 xl:text-base">DIAS</span>
           </div>
           <div className="px-2 text-3xl font-bold">:</div>
           <div className="flex flex-col items-center">
             <div className="flex gap-1">
               <CountdownNumber value={hours} />
             </div>
-            <span className="mt-1 text-xs">HORAS</span>
+            <span className="mt-1 text-xs xl:mt-2 xl:text-base">HORAS</span>
           </div>
           <div className="px-2 text-3xl font-bold">:</div>
           <div className="flex flex-col items-center">
             <div className="flex gap-1">
               <CountdownNumber value={minutes} />
             </div>
-            <span className="mt-1 text-xs">MINUTOS</span>
+            <span className="mt-1 text-xs xl:mt-2 xl:text-base">MINUTOS</span>
           </div>
         </div>
       ) : (
@@ -67,7 +67,10 @@ function CountdownNumber({ value }) {
   return String(value)
     .split("")
     .map((number, index) => (
-      <div key={index} className="px-2 text-3xl font-bold bg-beige">
+      <div
+        key={index}
+        className="px-2 text-3xl font-bold bg-beige xl:text-5xl xl:px-4 xl:py-2"
+      >
         {number}
       </div>
     ));
