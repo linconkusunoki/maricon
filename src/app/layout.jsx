@@ -2,6 +2,7 @@ import { Montserrat, Fraunces, Cormorant_Infant } from "next/font/google";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Header } from "@/components/header";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -39,7 +40,11 @@ export default function RootLayout({ children }) {
           "bg-green",
         ].join(" ")}
       >
+        <Header />
         {children}
+        <section className="py-10 text-xs text-center bg-beige font-primary">
+          <p>Por Mari & Lincon, com amor 🖤</p>
+        </section>
       </body>
     </html>
   );

@@ -12,8 +12,31 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        slideIn: {
+          "0%": {
+            transform: "translateX(-100%)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+        fadeIn: {
+          "0%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
+      },
+      animation: {
+        slideIn: "slideIn 200ms 150ms ease forwards",
+        fadeIn: "fadeIn 200ms ease forwards",
+      },
     },
     colors: {
+      black: "#000",
       beige: "#F6F3DE",
       sand: "#DFCAB5",
       bronze: "#CB9470",

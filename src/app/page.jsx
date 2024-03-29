@@ -1,14 +1,11 @@
 import { CountdownTimer } from "@/components/countdown";
 import { Faq } from "@/components/faq";
-import { Header } from "@/components/header";
 import { OurHistory } from "@/components/our-history";
 import { Playlist } from "@/components/playlist";
 
 export default function Home() {
   return (
     <>
-      <Header />
-
       <main>
         <figure className="relative w-full px-4 pt-8 md:-mb-10">
           <img
@@ -46,7 +43,7 @@ export default function Home() {
           </div>
         </figure>
 
-        <div className="absolute w-full text-center -translate-x-1/2 -translate-y-1/2 top-[44%] left-1/2 text-beige font-tertiary md:top-[50%] xl:top-[60%]">
+        <div className="absolute w-full text-center -translate-x-1/2 top-[200px] left-1/2 text-beige font-tertiary md:top-[230px] xl:top-[230px]">
           <h1 className="text-4xl font-medium uppercase md:leading-relaxed md:text-6xl">
             Mariana <br /> & <br /> Lincon
           </h1>
@@ -97,10 +94,6 @@ export default function Home() {
           Estamos ansiosos pra te ver :)
         </h2>
         <CountdownTimer futureDate="2024-10-05T12:00:00" />
-      </section>
-
-      <section className="py-10 text-xs text-center bg-beige font-primary">
-        <p>Por Mari & Lincon, com amor 🖤</p>
       </section>
     </>
   );
