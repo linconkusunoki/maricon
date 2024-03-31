@@ -1,6 +1,6 @@
 const DressingPage = () => {
   return (
-    <div className="grid gap-8 p-5 pb-20">
+    <div className="grid gap-8 p-5 pb-20 md:gap-20">
       <section className="max-w-[785px] mx-auto">
         <h1 className="mb-5 text-3xl text-center uppercase md:text-5xl font-secondary text-beige">
           O que vestir
