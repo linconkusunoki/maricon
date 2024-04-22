@@ -1,12 +1,15 @@
 import { CountdownTimer } from "@/components/countdown";
 import { Faq } from "@/components/faq";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 import { OurHistory } from "@/components/our-history";
 import { Playlist } from "@/components/playlist";
 
 export default function Home() {
   return (
     <>
-      <main>
+      <Header className="bg-green" />
+      <main className="bg-green">
         <figure className="relative w-full px-4 pt-8 md:-mb-10">
           <img
             src="/nozes.png"
@@ -71,7 +74,7 @@ export default function Home() {
 
       <OurHistory />
 
-      <section className="flex flex-col gap-4 py-16 text-center xl:flex-row xl:justify-center xl:text-left">
+      <section className="flex flex-col gap-4 py-16 text-center bg-green xl:flex-row xl:justify-center xl:text-left">
         <div className="px-4 xl:w-2/6">
           <h2 className="mb-8 text-3xl font-secondary text-bronze xl:text-5xl">
             Conheça mais da nossa história
@@ -95,6 +98,8 @@ export default function Home() {
         </h2>
         <CountdownTimer futureDate="2024-10-05T12:00:00" />
       </section>
+
+      <Footer />
     </>
   );
 }

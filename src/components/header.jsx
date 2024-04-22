@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export function Header() {
+export function Header({ className }) {
   const path = usePathname();
 
   return (
-    <header className="p-4 md:pt-8 xl:p-8 xl:pb-4">
+    <header className={`p-4 md:pt-8 xl:p-8 xl:pb-4 ${className}`}>
       <nav className="flex items-center justify-between">
         <Link href="/" className="hidden md:block">
           <img src="/logo.png" alt="logo" />
@@ -74,7 +74,9 @@ export function Header() {
           </div>
         </label>
 
-        <button className="btn">Confirmar presença</button>
+        <a className="btn" href="/confirmar-presenca">
+          Confirmar presença
+        </a>
       </nav>
     </header>
   );
