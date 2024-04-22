@@ -33,7 +33,7 @@ export function Playlist() {
   return (
     <Slider {...settings}>
       {[1, 2, 3, 4, 5, 6].map((i) => (
-        <div className="text-left ">
+        <div className="text-left " key={i}>
           <div key={i} className="aspect-square bg-earth" />
           <h3 className="mt-3 text-bronze font-primary">Anathema - Thin Air</h3>
           <p className="text-xs font-primary text-bronze">

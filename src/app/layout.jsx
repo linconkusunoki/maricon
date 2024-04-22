@@ -2,7 +2,7 @@ import { Montserrat, Fraunces, Cormorant_Infant } from "next/font/google";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Header } from "@/components/header";
+import { GuestsProvider } from "@/components/guests-context";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
           cormorant.variable,
         ].join(" ")}
       >
-        {children}
+        <GuestsProvider>{children}</GuestsProvider>
       </body>
     </html>
   );

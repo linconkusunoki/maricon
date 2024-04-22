@@ -1,7 +1,15 @@
+"use client";
+
 import { Footer } from "@/components/footer";
+import { GuestsConfirmation } from "@/components/guests-confirmation";
+import { GuestSearch } from "@/components/guests-search";
+import { GuestsSelection } from "@/components/guests-selection";
 import { Header } from "@/components/header";
+import React from "react";
 
 const ConfirmarPresenca = () => {
+  const [step, setStep] = React.useState(1);
+
   return (
     <>
       <Header className="bg-beige" />
@@ -40,15 +48,9 @@ const ConfirmarPresenca = () => {
             vindo com você :)
           </p>
 
-          <form className="justify-center gap-4 mx-auto lg:flex">
-            <input
-              className="bg-[#D7D5B4] bg-opacity-50 text-bronze px-8 py-4 w-full flex-shrink-0 placeholder-bronze outline-bronze uppercase"
-              placeholder="Primeiro nome"
-            />
-            <button type="submit" className="w-full px-12 mt-4 lg:mt-0 btn">
-              Buscar
-            </button>
-          </form>
+          <GuestSearch step={step} setStep={setStep} />
+          <GuestsSelection step={step} setStep={setStep} />
+          <GuestsConfirmation step={step} setStep={setStep} />
         </section>
       </main>
 
