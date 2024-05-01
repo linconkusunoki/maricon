@@ -34,7 +34,8 @@ export function Header({ className }) {
             <Link
               href="/"
               className={`hover:underline ${
-                path === "/como-chegar" && "font-bold hover:no-underline"
+                path === "/como-chegar" &&
+                "font-bold hover:no-underline text-beige"
               }`}
             >
               Como chegar
@@ -42,7 +43,8 @@ export function Header({ className }) {
             <Link
               href="/vestimenta"
               className={`hover:underline ${
-                path === "/vestimenta" && "font-bold hover:no-underline"
+                path === "/vestimenta" &&
+                "font-bold hover:no-underline text-beige"
               }`}
             >
               O que vestir
@@ -50,7 +52,7 @@ export function Header({ className }) {
             <Link
               href="/"
               className={`hover:underline ${
-                path === "/o-dia" && "font-bold hover:no-underline"
+                path === "/o-dia" && "font-bold hover:no-underline text-beige"
               }`}
             >
               O dia
@@ -58,7 +60,8 @@ export function Header({ className }) {
             <Link
               href="/"
               className={`hover:underline ${
-                path === "/viajantes" && "font-bold hover:no-underline"
+                path === "/viajantes" &&
+                "font-bold hover:no-underline text-beige"
               }`}
             >
               Para os viajantes
@@ -66,7 +69,8 @@ export function Header({ className }) {
             <Link
               href="/"
               className={`hover:underline ${
-                path === "/lista-presentes" && "font-bold hover:no-underline"
+                path === "/lista-presentes" &&
+                "font-bold hover:no-underline text-beige"
               }`}
             >
               Lista de presentes
