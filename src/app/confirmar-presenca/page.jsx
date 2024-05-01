@@ -18,7 +18,7 @@ const ConfirmarPresenca = () => {
       <main className="flex items-center justify-center min-h-screen px-8 pt-24 pb-32 text-center bg-beige">
         <section
           className={`max-w-[888px] mx-auto flex flex-col gap-10 text-earth ${
-            step === 1 && "mb-32"
+            step === 1 && "lg:mb-32"
           }`}
         >
           <GuestSearch step={step} setStep={setStep} />

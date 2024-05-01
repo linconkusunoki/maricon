@@ -74,8 +74,8 @@ export function GuestSearch({ step, setStep }) {
             name="name"
             value={name}
             onChange={handleChange}
-            className="bg-[#D7D5B4] bg-opacity-50 text-bronze px-8 py-4 w-full placeholder-bronze outline-bronze uppercase"
-            placeholder="Primeiro nome"
+            className="bg-[#D7D5B4] bg-opacity-50 text-bronze px-8 py-4 w-full placeholder-bronze outline-bronze uppercase font-primary"
+            placeholder="Nome"
           />
           {error && (
             <p className="text-sm font-primary text-earth">
