@@ -16,7 +16,10 @@ const ConfirmarPresenca = () => {
     <>
       <Header className="bg-beige" />
 
-      <main className="flex items-center justify-center px-8 pt-24 pb-32 text-center bg-beige">
+      <main
+        className="flex items-center justify-center px-8 pt-24 pb-32 text-center bg-beige"
+        style={{ height: "calc(100vh - 190px)" }}
+      >
         <div className="flex flex-col gap-16">
           <h1 className="text-earth text-[54px] uppercase text-center font-secondary">
             Lista de Presentes
