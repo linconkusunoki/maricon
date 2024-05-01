@@ -11,7 +11,7 @@ export function GuestSearch({ step, setStep }) {
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (name.length <= 3) {
+    if (name.length < 3) {
       setError(true);
       return;
     }
@@ -78,8 +78,8 @@ export function GuestSearch({ step, setStep }) {
             placeholder="Nome"
           />
           {error && (
-            <p className="text-sm font-primary text-earth">
-              Mínimo de 4 letras
+            <p className="text-[12px] text-left mt-1 font-primary text-earth">
+              Mínimo de 3 letras
             </p>
           )}
         </div>

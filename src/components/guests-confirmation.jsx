@@ -5,6 +5,7 @@ import { GuestsContext } from "./guests-context";
 
 export function GuestsConfirmation({ step, setStep }) {
   const formRef = React.useRef(null);
+  const [submitting, setSubmitting] = React.useState(false);
   const { confirmationList, setGuestsFound } = React.useContext(GuestsContext);
 
   function submitHandler(formEvent) {
@@ -42,6 +43,8 @@ export function GuestsConfirmation({ step, setStep }) {
           newData: JSON.stringify(rows[row]),
         }),
       };
+
+      setSubmitting(true);
 
       fetch(
         "https://script.google.com/macros/s/AKfycbwx5i5V0qdrQg3Aq8A8xyXeqsXhPlm2rpr2tp8I_CjYXsm8JcvkzCGHM6TARrfO5yTb/exec",
@@ -150,7 +153,11 @@ export function GuestsConfirmation({ step, setStep }) {
         )}
 
         <div className="flex flex-col items-center w-full gap-4">
-          <button type="submit" className="w-full btn md:w-auto">
+          <button
+            type="submit"
+            className="w-full btn md:w-auto disabled:bg-sand"
+            disabled={submitting}
+          >
             Enviar confirmação
           </button>
 
@@ -160,6 +167,7 @@ export function GuestsConfirmation({ step, setStep }) {
             onClick={() => {
               setGuestsFound([]);
               setStep(1);
+              setSubmitting(false);
             }}
           >
             Nova Busca

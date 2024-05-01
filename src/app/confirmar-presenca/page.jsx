@@ -6,10 +6,14 @@ import { GuestSearch } from "@/components/guests-search";
 import { GuestsSelection } from "@/components/guests-selection";
 import { GuestsSuccess } from "@/components/guests-success";
 import { Header } from "@/components/header";
-import React from "react";
+import React, { useEffect } from "react";
 
 const ConfirmarPresenca = () => {
   const [step, setStep] = React.useState(1);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [step]);
 
   return (
     <>
