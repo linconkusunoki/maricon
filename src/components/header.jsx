@@ -35,7 +35,9 @@ export function Header({ className }) {
               href="/"
               className={`hover:underline ${
                 path === "/como-chegar" &&
-                "font-bold hover:no-underline text-beige"
+                `font-bold hover:no-underline ${
+                  className ? "text-earth" : "text-beige"
+                }`
               }`}
             >
               Como chegar
@@ -44,7 +46,9 @@ export function Header({ className }) {
               href="/vestimenta"
               className={`hover:underline ${
                 path === "/vestimenta" &&
-                "font-bold hover:no-underline text-beige"
+                `font-bold hover:no-underline ${
+                  className ? "text-earth" : "text-beige"
+                }`
               }`}
             >
               O que vestir
@@ -52,7 +56,10 @@ export function Header({ className }) {
             <Link
               href="/"
               className={`hover:underline ${
-                path === "/o-dia" && "font-bold hover:no-underline text-beige"
+                path === "/day-d" &&
+                `font-bold hover:no-underline ${
+                  className ? "text-earth" : "text-beige"
+                }`
               }`}
             >
               O dia
@@ -61,7 +68,9 @@ export function Header({ className }) {
               href="/"
               className={`hover:underline ${
                 path === "/viajantes" &&
-                "font-bold hover:no-underline text-beige"
+                `font-bold hover:no-underline ${
+                  className ? "text-earth" : "text-beige"
+                }`
               }`}
             >
               Para os viajantes
@@ -70,7 +79,9 @@ export function Header({ className }) {
               href="/lista-presentes-escolha"
               className={`hover:underline ${
                 path === "/lista-presentes" &&
-                "font-bold hover:no-underline text-beige"
+                `font-bold hover:no-underline ${
+                  className ? "text-earth" : "text-beige"
+                }`
               }`}
             >
               Lista de presentes
