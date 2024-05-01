@@ -67,7 +67,7 @@ export function Header({ className }) {
               Para os viajantes
             </Link>
             <Link
-              href="/"
+              href="/lista-presentes-escolha"
               className={`hover:underline ${
                 path === "/lista-presentes" &&
                 "font-bold hover:no-underline text-beige"
