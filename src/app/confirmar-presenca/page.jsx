@@ -19,12 +19,11 @@ const ConfirmarPresenca = () => {
     <>
       <Header className="bg-beige" />
 
-      <main className="flex items-center justify-center min-h-screen px-8 pt-24 pb-32 text-center bg-beige">
-        <section
-          className={`max-w-[888px] mx-auto flex flex-col gap-10 text-earth ${
-            step === 1 && "lg:mb-32"
-          }`}
-        >
+      <main
+        className="flex items-center justify-center px-8 py-16 text-center bg-beige"
+        style={{ minHeight: "calc(100vh - 190px)" }}
+      >
+        <section className="max-w-[888px] mx-auto flex flex-col gap-10 text-earth">
           <GuestSearch step={step} setStep={setStep} />
           <GuestsSelection step={step} setStep={setStep} />
           <GuestsConfirmation step={step} setStep={setStep} />
