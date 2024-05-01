@@ -3,15 +3,9 @@
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 
-const ConfirmarPresenca = () => {
-  const [step, setStep] = React.useState(1);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [step]);
-
+const ListaPresentesEscolha = () => {
   return (
     <>
       <Header className="bg-beige" />
@@ -52,4 +46,4 @@ const ConfirmarPresenca = () => {
   );
 };
 
-export default ConfirmarPresenca;
+export default ListaPresentesEscolha;
