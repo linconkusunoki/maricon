@@ -33,7 +33,7 @@ export function Playlist() {
   return (
     <Slider {...settings}>
         <div className="text-left ">
-          <div className="aspect-square bg-earth" />
+          <div className="bg-earth aspect-[4/3] bg-cover bg-center" />
           <h3 className="mt-3 text-bronze font-primary">Anathema - Thin Air</h3>
           <p className="text-xs font-primary text-bronze">
             Mari & Lincon / Our main songs
@@ -46,7 +46,7 @@ export function Playlist() {
         </div>
 
       <div className="text-left ">
-          <div className="aspect-square bg-[url('/tangerina.jpg')]" />
+          <div className="bg-[url('/tangerina.jpg')] aspect-[4/3] bg-cover bg-center" />
           <h3 className="mt-3 text-bronze font-primary">Tangerina - Tiago Iorc</h3>
           <p className="text-xs font-primary text-bronze">
             Mari & Lincon / Our main songs
