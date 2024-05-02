@@ -77,11 +77,10 @@ export default function Home() {
       <section className="flex flex-col gap-4 py-16 text-center bg-green xl:flex-row xl:justify-center xl:text-left">
         <div className="px-4 xl:w-2/6">
           <h2 className="mb-8 text-3xl font-secondary text-bronze xl:text-5xl">
-            Conheça mais da nossa história
+            Nossa história em músicas e polaroides
           </h2>
           <p className="font-primary text-bronze">
-            Você pode escutar algumas das músicas que serão parte da cerimônia e
-            representam muito pra nós
+            Da primeira música enviada um pro outro, pra música que cantamos juntos no carro, até a música que aprendemos a tocar no violão esse ano: todas com alguma foto que tiramos na nossa polaroide nos últimos anos.
           </p>
         </div>
 
