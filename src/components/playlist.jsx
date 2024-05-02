@@ -32,7 +32,7 @@ const settings = {
 export function Playlist() {
   return (
     <Slider {...settings}>
-        <div className="text-left " key={i}>
+        <div className="text-left ">
           <div className="aspect-square bg-earth" />
           <h3 className="mt-3 text-bronze font-primary">Anathema - Thin Air</h3>
           <p className="text-xs font-primary text-bronze">
@@ -45,7 +45,7 @@ export function Playlist() {
           </audio>
         </div>
 
-      <div className="text-left " key={i}>
+      <div className="text-left ">
           <div className="aspect-square bg-[url('/img/tangerina.jpg')]" />
           <h3 className="mt-3 text-bronze font-primary">Tangerina - Tiago Iorc</h3>
           <p className="text-xs font-primary text-bronze">
