@@ -10,7 +10,7 @@ export function Header({ className }) {
     <header className={`p-4 md:pt-8 xl:p-8 xl:pb-4 ${className}`}>
       <nav className="flex items-center justify-between">
         <Link href="/" className="hidden md:block">
-          <img src="/logo.png" alt="Mariana & Lincon" />
+          <img className="w-[35px]" src="/logo.png" alt="Mariana & Lincon" />
         </Link>
 
         <label
