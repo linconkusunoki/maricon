@@ -66,7 +66,7 @@ export default function Home() {
             </span>
             <br />
             <span className="font-semibold uppercase md:text-2xl">
-              Valencia, Span
+              Valencia, Spain
             </span>
           </p>
         </div>
