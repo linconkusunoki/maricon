@@ -47,6 +47,7 @@ export function Playlist() {
 
       <div className="text-left ">
           <div className="aspect-square bg-[url('/img/tangerina.jpg')]" />
+        <source src="tangerina.jpg" type="image/jpg" />
           <h3 className="mt-3 text-bronze font-primary">Tangerina - Tiago Iorc</h3>
           <p className="text-xs font-primary text-bronze">
             Mari & Lincon / Our main songs
