@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icon.png" type="image/png" />
+        <link rel="icon" href="/logo-dark.png" type="image/png" />
       </head>
       <body
         className={[
