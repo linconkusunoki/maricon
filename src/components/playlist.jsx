@@ -21,6 +21,7 @@ const settings = {
     {
       breakpoint: 767,
       settings: {
+        topPadding: "20px",
         centerMode: true,
         centerPadding: "56px",
         slidesToShow: 1,
