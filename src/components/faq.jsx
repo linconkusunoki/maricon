@@ -25,7 +25,7 @@ export function Faq() {
               <Accordion
                 title="Onde será a cerimônia?"
                 content={
-                  <p>
+                   <p className="font-primary">
                     Cerimônia, recepção e festa seráo na Masía Xamandreu, no pueblo de Godella localizado a 20min do centro de Valencia, na Espanha. <a href="https://maps.app.goo.gl/daumZvH3X1AKDk3r7" className="text-earth"> Abrir google maps →</a>
                   </p>
                 }
@@ -34,7 +34,7 @@ export function Faq() {
               <Accordion
                 title="Como eu chego lá?"
                 content={
-                  <p>
+                   <p className="font-primary">
                     Estamos trabalhando para conseguir um serviço de transporte do centro da cidade até o casamento para todos os convidados, porém você também pode dirigir ou agendar um Uber, Cabify ou FreeNow. Só nos deixe saber já que temos que organizar o transporte em grupo por número de lugares!
                   </p>
                 }
@@ -43,7 +43,7 @@ export function Faq() {
               <Accordion
                 title="Que horas eu devo chegar?"
                 content={
-                  <p>
+                   <p className="font-primary">
                     Nossa cerimônia começará às 18:30h, e pedimos que os convidados cheguem de 15 a 30 minutos antes do horário de início da cerimônia. Isso te dará tempo suficiente para tomar uma bebida e escolher seu lugar!
                   </p>
                 }
@@ -54,7 +54,7 @@ export function Faq() {
               <Accordion
                 title="O que eu devo vestir?"
                 content={
-                  <p>
+                   <p className="font-primary">
                     Roupas no estilo casual chique, em tons neutros e terrosos, sem estampas. Homens também podem usar branco e bege, só fujam do verde ja que essa é a cor do noivo. Qualquer sapato é bem vindo e não precisa de gravata. <a href="#" className="text-earth">Ver paleta de cores e referências →</a>
                   </p>
                 }
@@ -63,7 +63,7 @@ export function Faq() {
               <Accordion
                 title="Posso trazer um acompanhante?"
                 content={
-                  <p>
+                   <p className="font-primary">
                    Se o nome do seu convidado está listado na página de confirmação de presença, então sim! Caso contrário, adoraríamos manter nosso casamento como um evento íntimo apenas com familiares e amigos próximos.
                   </p>
                 }
@@ -72,7 +72,7 @@ export function Faq() {
               <Accordion
                 title="Posso tirar e postar fotos?"
                 content={
-                  <p>
+                  <p className="font-primary">
                     Durante a cerimônia gostaríamos de todos presentes, sem os celulares na mão. Depois disso, fotos estão liberadas!
                   </p>
                 }
@@ -81,7 +81,7 @@ export function Faq() {
               <Accordion
                 title="Não posso ir :( o que eu faço?"
                 content={
-                  <p>
+                   <p className="font-primary">
                     Nós vamos sentir sua falta :( Se você não puder ir, deixe a gente saber o mais rápido possível e confirme "NÃO comparecerá" na página de confirmação de presença para que possamos nos planejar de acordo.
                   </p>
                 }
