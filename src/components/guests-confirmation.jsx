@@ -67,11 +67,11 @@ export function GuestsConfirmation({ step, setStep }) {
       <h2 className="text-4xl uppercase lg:text-5xl font-secondary">
         Podemos contar com você?
       </h2>
-      <p className="font-primary">
+{/*       <p className="font-primary">
         Para confirmar a sua presença no casamento é só escrever o seu nome e
         clicar em <span className="font-bold">Buscar</span>. Seu nome aparecerá
         e você poderá confirmar sua presença e dos convidados vindo com você :)
-      </p>
+      </p> */}
 
       <form
         ref={formRef}
@@ -136,7 +136,7 @@ export function GuestsConfirmation({ step, setStep }) {
                   <option>MENU</option>
                   <option value="traditional">Tradicional</option>
                   <option value="vegetarian">Vegetariano</option>
-                  <option value="kids">Kids</option>
+                  <option value="kids">Infantil</option>
                 </select>
 
                 <select
@@ -145,8 +145,8 @@ export function GuestsConfirmation({ step, setStep }) {
                   required
                 >
                   <option>TRANSPORTE</option>
-                  <option value="group">Grupo</option>
-                  <option value="own">Carro próprio</option>
+                  <option value="group">Vou com o grupo</option>
+                  <option value="own">Vou de Taxi/Carro</option>
                 </select>
               </div>
             )
