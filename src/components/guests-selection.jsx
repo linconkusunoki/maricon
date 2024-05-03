@@ -55,11 +55,11 @@ Voltar
       <h2 className="text-4xl uppercase lg:text-5xl font-secondary">
         Podemos contar com você?
       </h2>
-      <p className="font-primary">
+{/*       <p className="font-primary">
         Para confirmar a sua presença no casamento é só escrever o seu nome e
         clicar em <span className="font-bold">Buscar</span>. Seu nome aparecerá
         e você poderá confirmar sua presença e dos convidados vindo com você :)
-      </p>
+      </p> */}
 
       <form
         onSubmit={handleSubmit}
