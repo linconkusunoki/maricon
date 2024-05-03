@@ -65,7 +65,7 @@ export function Header({ className }) {
               O dia
             </Link>
             <Link
-              href="https://www.notion.so/Bienvenidos-a-Valencia-cd7635a00d6d42818be1532c46dbc709?pvs=4"
+              href="https://organized-script-04e.notion.site/Bienvenidos-a-Valencia-cd7635a00d6d42818be1532c46dbc709" target="_blank"
               className={`hover:underline ${
                 path === "/viajantes" &&
                 `font-bold hover:no-underline ${
