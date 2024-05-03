@@ -33,8 +33,8 @@ export function Playlist() {
   return (
     <Slider {...settings}>
         <div className="text-left ">
-          <div className="bg-earth aspect-[4/3] bg-cover bg-center" />
-          <h3 className="mt-3 text-bronze font-primary">Anathema - Thin Air</h3>
+           <div className="bg-[url('/thinair.jpg')] aspect-[4/3] bg-cover bg-center" />
+          <h3 className="mt-3 text-bronze font-primary">Thin Air - Anathema</h3>
           <p className="text-xs font-primary text-bronze">
             Mari & Lincon / Our main songs
           </p>
