@@ -130,7 +130,7 @@ export function GuestsConfirmation({ step, setStep }) {
 
                 <select
                   name={`${guest.id}-menu`}
-                  className="bg-[#D7D5B4] bg-opacity-50 text-bronze p-4 w-full placeholder-bronze outline-bronze"
+                  className="bg-[#D7D5B4] bg-opacity-50 text-bronze p-4 w-full placeholder-bronze outline-bronze font-primary"
                   required
                 >
                   <option>MENU</option>
@@ -141,7 +141,7 @@ export function GuestsConfirmation({ step, setStep }) {
 
                 <select
                   name={`${guest.id}-transport`}
-                  className="bg-[#D7D5B4] bg-opacity-50 text-bronze p-4 w-full placeholder-bronze outline-bronze"
+                  className="bg-[#D7D5B4] bg-opacity-50 text-bronze p-4 w-full placeholder-bronze outline-bronze font-primary"
                   required
                 >
                   <option>TRANSPORTE</option>
