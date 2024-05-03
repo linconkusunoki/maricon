@@ -33,12 +33,12 @@ export function GuestsSelection({ step, setStep }) {
 
   if (guestsFound.length === 0) {
     return (
-      <p className="text-lg font-bold font-primary">
+      <p className="text-lg font-normal font-primary">
         Oops, não foi encontrado nenhum convidado com esse nome. Dica: Busque pelas 3 primeiras letras do seu nome :) <br/>
 
         <button
           type="button"
-          className="w-full px-12 py-4 mt-4 lg:mt-0 btn"
+          className="px-12 py-4 mt-4 lg:mt-40 btn"
           onClick={() => {
             setGuestsFound([]);
             setStep(1);
