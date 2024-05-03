@@ -34,7 +34,7 @@ export function GuestsSelection({ step, setStep }) {
   if (guestsFound.length === 0) {
     return (
       <p className="text-lg font-bold font-primary">
-        Nenhum convidado encontrado com este nome!
+        Oops, não foi encontrado nenhum convidado com esse nome. Dica: Busque pelas 3 primeiras letras do seu nome :) <br/> Nova busca →
       </p>
     );
   }
