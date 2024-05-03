@@ -38,7 +38,7 @@ export function GuestsSelection({ step, setStep }) {
 
         <button
           type="button"
-          className="px-12 py-4 mt-4 lg:mt-40 btn"
+          className="px-12 py-4 mt-4 lg:mt-12 btn"
           onClick={() => {
             setGuestsFound([]);
             setStep(1);
