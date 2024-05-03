@@ -102,7 +102,7 @@ export function GuestsConfirmation({ step, setStep }) {
                   {guest.name}
                 </div>
 
-                <div className="flex justify-around sm:justify-between">
+                <div className="flex justify-between sm:justify-between">
                   <label className="flex items-center gap-2 font-bold uppercase font-primary">
                     <input
                       type="radio"
