@@ -64,7 +64,7 @@ export function GuestsConfirmation({ step, setStep }) {
 
   return (
     <>
-      <h2 className="text-4xl uppercase lg:text-5xl font-secondary">
+      <h2 className="text-3xl uppercase lg:text-5xl font-secondary">
         Podemos contar com você?
       </h2>
 {/*       <p className="font-primary">
