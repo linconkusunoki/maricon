@@ -14,7 +14,7 @@ export function Faq() {
               <Accordion
                 title="Como confirmo minha presença?"
                 content={
-                  <p>
+                  <p className="font-primary">
                     Na página de confirmação de presença, escreva o seu nome e
                     clique em Buscar. Seu nome aparecerá e você poderá confirmar
                     sua presença e daqueles vindo com você :)
