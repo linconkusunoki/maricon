@@ -21,10 +21,7 @@ const ListaPresentes = () => {
             </h2>
 
             <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => {
-                return (
                   <li
-                    key={i}
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
@@ -45,8 +42,6 @@ const ListaPresentes = () => {
                       Comprar
                     </button>
                   </li>
-                );
-              })}
             </ul>
           </section>
 
@@ -56,10 +51,7 @@ const ListaPresentes = () => {
             </h2>
 
             <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => {
-                return (
                   <li
-                    key={i}
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
@@ -80,8 +72,6 @@ const ListaPresentes = () => {
                       Comprar
                     </button>
                   </li>
-                );
-              })}
             </ul>
           </section>
 
@@ -91,8 +81,6 @@ const ListaPresentes = () => {
             </h2>
 
             <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {[1, 2, 3, 4].map((i) => {
-                return (
                   <li
                     key={i}
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
@@ -115,8 +103,6 @@ const ListaPresentes = () => {
                       Comprar
                     </button>
                   </li>
-                );
-              })}
             </ul>
           </section>
 
