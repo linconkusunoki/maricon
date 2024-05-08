@@ -56,7 +56,7 @@ const ListaPresentes = () => {
                     </h3>
 
                     <p className="text-sm text-left text-earth font-primary">
-                      R$ 120,00
+                      R$ 100,00
                     </p>
 
                     <button className="self-start rounded-full btn">
@@ -99,6 +99,90 @@ const ListaPresentes = () => {
 
                     <p className="text-sm text-left text-earth font-primary">
                       R$ 200,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                      Comprar
+                    </button>
+                  </li>
+               <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                  Jogar o bouquet na sua direção
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 80,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                      Comprar
+                    </button>
+                  </li>
+              <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                  Pra me apresentar pra madrinha solteira da noiva
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 105,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                      Comprar
+                    </button>
+                  </li>
+              <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                  Pra me apresentar pro padrinho solteiro do noivo
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 103,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                      Comprar
+                    </button>
+                  </li>
+              <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                  Ganhe um lugar especial no nosso coração
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 4235,00
                     </p>
 
                     <button className="self-start rounded-full btn">
