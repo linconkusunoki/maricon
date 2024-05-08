@@ -30,7 +30,17 @@ export function Header({ className }) {
             <Link href="/" className="lg:hidden">
               <img src="/logo.png" alt="logo" />
             </Link>
-
+<Link
+              href="/"
+              className={`hover:underline ${
+                path === "/day-d" &&
+                `font-bold hover:no-underline ${
+                  className ? "text-earth" : "text-beige"
+                }`
+              }`}
+            >
+              Início
+            </Link>
             <Link
               href="/"
               className={`hover:underline ${
@@ -52,17 +62,6 @@ export function Header({ className }) {
               }`}
             >
               O que vestir
-            </Link>
-            <Link
-              href="/"
-              className={`hover:underline ${
-                path === "/day-d" &&
-                `font-bold hover:no-underline ${
-                  className ? "text-earth" : "text-beige"
-                }`
-              }`}
-            >
-              O dia
             </Link>
             <Link
               href="https://organized-script-04e.notion.site/Bienvenidos-a-Valencia-cd7635a00d6d42818be1532c46dbc709" target="_blank"
