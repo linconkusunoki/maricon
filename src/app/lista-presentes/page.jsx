@@ -42,8 +42,6 @@ const ListaPresentes = () => {
                       Comprar
                     </button>
                   </li>
-            </ul>
-            <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   <li
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
@@ -65,8 +63,6 @@ const ListaPresentes = () => {
                       Comprar
                     </button>
                   </li>
-            </ul>
-            <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   <li
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
@@ -88,8 +84,6 @@ const ListaPresentes = () => {
                       Comprar
                     </button>
                   </li>
-            </ul>
-            <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   <li
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
