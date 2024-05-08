@@ -379,7 +379,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/tattoo-noiva.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
@@ -400,7 +400,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/tattoo-noivo.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
@@ -421,7 +421,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/show.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
@@ -442,7 +442,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/vaquinha.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
@@ -506,7 +506,7 @@ const ListaPresentes = () => {
               </svg>
 
               <img
-                src="https://fakeimg.pl/500x500/282828/eae0d0/?retina=1"
+                src="/teamamos.jpg"
                 className="rounded-[20px]"
                 height={360}
                 width={480}
