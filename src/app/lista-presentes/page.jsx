@@ -43,6 +43,29 @@ const ListaPresentes = () => {
                     </button>
                   </li>
             </ul>
+            <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                  <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                      Foto com José
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 120,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                      Comprar
+                    </button>
+                  </li>
+            </ul>
           </section>
 
           <section className="max-w-[1440px] mx-auto w-full">
