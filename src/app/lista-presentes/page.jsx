@@ -202,7 +202,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/cafe.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
@@ -223,7 +223,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/japao.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
@@ -244,7 +244,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/islandia.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
@@ -265,7 +265,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/escocia.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
@@ -286,7 +286,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/nintendo.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
@@ -307,7 +307,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/carro.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
@@ -328,7 +328,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/amem.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
@@ -349,7 +349,7 @@ const ListaPresentes = () => {
                     className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
                   >
                     <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      src="/camera.jpg"
                       className="rounded-[20px]"
                       height={230}
                     />
