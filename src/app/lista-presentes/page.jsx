@@ -385,17 +385,81 @@ const ListaPresentes = () => {
                     />
 
                     <h3 className="font-bold text-left text-earth font-primary">
-                      Foto com George
+                      Tatuagem pra noiva
                     </h3>
 
                     <p className="text-sm text-left text-earth font-primary">
-                      R$ 120,00
+                      R$ 500,00
                     </p>
 
                     <button className="self-start rounded-full btn">
-                      Comprar
+                      Presentear os noivos
                     </button>
                   </li>
+               <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                      Tatuagem pro noivo
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 505,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                      Presentear os noivos
+                    </button>
+                  </li>
+              <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                   Ingressos pra curtirmos um showzin
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 610,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                      Presentear os noivos
+                    </button>
+                  </li>
+               <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                   Vaquinha para ajudar os noivos quebrados
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 1.234,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                      Presentear os noivos
+                    </button>
+                  </li>
+              
             </ul>
           </section>
 
