@@ -114,7 +114,7 @@ export default function Home() {
           </svg>
 
           <h2 className="text-bronze font-secondary text-[32px] px-8 lg:text-[54px]">
-            Nosso dia
+            {t.our_day}
           </h2>
 
           <svg
@@ -152,7 +152,7 @@ export default function Home() {
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
               <h3 className="text-2xl font-semibold font-secondary">18:00h</h3>
-              <p className="text-[12px] font-primary">Chegada dos convidados</p>
+              <p className="text-[12px] font-primary">{t.our_day_arrival}</p>
             </div>
           </li>
 
@@ -173,7 +173,7 @@ export default function Home() {
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
               <h3 className="text-2xl font-semibold font-secondary">18:30h</h3>
-              <p className="text-[12px] font-primary">Cerimônia</p>
+              <p className="text-[12px] font-primary">{t.our_day_ceremony}</p>
             </div>
           </li>
 
@@ -194,7 +194,7 @@ export default function Home() {
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
               <h3 className="text-2xl font-semibold font-secondary">19:30h</h3>
-              <p className="text-[12px] font-primary">Cocktails</p>
+              <p className="text-[12px] font-primary">{t.our_day_cocktails}</p>
             </div>
           </li>
 
@@ -215,7 +215,7 @@ export default function Home() {
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
               <h3 className="text-2xl font-semibold font-secondary">21:00h</h3>
-              <p className="text-[12px] font-primary">Jantar & Brindes</p>
+              <p className="text-[12px] font-primary">{t.our_day_dinner}</p>
             </div>
           </li>
 
@@ -236,18 +236,16 @@ export default function Home() {
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
               <h3 className="text-2xl font-semibold font-secondary">22:30h</h3>
-              <p className="text-[12px] font-primary">Festa</p>
+              <p className="text-[12px] font-primary">{t.our_day_party}</p>
             </div>
           </li>
         </ul>
 
         <p className="font-primary text-bronze lg:max-w-[1100px] lg:mx-auto lg:text-center">
-          Caso queira fazer um brinde ou qualquer outra surpresa para nós, nossa
-          coordenadora, Sandra, vai cuidar de tudo e pode te auxiliar em
-          encontrar o melhor momento pra isso.
+          {t.our_day_p1}
           <br />
           <a className="font-bold underline" href="tel:1231231323">
-            Entrar em contato →
+            {t.our_day_contact}
           </a>
         </p>
       </section>

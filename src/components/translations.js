@@ -130,6 +130,15 @@ export const translations = {
       "Se preferir, você também pode dirigir ou chamar um Uber, Cabify ou FreeNow. Só nos deixe saber já que temos que organizar o transporte em grupo por número de lugares!",
     how_to_get_more_details_soon: "Mais detalhes em breve!",
     how_to_get_hour_title: "Horário e ponto de encontro",
+    our_day: "Nosso dia",
+    our_day_arrival: "Chegada dos convidados",
+    our_day_ceremony: "Cerimônia",
+    our_day_cocktails: "Cocktails",
+    our_day_dinner: "Jantar & Brindes",
+    our_day_party: "Festa",
+    our_day_p1:
+      "Caso queira fazer um brinde ou qualquer outra surpresa para nós, nossa coordenadora, Sandra, vai cuidar de tudo e pode te auxiliar em encontrar o melhor momento pra isso.",
+    our_day_contact: "Entrar em contato →",
   },
   en: {},
 };
