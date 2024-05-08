@@ -208,15 +208,162 @@ const ListaPresentes = () => {
                     />
 
                     <h3 className="font-bold text-left text-earth font-primary">
-                      Foto com George
+                     Café da manhã no hotel
                     </h3>
 
                     <p className="text-sm text-left text-earth font-primary">
-                      R$ 120,00
+                      R$ 50,00
                     </p>
 
                     <button className="self-start rounded-full btn">
-                      Comprar
+                     Presentear os noivos
+                    </button>
+                  </li>
+               <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                     Sessão de fotos no Japão
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 700,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                     Presentear os noivos
+                    </button>
+                  </li>
+               <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                     Sessão de fotos na Islândia
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 710,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                     Presentear os noivos
+                    </button>
+                  </li>
+              <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                     Sessão de fotos na Escócia
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 720,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                     Presentear os noivos
+                    </button>
+                  </li>
+               <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                    Entradas para o parque da Nintendo
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$ 600,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                     Presentear os noivos
+                    </button>
+                  </li>
+              <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                    Aluguel de carro pra conhecermos a Espanha toda
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$900,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                     Presentear os noivos
+                    </button>
+                  </li>
+              <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                    Você acordou inspirado e resolveu bancar parte da viagem
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$2.000,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                     Presentear os noivos
+                    </button>
+                  </li>
+              <li
+                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
+                  >
+                    <img
+                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                      className="rounded-[20px]"
+                      height={230}
+                    />
+
+                    <h3 className="font-bold text-left text-earth font-primary">
+                   Uma camera nova pros noivos tirarem fotos em HD da aurora boreal
+                    </h3>
+
+                    <p className="text-sm text-left text-earth font-primary">
+                      R$3.000,00
+                    </p>
+
+                    <button className="self-start rounded-full btn">
+                     Presentear os noivos
                     </button>
                   </li>
             </ul>
