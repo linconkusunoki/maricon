@@ -2,470 +2,392 @@
 
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { useLocale } from "@/components/language-context";
 import React from "react";
 
 const ListaPresentes = () => {
+  const { t, locale } = useLocale();
+
   return (
     <>
-      <Header className="bg-beige" />
+      <Header className="bg-beige" light />
 
       <main className="flex items-center justify-center px-8 pt-10 pb-32 text-center bg-beige">
         <div className="flex flex-col w-full gap-16">
           <h1 className="text-earth text-[54px] uppercase text-center font-secondary">
-            Lista de Presentes
+            {t.gift_title}
           </h1>
 
           <section className="max-w-[1440px] mx-auto w-full">
             <h2 className="mb-10 text-3xl font-bold text-left font-primary text-earth">
-              Brincadeiras
+              {t.gift_jokes}
             </h2>
 
             <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                  <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/george.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/george.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                      Foto com George
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_pic_george}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 120,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 120,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Comprar
-                    </button>
-                  </li>
-                  <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/jose.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">{t.buy}</button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img src="/jose.jpg" className="rounded-[20px]" height={230} />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                      Foto com José
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_pic_jose}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 100,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 100,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Comprar
-                    </button>
-                  </li>
-                  <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">{t.buy}</button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                      Pedir pro Lincon tocar Raul
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_lincon}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 210,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 210,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Comprar
-                    </button>
-                  </li>
-                  <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">{t.buy}</button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                      Tarot: Pergunte algo pra noiva
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_tarot}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 200,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 200,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Comprar
-                    </button>
-                  </li>
-               <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">{t.buy}</button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                  Jogar o bouquet na sua direção
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_bouquet}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 80,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 80,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Comprar
-                    </button>
-                  </li>
-              <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/madrinha.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">{t.buy}</button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/madrinha.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                  Pra me apresentar pra madrinha solteira da noiva
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_tinder_w}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 105,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 105,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Comprar
-                    </button>
-                  </li>
-              <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/padrinho.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">{t.buy}</button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/padrinho.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                  Pra me apresentar pro padrinho solteiro do noivo
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_tinder_m}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 103,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 103,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Comprar
-                    </button>
-                  </li>
-              <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">{t.buy}</button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                  Ganhe um lugar especial no nosso coração
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_heart}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 4235,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 4235,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Comprar
-                    </button>
-                  </li>
+                <button className="self-start rounded-full btn">{t.buy}</button>
+              </li>
             </ul>
           </section>
 
           <section className="max-w-[1440px] mx-auto w-full">
             <h2 className="mb-10 text-3xl font-bold text-left font-primary text-earth">
-              Lua de Mel
+              {t.gift_honeymoon}
             </h2>
 
             <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                  <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/cafe.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img src="/cafe.jpg" className="rounded-[20px]" height={230} />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                     Café da manhã no hotel
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_hotel_coffee}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 50,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 50,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                     Presentear os noivos
-                    </button>
-                  </li>
-               <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/japao.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img src="/japao.jpg" className="rounded-[20px]" height={230} />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                     Sessão de fotos no Japão
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_japan_pics}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 700,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 700,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                     Presentear os noivos
-                    </button>
-                  </li>
-               <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/islandia.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/islandia.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                     Sessão de fotos na Islândia
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_iceland_pics}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 710,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 710,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                     Presentear os noivos
-                    </button>
-                  </li>
-              <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/escocia.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/escocia.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                     Sessão de fotos na Escócia
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_scotland_pics}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 720,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 720,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                     Presentear os noivos
-                    </button>
-                  </li>
-               <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/nintendo.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/nintendo.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                    Entradas para o parque da Nintendo
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_nintendo}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 600,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 600,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                     Presentear os noivos
-                    </button>
-                  </li>
-              <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/carro.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img src="/carro.jpg" className="rounded-[20px]" height={230} />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                    Aluguel de carro pra conhecermos a Espanha toda
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_rent_car}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$900,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$900,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                     Presentear os noivos
-                    </button>
-                  </li>
-              <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/amem.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img src="/amem.jpg" className="rounded-[20px]" height={230} />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                    Você acordou inspirado e resolveu bancar parte da viagem
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_inpired}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$2.000,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$2.000,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                     Presentear os noivos
-                    </button>
-                  </li>
-              <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/camera.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/camera.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                   Uma camera nova pros noivos tirarem fotos em HD da aurora boreal
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_camera}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$3.000,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$3.000,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                     Presentear os noivos
-                    </button>
-                  </li>
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
             </ul>
           </section>
 
           <section className="max-w-[1440px] mx-auto w-full">
             <h2 className="mb-10 text-3xl font-bold text-left font-primary text-earth">
-              Para nossa alegria
+              {t.gift_our_hapinness}
             </h2>
 
             <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                  <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/tattoo-noiva.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/tattoo-noiva.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                      Tatuagem pra noiva
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_tattoo_her}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 500,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 500,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Presentear os noivos
-                    </button>
-                  </li>
-               <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/tattoo-noivo.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/tattoo-noivo.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                      Tatuagem pro noivo
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_tattoo_him}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 505,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 505,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Presentear os noivos
-                    </button>
-                  </li>
-              <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/show.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img src="/show.jpg" className="rounded-[20px]" height={230} />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                   Ingressos pra curtirmos um showzin
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_show_ticket}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 610,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 610,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Presentear os noivos
-                    </button>
-                  </li>
-               <li
-                    className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px]"
-                  >
-                    <img
-                      src="/vaquinha.jpg"
-                      className="rounded-[20px]"
-                      height={230}
-                    />
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/vaquinha.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
 
-                    <h3 className="font-bold text-left text-earth font-primary">
-                   Vaquinha para ajudar os noivos quebrados
-                    </h3>
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_vaquinha}
+                </h3>
 
-                    <p className="text-sm text-left text-earth font-primary">
-                      R$ 1.234,00
-                    </p>
+                <p className="text-sm text-left text-earth font-primary">
+                  R$ 1.234,00
+                </p>
 
-                    <button className="self-start rounded-full btn">
-                      Presentear os noivos
-                    </button>
-                  </li>
-              
+                <button className="self-start rounded-full btn">
+                  {t.gift_present}
+                </button>
+              </li>
             </ul>
           </section>
 
           <section className="max-w-[1440px] mx-auto w-full">
             <h2 className="mb-10 text-3xl font-bold font-primary text-earth">
-              Você tem uma categoria propria de tanta luz que voce emite
+              {t.gift_god_bless}
             </h2>
 
             <div className="bg-[#DFCAB5] p-4 rounded-[26px] items-center relative flex flex-col gap-[20px] max-w-[520px] mx-auto">
@@ -513,7 +435,7 @@ const ListaPresentes = () => {
               />
 
               <h3 className="font-bold text-earth font-primary text-[21px]">
-                Se por uma intervenção divina você se sentir tocado
+                {t.gift_divine}
               </h3>
 
               <p className="text-sm text-earth font-primary text-[18px]">
@@ -521,7 +443,7 @@ const ListaPresentes = () => {
               </p>
 
               <button className="w-full rounded-full btn md:w-auto">
-                Garanta seu lugar no céu
+                {t.gift_ensure_heaven}
               </button>
             </div>
           </section>

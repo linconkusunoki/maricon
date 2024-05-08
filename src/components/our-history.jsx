@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
+import { useLocale } from "./language-context";
 
 export function OurHistory() {
+  const { t } = useLocale();
   return (
     <section className="flex flex-col gap-4 px-4 pt-32 pb-16 text-center bg-beige xl:pb-32">
       <svg
@@ -19,32 +23,16 @@ export function OurHistory() {
 
       <div className="max-w-[600px] mx-auto flex flex-col gap-4 md:gap-8">
         <h2 className="text-3xl font-secondary text-earth xl:text-5xl">
-          Love is free. In time, in peace.
+          {t.history_title}
         </h2>
-        <p className="font-primary text-earth">
-          Depois de 8 anos juntos, uma mudança pro exterior, dois gatos e um
-          apartamento, nós finalmente vamos nos casar!
-        </p>
-        <p className="font-primary text-earth">
-          Nós estamos preparando um casamento íntimo em uma das melhores cidades
-          do mundo que nós chamamos de casa: Valencia, na Espanha.
-        </p>
-        <p className="font-primary text-earth">
-          Criamos esse site pra tentar responder qualquer dúvida que vocês
-          tenham sobre o casamento ou, para aqueles vindo de longe, sobre a
-          viagem.
-        </p>
-        <p className="font-primary text-earth">
-          Não esqueça, sua confirmação de presença é muito importante - e quanto
-          mais rápido melhor. Isso vai fazer nossa vida beeem mais fácil hehe
-        </p>
-
-        <p className="font-primary text-earth">
-          Dá uma olhada em tudo e a gente se vê em outubro!
-        </p>
+        <p className="font-primary text-earth">{t.history_p1}</p>
+        <p className="font-primary text-earth">{t.history_p2}</p>
+        <p className="font-primary text-earth">{t.history_p3}</p>
+        <p className="font-primary text-earth">{t.history_p4}</p>
+        <p className="font-primary text-earth">{t.history_p5}</p>
 
         <Link href="/" className="self-center btn">
-          Confirmar presença
+          {t.confirmar_presenca}
         </Link>
       </div>
     </section>

@@ -1,11 +1,15 @@
+"use client";
+
 import { CountdownTimer } from "@/components/countdown";
 import { Faq } from "@/components/faq";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { useLocale } from "@/components/language-context";
 import { OurHistory } from "@/components/our-history";
 import { Playlist } from "@/components/playlist";
 
 export default function Home() {
+  const { t } = useLocale();
   return (
     <>
       <Header className="bg-green" />
@@ -77,11 +81,9 @@ export default function Home() {
       <section className="flex flex-col gap-4 py-16 text-center bg-green xl:flex-row xl:justify-center xl:text-left">
         <div className="px-4 xl:w-2/6">
           <h2 className="mb-8 text-3xl font-secondary text-bronze xl:text-5xl">
-            Nossa história em músicas e polaroides
+            {t.music_title}
           </h2>
-          <p className="font-primary text-bronze">
-            Da primeira música enviada um pro outro, pra música que cantamos juntos no carro, até a música que aprendemos a tocar no violão esse ano: todas com alguma foto que tiramos na nossa polaroide nos últimos anos.
-          </p>
+          <p className="font-primary text-bronze">{t.music_text}</p>
         </div>
 
         <div className="xl:w-2/5 xl:-mt-28">
@@ -93,7 +95,7 @@ export default function Home() {
 
       <section className="px-4 py-16 text-center bg-bronze">
         <h2 className="text-3xl text-green font-secondary xl:text-5xl">
-          Estamos ansiosos pra te ver :)
+          {t.countdown_title}
         </h2>
         <CountdownTimer futureDate="2024-10-05T12:00:00" />
       </section>

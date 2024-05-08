@@ -2,8 +2,10 @@
 import * as React from "react";
 
 import { GuestsContext } from "./guests-context";
+import { useLocale } from "./language-context";
 
 export function GuestsConfirmation({ step, setStep }) {
+  const { t } = useLocale();
   const formRef = React.useRef(null);
   const [submitting, setSubmitting] = React.useState(false);
   const { confirmationList, setGuestsFound } = React.useContext(GuestsContext);
@@ -65,9 +67,9 @@ export function GuestsConfirmation({ step, setStep }) {
   return (
     <>
       <h2 className="text-3xl uppercase lg:text-5xl font-secondary">
-        Podemos contar com você?
+        {t.guest_selection_title}
       </h2>
-{/*       <p className="font-primary">
+      {/*       <p className="font-primary">
         Para confirmar a sua presença no casamento é só escrever o seu nome e
         clicar em <span className="font-bold">Buscar</span>. Seu nome aparecerá
         e você poderá confirmar sua presença e dos convidados vindo com você :)
@@ -112,7 +114,7 @@ export function GuestsConfirmation({ step, setStep }) {
                       required
                     />
                     <div className="flex items-center justify-center w-4 h-4 border rounded-full border-earth peer-checked:before:w-2 peer-checked:before:h-2 peer-checked:before:bg-earth peer-checked:before:block peer-checked:before:rounded-full" />
-                    Eu vou!
+                    {t.going}
                   </label>
 
                   <label className="flex items-center gap-2 uppercase font-primary">
@@ -124,7 +126,7 @@ export function GuestsConfirmation({ step, setStep }) {
                       required
                     />
                     <div className="flex items-center justify-center w-4 h-4 border rounded-full border-earth peer-checked:before:w-2 peer-checked:before:h-2 peer-checked:before:bg-earth peer-checked:before:block peer-checked:before:rounded-full" />
-                    Não vou :(
+                    {t.not_going}
                   </label>
                 </div>
 
@@ -133,10 +135,10 @@ export function GuestsConfirmation({ step, setStep }) {
                   className="bg-[#D7D5B4] bg-opacity-50 text-bronze p-4 w-full placeholder-bronze outline-bronze font-primary"
                   required
                 >
-                  <option>MENU</option>
-                  <option value="traditional">Tradicional</option>
-                  <option value="vegetarian">Vegetariano</option>
-                  <option value="kids">Infantil</option>
+                  <option>{t.menu}</option>
+                  <option value="traditional">{t.menu_traditional}</option>
+                  <option value="vegetarian">{t.menu_vegetarian}</option>
+                  <option value="kids">{t.menu_kids}</option>
                 </select>
 
                 <select
@@ -144,9 +146,9 @@ export function GuestsConfirmation({ step, setStep }) {
                   className="bg-[#D7D5B4] bg-opacity-50 text-bronze p-4 w-full placeholder-bronze outline-bronze font-primary"
                   required
                 >
-                  <option>TRANSPORTE</option>
-                  <option value="group">Vou com o grupo</option>
-                  <option value="own">Vou de Taxi/Carro</option>
+                  <option>{t.transport}</option>
+                  <option value="group">{t.transport_group}</option>
+                  <option value="own">{t.transport_own}</option>
                 </select>
               </div>
             )
@@ -158,7 +160,7 @@ export function GuestsConfirmation({ step, setStep }) {
             className="w-full btn md:w-auto disabled:bg-sand"
             disabled={submitting}
           >
-            Enviar confirmação
+            {t.send_confirmation}
           </button>
 
           <button
@@ -170,7 +172,7 @@ export function GuestsConfirmation({ step, setStep }) {
               setSubmitting(false);
             }}
           >
-            Nova Busca
+            {t.new_search}
           </button>
         </div>
       </form>

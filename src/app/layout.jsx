@@ -3,6 +3,7 @@ import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { GuestsProvider } from "@/components/guests-context";
+import { LanguageProvider } from "@/components/language-context";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -39,7 +40,9 @@ export default function RootLayout({ children }) {
           cormorant.variable,
         ].join(" ")}
       >
-        <GuestsProvider>{children}</GuestsProvider>
+        <LanguageProvider>
+          <GuestsProvider>{children}</GuestsProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

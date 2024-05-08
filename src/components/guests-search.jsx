@@ -2,8 +2,10 @@
 
 import { GuestsContext } from "@/components/guests-context";
 import * as React from "react";
+import { useLocale } from "./language-context";
 
 export function GuestSearch({ step, setStep }) {
+  const { t } = useLocale();
   const [name, setName] = React.useState("");
   const [error, setError] = React.useState(false);
   const { setGuestsFound, guests } = React.useContext(GuestsContext);
@@ -56,13 +58,9 @@ export function GuestSearch({ step, setStep }) {
       </svg>
 
       <h2 className="text-4xl uppercase lg:text-5xl font-secondary">
-        Prevemos você no nosso dia
+        {t.guest_search_title}
       </h2>
-      <p className="font-primary">
-        Para confirmar a sua presença no casamento é só escrever o seu nome e
-        clicar em <span className="font-bold">Buscar</span>. Seu nome aparecerá
-        e você poderá confirmar sua presença e dos convidados vindo com você :)
-      </p>
+      <p className="font-primary">{t.guest_search_p1}</p>
 
       <form
         onSubmit={handleSubmit}
@@ -75,11 +73,11 @@ export function GuestSearch({ step, setStep }) {
             value={name}
             onChange={handleChange}
             className="bg-[#D7D5B4] bg-opacity-50 text-bronze px-8 py-4 w-full placeholder-bronze outline-bronze uppercase font-primary"
-            placeholder="Nome"
+            placeholder={t.name}
           />
           {error && (
             <p className="text-[12px] text-left mt-1 font-primary text-earth">
-              Mínimo de 3 letras
+              {t.min_char}
             </p>
           )}
         </div>
@@ -89,7 +87,7 @@ export function GuestSearch({ step, setStep }) {
           className="w-full px-12 py-4 mt-4 lg:mt-0 btn disabled:bg-sand"
           disabled={guests.length === 0}
         >
-          Buscar
+          {t.search}
         </button>
       </form>
     </>

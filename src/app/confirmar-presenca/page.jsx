@@ -17,7 +17,7 @@ const ConfirmarPresenca = () => {
 
   return (
     <>
-      <Header className="bg-beige" />
+      <Header className="bg-beige" light />
 
       <main
         className="flex items-center justify-center px-8 py-16 text-center bg-beige"

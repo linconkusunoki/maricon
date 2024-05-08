@@ -2,10 +2,12 @@
 import * as React from "react";
 import Link from "next/link";
 import { GuestsContext } from "./guests-context";
+import { useLocale } from "./language-context";
 
 export function GuestsSuccess({ step, setStep }) {
+  const { t } = useLocale();
   const { confirmationList, setGuestsFound } = React.useContext(GuestsContext);
-  console.log(step);
+
   if (step !== 4) {
     return null;
   }
@@ -13,11 +15,9 @@ export function GuestsSuccess({ step, setStep }) {
   return (
     <>
       <h2 className="text-4xl uppercase lg:text-5xl font-secondary">
-        Confirmação enviada
+        {t.confirmation_sent}
       </h2>
-      <p className="font-primary">
-        Você pode ver os detalhes da sua confirmação abaixo:
-      </p>
+      <p className="font-primary">{t.confirmation_p1}</p>
 
       <section className="flex items-center flex-col max-w-[500px] mx-auto gap-10 w-full">
         <svg
@@ -38,27 +38,29 @@ export function GuestsSuccess({ step, setStep }) {
             <li className="flex-1 p-4 text-left border border-earth max-w-[250px] flex flex-col gap-1">
               <h3 className="text-xl font-bold font-primary">{guest.name}</h3>
               <div className="flex gap-2 text-sm uppercase font-primary">
-                Presença
+                {t.presence}
                 <span className="font-bold">
-                  {guest.answer === "accepted" ? "Confirmada" : "Rejeitada"}
+                  {guest.answer === "accepted"
+                    ? t.presence_confirmed
+                    : t.presence_rejected}
                 </span>
               </div>
               <div className="flex gap-2 text-sm uppercase font-primary">
-                Menu
+                <span className="capitalize">{t.menu}</span>
                 <span className="font-bold">
                   {guest.menu === "traditional"
-                    ? "Tradicional"
+                    ? t.menu_traditional
                     : guest.menu === "vegetarian"
-                    ? "Vegetariano"
-                    : "Kids"}
+                    ? t.menu_vegetarian
+                    : t.menu_kids}
                 </span>
               </div>
               <div className="flex gap-2 text-sm uppercase font-primary">
-                Transporte
+                <span className="capitalize">{t.transport}</span>
                 <span className="font-bold">
                   {guest.transport === "group"
-                    ? "Com o grupo"
-                    : "Carro próprio"}
+                    ? t.transport_group
+                    : t.transport_own}
                 </span>
               </div>
             </li>
@@ -71,7 +73,7 @@ export function GuestsSuccess({ step, setStep }) {
             type="submit"
             className="w-full btn md:w-auto"
           >
-            Ver lista de presentes
+            {t.see_gift_list}
           </Link>
 
           <button
@@ -82,7 +84,7 @@ export function GuestsSuccess({ step, setStep }) {
               setStep(1);
             }}
           >
-            Nova Busca
+            {t.new_search}
           </button>
         </div>
 

@@ -2,8 +2,10 @@
 import * as React from "react";
 
 import { GuestsContext } from "./guests-context";
+import { useLocale } from "./language-context";
 
 export function GuestsSelection({ step, setStep }) {
+  const { t } = useLocale();
   const [selected, setSelected] = React.useState();
   const { guestsFound, setConfirmationList, guests, setGuestsFound } =
     React.useContext(GuestsContext);
@@ -34,8 +36,7 @@ export function GuestsSelection({ step, setStep }) {
   if (guestsFound.length === 0) {
     return (
       <p className="text-lg font-normal font-primary">
-        Oops, não foi encontrado nenhum convidado com esse nome. Dica: Busque pelas 3 primeiras letras do seu nome :) <br/>
-
+        {t.search_ops} <br />
         <button
           type="button"
           className="px-12 py-4 mt-4 lg:mt-12 btn"
@@ -44,7 +45,7 @@ export function GuestsSelection({ step, setStep }) {
             setStep(1);
           }}
         >
-Voltar
+          {t.back}
         </button>
       </p>
     );
@@ -53,9 +54,9 @@ Voltar
   return (
     <>
       <h2 className="text-4xl uppercase lg:text-5xl font-secondary">
-        Podemos contar com você?
+        {t.guest_selection_title}
       </h2>
-{/*       <p className="font-primary">
+      {/*       <p className="font-primary">
         Para confirmar a sua presença no casamento é só escrever o seu nome e
         clicar em <span className="font-bold">Buscar</span>. Seu nome aparecerá
         e você poderá confirmar sua presença e dos convidados vindo com você :)
@@ -79,7 +80,7 @@ Voltar
         </svg>
 
         <h2 className="text-3xl font-secondary text-earth">
-          Selecione seu nome
+          {t.guest_selection_title2}
         </h2>
 
         {guestsFound.map((guest) => (
@@ -101,7 +102,7 @@ Voltar
           </label>
         ))}
         <button type="submit" className="w-full mt-8 btn md:w-auto">
-          Continuar
+          {t.continue}
         </button>
 
         <button
@@ -112,7 +113,7 @@ Voltar
             setStep(1);
           }}
         >
-          Nova Busca
+          {t.new_search}
         </button>
       </form>
     </>
