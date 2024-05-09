@@ -133,7 +133,7 @@ export default function Home() {
         </div>
 
         <ul className="relative flex flex-col gap-5 lg:flex-row">
-          <span className="absolute w-[2px] left-[8px] top-8 bottom-7 bg-[#A25A44] lg:left-11 lg:right-11 lg:bottom-[11px] lg:top-auto lg:w-auto lg:h-[2px]" />
+          <span className="absolute w-[2px] left-[8px] top-8 bottom-7 bg-[#A25A44] lg:left-21 lg:right-21 lg:bottom-[11px] lg:top-auto lg:w-auto lg:h-[2px]" />
 
           <li className="flex items-center lg:flex-col-reverse lg:flex-1">
             <svg
