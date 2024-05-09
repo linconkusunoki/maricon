@@ -137,7 +137,7 @@ export const translations = {
     our_day_dinner: "Jantar & Brindes",
     our_day_party: "Festa",
     our_day_p1:
-      "Caso queira fazer um brinde ou qualquer outra surpresa para nós, nossa coordenadora, Sandra, vai cuidar de tudo e pode te auxiliar em encontrar o melhor momento pra isso.",
+      "Caso queira fazer um brinde ou qualquer outra surpresa para nós, nossa coordenadora, Sandra, vai cuidar de tudo e pode te auxiliar em encontrar o melhor momento pra isso. ",
     our_day_contact: "Entrar em contato →",
   },
   en: {
@@ -278,6 +278,6 @@ how_to_get_hour_title: "Time and meeting point",
     our_day_dinner: "Dinner & toasts",
     our_day_party: "Party",
     our_day_p1:
-      "If you'd like to make a toast or any other surprise for us, our coordinator, Sandra, will take care of everything and can assist you in finding the best moment for it.",
+      "If you'd like to make a toast or any other surprise for us, our coordinator, Sandra, will take care of everything and can assist you in finding the best moment for it. ",
     our_day_contact: "Get in touch with Sandra →",},
 };
