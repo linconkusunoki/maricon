@@ -262,22 +262,22 @@ export const translations = {
       "You have your own category because of the light you emit",
     gift_divine: "If by divine intervention you feel touched",
     gift_ensure_heaven: "Secure your place in heaven",
-    how_to_get: "COMO CHEGAR",
-    how_to_get_p1:
-      "Não queremos que vocês se preocupem em como chegar ou voltar do casamento, por isso",
-    how_to_get_p1_b:
-      "estamos buscando um transporte para todos saindo de Valencia até a Masía",
-    how_to_get_p2:
-      "Se preferir, você também pode dirigir ou chamar um Uber, Cabify ou FreeNow. Só nos deixe saber já que temos que organizar o transporte em grupo por número de lugares!",
-    how_to_get_more_details_soon: "Mais detalhes em breve!",
-    how_to_get_hour_title: "Horário e ponto de encontro",
-    our_day: "Nosso dia",
-    our_day_arrival: "Chegada dos convidados",
-    our_day_ceremony: "Cerimônia",
+how_to_get: "HOW TO GET THERE",
+how_to_get_p1:
+  "We don't want you to worry about how to get to or from the wedding, so",
+how_to_get_p1_b:
+  "we're arranging transportation for everyone from Valencia to the Masía.",
+how_to_get_p2:
+  "However, if you prefer, you can also drive or call an Uber, Cabify, or FreeNow. Just let us know, as we need to organize the group transportation based on the number of seats!",
+how_to_get_more_details_soon: "More details coming soon!",
+how_to_get_hour_title: "Time and meeting point",
+    our_day: "Our day",
+    our_day_arrival: "Guests arrival",
+    our_day_ceremony: "Ceremony",
     our_day_cocktails: "Cocktails",
-    our_day_dinner: "Jantar & Brindes",
-    our_day_party: "Festa",
+    our_day_dinner: "Dinner & toasts",
+    our_day_party: "Party",
     our_day_p1:
-      "Caso queira fazer um brinde ou qualquer outra surpresa para nós, nossa coordenadora, Sandra, vai cuidar de tudo e pode te auxiliar em encontrar o melhor momento pra isso.",
-    our_day_contact: "Entrar em contato →",},
+      "If you'd like to make a toast or any other surprise for us, our coordinator, Sandra, will take care of everything and can assist you in finding the best moment for it.",
+    our_day_contact: "Get in touch with Sandra →",},
 };
