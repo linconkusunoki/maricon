@@ -64,7 +64,7 @@ export function Header({ className, light }) {
             <Link
               href="/"
               className={`hover:underline ${
-                path === "/day-d" &&
+                path === "/" &&
                 `font-bold hover:no-underline ${
                   className ? "text-earth" : "text-beige"
                 }`
