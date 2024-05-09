@@ -78,9 +78,12 @@ export default function Home() {
 
       <OurHistory />
 
-      <section className="flex flex-col gap-4 py-16 text-center bg-green xl:flex-row xl:justify-center xl:text-left">
-        <div className="px-4 xl:w-2/6">
-          <h2 className="mb-8 text-3xl font-secondary text-bronze xl:text-5xl">
+      <section className="flex flex-col gap-4 py-10 text-center bg-green xl:flex-row xl:justify-center xl:text-left">
+        <div className="px-4 mb-10 xl:w-2/6">
+          <h2
+            className="mb-8 text-[32px] font-secondary text-bronze xl:text-5xl"
+            style={{ lineHeight: "120%" }}
+          >
             {t.music_title}
           </h2>
           <p className="font-primary text-bronze">{t.music_text}</p>
@@ -133,7 +136,7 @@ export default function Home() {
         </div>
 
         <ul className="relative flex flex-col gap-5 lg:flex-row">
-          <span className="absolute w-[2px] left-[8px] top-8 bottom-7 bg-[#A25A44] lg:left-11 lg:right-11 lg:bottom-[11px] lg:top-auto lg:w-auto lg:h-[2px]" />
+          <span className="absolute w-[2px] left-[8px] top-8 bottom-7 bg-[#A25A44] lg:left-14 lg:right-14 lg:bottom-[11px] lg:top-auto lg:w-auto lg:h-[2px]" />
 
           <li className="flex items-center lg:flex-col-reverse lg:flex-1">
             <svg
@@ -142,7 +145,7 @@ export default function Home() {
               viewBox="0 0 18 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="mt-1 mt-2 mr-4 lg:mr-0"
+              className="mt-2 mr-4 lg:mr-0"
             >
               <path
                 d="M9.08136 0C9.57061 5.27496 13.4316 10.4956 17.9997 11.6919H18V11.7465C13.5951 12.9972 9.89741 18.0003 9.13597 23.0579H8.86403C7.99393 17.946 4.29619 13.0516 0 11.8009V11.7463C5.27496 10.6043 8.42885 5.32956 8.9727 0H9.08136Z"
@@ -163,7 +166,7 @@ export default function Home() {
               viewBox="0 0 18 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="mt-1 mt-2 mr-4 lg:mr-0"
+              className="mt-2 mr-4 lg:mr-0"
             >
               <path
                 d="M9.08136 0C9.57061 5.27496 13.4316 10.4956 17.9997 11.6919H18V11.7465C13.5951 12.9972 9.89741 18.0003 9.13597 23.0579H8.86403C7.99393 17.946 4.29619 13.0516 0 11.8009V11.7463C5.27496 10.6043 8.42885 5.32956 8.9727 0H9.08136Z"
@@ -184,7 +187,7 @@ export default function Home() {
               viewBox="0 0 18 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="mt-1 mt-2 mr-4 lg:mr-0"
+              className="mt-2 mr-4 lg:mr-0"
             >
               <path
                 d="M9.08136 0C9.57061 5.27496 13.4316 10.4956 17.9997 11.6919H18V11.7465C13.5951 12.9972 9.89741 18.0003 9.13597 23.0579H8.86403C7.99393 17.946 4.29619 13.0516 0 11.8009V11.7463C5.27496 10.6043 8.42885 5.32956 8.9727 0H9.08136Z"
@@ -205,7 +208,7 @@ export default function Home() {
               viewBox="0 0 18 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="mt-1 mt-2 mr-4 lg:mr-0"
+              className="mt-2 mr-4 lg:mr-0"
             >
               <path
                 d="M9.08136 0C9.57061 5.27496 13.4316 10.4956 17.9997 11.6919H18V11.7465C13.5951 12.9972 9.89741 18.0003 9.13597 23.0579H8.86403C7.99393 17.946 4.29619 13.0516 0 11.8009V11.7463C5.27496 10.6043 8.42885 5.32956 8.9727 0H9.08136Z"
@@ -226,7 +229,7 @@ export default function Home() {
               viewBox="0 0 18 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="mt-1 mt-2 mr-4 lg:mr-0"
+              className="mt-2 mr-4 lg:mr-0"
             >
               <path
                 d="M9.08136 0C9.57061 5.27496 13.4316 10.4956 17.9997 11.6919H18V11.7465C13.5951 12.9972 9.89741 18.0003 9.13597 23.0579H8.86403C7.99393 17.946 4.29619 13.0516 0 11.8009V11.7463C5.27496 10.6043 8.42885 5.32956 8.9727 0H9.08136Z"

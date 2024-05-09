@@ -16,7 +16,7 @@ export function Header({ className, light }) {
         <Link href="/" className="hidden md:block">
           <img
             className="w-[35px]"
-            src={light ? "/logo-dark.png" : "/logo.png"}
+            src={light && !open ? "/logo-dark.png" : "/logo.png"}
             alt="Mariana & Lincon"
           />
         </Link>
@@ -57,7 +57,7 @@ export function Header({ className, light }) {
             <Link href="/" className="lg:hidden">
               <img
                 className="w-[55px]"
-                src={light ? "/logo-dark.png" : "/logo.png"}
+                src={light && !open ? "/logo-dark.png" : "/logo.png"}
                 alt="logo"
               />
             </Link>

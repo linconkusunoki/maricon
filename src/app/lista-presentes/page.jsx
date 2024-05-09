@@ -12,18 +12,18 @@ const ListaPresentes = () => {
     <>
       <Header className="bg-beige" light />
 
-      <main className="flex items-center justify-center px-8 pt-10 pb-32 text-center bg-beige">
-        <div className="flex flex-col w-full gap-16">
-          <h1 className="text-earth text-[54px] uppercase text-center font-secondary">
+      <main className="flex items-center justify-center px-4 pt-10 pb-32 overflow-x-hidden text-center lg:px-8 bg-beige">
+        <div className="flex flex-col w-full gap-10 lg:gap-16">
+          <h1 className="text-earth text-[32px] lg:text-[54px] uppercase text-center font-secondary">
             {t.gift_title}
           </h1>
 
           <section className="max-w-[1440px] mx-auto w-full">
-            <h2 className="mb-10 text-3xl font-bold text-left font-primary text-earth">
+            <h2 className="text-center mb-5 lg:text-left lg:mb-10 text-[20px] lg:text-3xl font-bold font-primary text-earth">
               {t.gift_jokes}
             </h2>
 
-            <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <ul className="grid grid-cols-2 gap-4 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4">
               <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/george.jpg"
@@ -160,11 +160,11 @@ const ListaPresentes = () => {
           </section>
 
           <section className="max-w-[1440px] mx-auto w-full">
-            <h2 className="mb-10 text-3xl font-bold text-left font-primary text-earth">
+            <h2 className="text-center mb-5 lg:text-left lg:mb-10 text-[20px] lg:text-3xl font-bold font-primary text-earth">
               {t.gift_honeymoon}
             </h2>
 
-            <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <ul className="grid grid-cols-2 gap-4 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4">
               <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/cafe.jpg" className="rounded-[20px]" height={230} />
 
@@ -305,11 +305,11 @@ const ListaPresentes = () => {
           </section>
 
           <section className="max-w-[1440px] mx-auto w-full">
-            <h2 className="mb-10 text-3xl font-bold text-left font-primary text-earth">
+            <h2 className="text-center mb-5 lg:text-left lg:mb-10 text-[20px] lg:text-3xl font-bold font-primary text-earth">
               {t.gift_our_hapinness}
             </h2>
 
-            <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <ul className="grid grid-cols-2 gap-4 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4">
               <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/tattoo-noiva.jpg"
@@ -386,7 +386,10 @@ const ListaPresentes = () => {
           </section>
 
           <section className="max-w-[1440px] mx-auto w-full">
-            <h2 className="mb-10 text-3xl font-bold font-primary text-earth">
+            <h2
+              className="mb-5 lg:mb-10 text-[20px] lg:text-3xl font-bold font-primary text-earth"
+              style={{ lineHeight: "120%" }}
+            >
               {t.gift_god_bless}
             </h2>
 

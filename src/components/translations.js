@@ -103,7 +103,7 @@ export const translations = {
     gift_heart: "Ganhe um lugar especial no nosso coração",
     gift_honeymoon: "Lua de Mel",
     gift_hotel_coffee: "Café da manhã no hotel",
-    gift_present: "Presentear os noivos",
+    gift_present: "Presentear",
     gift_japan_pics: "Sessão de fotos no Japão",
     gift_iceland_pics: "Sessão de fotos na Islândia",
     gift_scotland_pics: "Sessão de fotos na Escócia",
@@ -250,7 +250,8 @@ export const translations = {
     gift_scotland_pics: "Photoshoot in Scotland",
     gift_nintendo: "Tickets to Nintendo's park",
     gift_rent_car: "Car rental to travel through Spain",
-    gift_inpired: "You woke up inspired and decided to sponsor part of the trip",
+    gift_inpired:
+      "You woke up inspired and decided to sponsor part of the trip",
     gift_camera:
       "A new camera for the newlyweds to take HD photos of the Northern Lights",
     gift_our_hapinness: "For our happiness",
@@ -258,19 +259,18 @@ export const translations = {
     gift_tattoo_him: "New tattoo for the groom",
     gift_show_ticket: "Tickets for us to enjoy a concert",
     gift_vaquinha: "Fund to help the now broke newlyweds",
-    gift_god_bless:
-      "You have your own category because of the light you emit",
+    gift_god_bless: "You have your own category because of the light you emit",
     gift_divine: "If by divine intervention you feel touched",
     gift_ensure_heaven: "Secure your place in heaven",
-how_to_get: "HOW TO GET THERE",
-how_to_get_p1:
-  "We don't want you to worry about how to get to or from the wedding, so",
-how_to_get_p1_b:
-  "we're arranging transportation for everyone from Valencia to the Masía.",
-how_to_get_p2:
-  "However, if you prefer, you can also drive or call an Uber, Cabify, or FreeNow. Just let us know, as we need to organize the group transportation based on the number of seats!",
-how_to_get_more_details_soon: "More details coming soon!",
-how_to_get_hour_title: "Time and meeting point",
+    how_to_get: "HOW TO GET THERE",
+    how_to_get_p1:
+      "We don't want you to worry about how to get to or from the wedding, so",
+    how_to_get_p1_b:
+      "we're arranging transportation for everyone from Valencia to the Masía.",
+    how_to_get_p2:
+      "However, if you prefer, you can also drive or call an Uber, Cabify, or FreeNow. Just let us know, as we need to organize the group transportation based on the number of seats!",
+    how_to_get_more_details_soon: "More details coming soon!",
+    how_to_get_hour_title: "Time and meeting point",
     our_day: "Our day",
     our_day_arrival: "Guests arrival",
     our_day_ceremony: "Ceremony",
@@ -279,5 +279,6 @@ how_to_get_hour_title: "Time and meeting point",
     our_day_party: "Party",
     our_day_p1:
       "If you'd like to make a toast or any other surprise for us, our coordinator, Sandra, will take care of everything and can assist you in finding the best moment for it. ",
-    our_day_contact: "Get in touch with Sandra →",},
+    our_day_contact: "Get in touch with Sandra →",
+  },
 };
