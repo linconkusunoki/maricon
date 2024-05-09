@@ -26,7 +26,10 @@ const ListaPresentesEscolha = () => {
             <div className="relative md:min-w-[420px] w-full">
               <img src="euro.png" className="max-w-[200px]" />
               <Link href="/lista-presentes">
-                <button className="absolute right-0 px-4 py-2 font-semibold rounded-full -translate-y-1/4 text-nowrap bg-bronze text-beige font-primary top-1/2 md:text-2xl md:py-4 md:px-8">
+                <button
+                  onClick={() => localStorage.setItem("currency", "euro")}
+                  className="absolute right-0 px-4 py-2 font-semibold rounded-full -translate-y-1/4 text-nowrap bg-bronze text-beige font-primary top-1/2 md:text-2xl md:py-4 md:px-8"
+                >
                   {t.gift_euro}
                 </button>
               </Link>
@@ -35,7 +38,10 @@ const ListaPresentesEscolha = () => {
             <div className="relative md:min-w-[420px] w-full">
               <img src="real.png" className="max-w-[180px]" />
               <Link href="/lista-presentes">
-                <button className="absolute right-0 px-4 py-2 font-semibold rounded-full -translate-y-1/4 text-nowrap bg-bronze text-beige font-primary top-1/2 md:text-2xl md:py-4 md:px-8">
+                <button
+                  onClick={() => localStorage.setItem("currency", "real")}
+                  className="absolute right-0 px-4 py-2 font-semibold rounded-full -translate-y-1/4 text-nowrap bg-bronze text-beige font-primary top-1/2 md:text-2xl md:py-4 md:px-8"
+                >
                   {t.gift_real}
                 </button>
               </Link>

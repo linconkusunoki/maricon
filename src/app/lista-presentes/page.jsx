@@ -3,10 +3,15 @@
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { useLocale } from "@/components/language-context";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const ListaPresentes = () => {
-  const { t, locale } = useLocale();
+  const { t } = useLocale();
+  const [isEuro, setEuro] = useState(true);
+
+  useEffect(() => {
+    setEuro(localStorage.getItem("currency") === "euro");
+  }, []);
 
   return (
     <>
@@ -36,7 +41,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 120,00
+                  {isEuro ? "€ 60" : "R$ 120,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">{t.buy}</button>
@@ -49,7 +54,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 100,00
+                  {isEuro ? "€ 50" : "R$ 100,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">{t.buy}</button>
@@ -66,7 +71,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 210,00
+                  {isEuro ? "€ 80" : "R$ 210,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">{t.buy}</button>
@@ -83,7 +88,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 200,00
+                  {isEuro ? "€ 85" : "R$ 200,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">{t.buy}</button>
@@ -100,7 +105,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 80,00
+                  {isEuro ? "€ 40" : "R$ 80,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">{t.buy}</button>
@@ -117,7 +122,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 105,00
+                  {isEuro ? "€ 75" : "R$ 105,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">{t.buy}</button>
@@ -134,7 +139,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 103,00
+                  {isEuro ? "€ 70" : "R$ 103,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">{t.buy}</button>
@@ -151,7 +156,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 4235,00
+                  {isEuro ? "€ 800" : "R$ 4235,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">{t.buy}</button>
@@ -173,7 +178,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 50,00
+                  {isEuro ? "€ 30" : "R$ 50,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -188,7 +193,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 700,00
+                  {isEuro ? "€ 150" : "R$ 700,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -207,7 +212,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 710,00
+                  {isEuro ? "€ 155" : "R$ 710,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -226,7 +231,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 720,00
+                  {isEuro ? "€ 160" : "R$ 720,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -245,7 +250,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 600,00
+                  {isEuro ? "€ 170" : "R$ 600,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -260,7 +265,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$900,00
+                  {isEuro ? "€ 200" : "R$ 900,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -275,7 +280,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$2.000,00
+                  {isEuro ? "€ 500" : "R$ 2.000,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -294,7 +299,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$3.000,00
+                  {isEuro ? "€ 650" : "R$ 3.000,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -322,7 +327,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 500,00
+                  {isEuro ? "€ 100" : "R$ 500,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -341,7 +346,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 505,00
+                  {isEuro ? "€ 105" : "R$ 505,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -356,7 +361,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 610,00
+                  {isEuro ? "€ 180" : "R$ 610,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -375,7 +380,7 @@ const ListaPresentes = () => {
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
-                  R$ 1.234,00
+                  {isEuro ? "€ 250" : "R$ 1.234,00"}
                 </p>
 
                 <button className="self-start rounded-full btn">
@@ -442,7 +447,7 @@ const ListaPresentes = () => {
               </h3>
 
               <p className="text-sm text-earth font-primary text-[18px]">
-                R$ 5.000,00
+                {isEuro ? "€ 1.000" : "R$ 5.000,00"}
               </p>
 
               <button className="w-full rounded-full btn md:w-auto">
