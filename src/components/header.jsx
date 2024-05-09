@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export function Header({ className, light }) {
   const path = usePathname();
-  const { t } = useLocale();
+  const { t, locale, setLocale } = useLocale();
   const [open, setOpen] = useState(false);
 
   return (
@@ -117,12 +117,58 @@ export function Header({ className, light }) {
             >
               {t.lista_presentes}
             </Link>
+
+            <div className="flex gap-1 text-beige text-[12px] lg:hidden lg:ml-4">
+              <div
+                onClick={() => setLocale("pt")}
+                className={locale === "pt" ? "font-bold" : "cursor-pointer"}
+              >
+                PT
+              </div>
+              |
+              <div
+                onClick={() => setLocale("es")}
+                className={locale === "es" ? "font-bold" : "cursor-pointer"}
+              >
+                ES
+              </div>
+              |
+              <div
+                onClick={() => setLocale("en")}
+                className={locale === "en" ? "font-bold" : "cursor-pointer"}
+              >
+                EN
+              </div>
+            </div>
           </div>
         </div>
 
         <a className="btn" href="/confirmar-presenca">
           {t.confirmar_presenca}
         </a>
+
+        <div className="hidden gap-1 text-bronze text-[12px] lg:flex lg:ml-4">
+          <div
+            onClick={() => setLocale("pt")}
+            className={locale === "pt" ? "font-bold" : "cursor-pointer"}
+          >
+            PT
+          </div>
+          |
+          <div
+            onClick={() => setLocale("es")}
+            className={locale === "es" ? "font-bold" : "cursor-pointer"}
+          >
+            ES
+          </div>
+          |
+          <div
+            onClick={() => setLocale("en")}
+            className={locale === "en" ? "font-bold" : "cursor-pointer"}
+          >
+            EN
+          </div>
+        </div>
       </nav>
     </header>
   );
