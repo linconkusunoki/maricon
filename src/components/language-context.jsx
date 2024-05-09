@@ -8,7 +8,7 @@ const LanguageContext = React.createContext();
 
 export const LanguageProvider = ({ children }) => {
   const [locale, setLocale] = React.useState(
-    localStorage.getItem("locale") || "pt"
+    typeof window !== 'undefined' && localStorage.getItem("locale") || "pt"
   );
 
   return (
