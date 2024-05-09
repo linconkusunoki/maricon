@@ -143,7 +143,7 @@ export const translations = {
   en: {
     home: "Home",
     como_chegar: "Getting there",
-    o_que_vestir: "Dresscode",
+    o_que_vestir: "Dress code",
     o_dia: "Our day",
     para_os_viajantes: "For the travelers",
     lista_presentes: "Registry",
