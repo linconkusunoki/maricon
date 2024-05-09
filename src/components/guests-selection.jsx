@@ -92,13 +92,20 @@ export function GuestsSelection({ step, setStep }) {
               type="radio"
               className="hidden peer"
               name="selected-guest"
-              id={`${guest?.id}`}
+              id={`${guest.id}`}
               value={guest.id}
               onChange={handleChange}
+              disabled={guest.answer === "accepted"}
               required
             />
-            <div className="flex items-center justify-center w-4 h-4 border rounded-full border-earth peer-checked:before:w-2 peer-checked:before:h-2 peer-checked:before:bg-earth peer-checked:before:block peer-checked:before:rounded-full" />
-            {guest.name}
+            <div
+              className={`flex items-center justify-center w-4 h-4 border rounded-full border-earth peer-checked:before:w-2 peer-checked:before:h-2 peer-checked:before:bg-earth peer-checked:before:block peer-checked:before:rounded-full ${
+                guest.answer === "accepted" && "border-sand"
+              }`}
+            />
+            <div className={`${guest.answer === "accepted" && "text-sand"}`}>
+              {guest.name}
+            </div>
           </label>
         ))}
         <button type="submit" className="w-full mt-8 btn md:w-auto">

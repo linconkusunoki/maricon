@@ -61,7 +61,7 @@ export const translations = {
     dress_inspirations: "Inspirações",
     guest_search_title: "Prevemos você no nosso dia",
     guest_search_p1:
-      'Para confirmar a sua presença no casamento é só escrever o seu nome e clicar em <span className="font-bold">Buscar</span>. Seu nome aparecerá e você poderá confirmar sua presença e dos convidados vindo com você :)',
+      "Para confirmar a sua presença no casamento é só escrever o seu nome e clicar em Buscar. Seu nome aparecerá e você poderá confirmar sua presença e dos convidados vindo com você :)",
     name: "Nome",
     min_char: "Mínimo de 3 letras",
     search: "Buscar",
@@ -103,7 +103,7 @@ export const translations = {
     gift_heart: "Ganhe um lugar especial no nosso coração",
     gift_honeymoon: "Lua de Mel",
     gift_hotel_coffee: "Café da manhã no hotel",
-    gift_present: "Presentear",
+    gift_present: "Presentearguest_search_p1",
     gift_japan_pics: "Sessão de fotos no Japão",
     gift_iceland_pics: "Sessão de fotos na Islândia",
     gift_scotland_pics: "Sessão de fotos na Escócia",
@@ -202,7 +202,7 @@ export const translations = {
     dress_inspirations: "Some references",
     guest_search_title: "We foresee you on our day",
     guest_search_p1:
-      "To confirm your attendance at the wedding, simply enter your name and click <span className='font-bold'>Search</span>. Your name will appear, and you'll be able to confirm your attendance and that of any guests coming with you :)",
+      "To confirm your attendance at the wedding, simply enter your name and click Search. Your name will appear, and you'll be able to confirm your attendance and that of any guests coming with you :)",
     name: "Name",
     min_char: "Please type at least 3 characters",
     search: "Search",

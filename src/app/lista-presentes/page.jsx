@@ -29,7 +29,7 @@ const ListaPresentes = () => {
             </h2>
 
             <ul className="grid grid-cols-2 gap-4 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4">
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/george.jpg"
                   className="rounded-[20px]"
@@ -44,9 +44,19 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 60" : "R$ 120,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">{t.buy}</button>
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
+                  {t.buy}
+                </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/jose.jpg" className="rounded-[20px]" height={230} />
 
                 <h3 className="font-bold text-left text-earth font-primary">
@@ -57,9 +67,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 50" : "R$ 100,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">{t.buy}</button>
+                <button className="self-start w-full rounded-full btn lg:w-auto">
+                  {t.buy}
+                </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
                   className="rounded-[20px]"
@@ -74,9 +86,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 80" : "R$ 210,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">{t.buy}</button>
+                <button className="self-start w-full rounded-full btn lg:w-auto">
+                  {t.buy}
+                </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
                   className="rounded-[20px]"
@@ -91,9 +105,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 85" : "R$ 200,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">{t.buy}</button>
+                <button className="self-start w-full rounded-full btn lg:w-auto">
+                  {t.buy}
+                </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
                   className="rounded-[20px]"
@@ -108,9 +124,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 40" : "R$ 80,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">{t.buy}</button>
+                <button className="self-start w-full rounded-full btn lg:w-auto">
+                  {t.buy}
+                </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/madrinha.jpg"
                   className="rounded-[20px]"
@@ -125,9 +143,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 75" : "R$ 105,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">{t.buy}</button>
+                <button className="self-start w-full rounded-full btn lg:w-auto">
+                  {t.buy}
+                </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/padrinho.jpg"
                   className="rounded-[20px]"
@@ -142,9 +162,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 70" : "R$ 103,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">{t.buy}</button>
+                <button className="self-start w-full rounded-full btn lg:w-auto">
+                  {t.buy}
+                </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
                   className="rounded-[20px]"
@@ -159,7 +181,9 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 800" : "R$ 4235,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">{t.buy}</button>
+                <button className="self-start w-full rounded-full btn lg:w-auto">
+                  {t.buy}
+                </button>
               </li>
             </ul>
           </section>
@@ -170,7 +194,7 @@ const ListaPresentes = () => {
             </h2>
 
             <ul className="grid grid-cols-2 gap-4 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4">
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/cafe.jpg" className="rounded-[20px]" height={230} />
 
                 <h3 className="font-bold text-left text-earth font-primary">
@@ -181,11 +205,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 30" : "R$ 50,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/japao.jpg" className="rounded-[20px]" height={230} />
 
                 <h3 className="font-bold text-left text-earth font-primary">
@@ -196,11 +220,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 150" : "R$ 700,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/islandia.jpg"
                   className="rounded-[20px]"
@@ -215,11 +239,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 155" : "R$ 710,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/escocia.jpg"
                   className="rounded-[20px]"
@@ -234,11 +258,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 160" : "R$ 720,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/nintendo.jpg"
                   className="rounded-[20px]"
@@ -253,11 +277,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 170" : "R$ 600,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/carro.jpg" className="rounded-[20px]" height={230} />
 
                 <h3 className="font-bold text-left text-earth font-primary">
@@ -268,11 +292,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 200" : "R$ 900,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/amem.jpg" className="rounded-[20px]" height={230} />
 
                 <h3 className="font-bold text-left text-earth font-primary">
@@ -283,11 +307,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 500" : "R$ 2.000,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/camera.jpg"
                   className="rounded-[20px]"
@@ -302,7 +326,7 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 650" : "R$ 3.000,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>
@@ -315,7 +339,7 @@ const ListaPresentes = () => {
             </h2>
 
             <ul className="grid grid-cols-2 gap-4 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4">
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/tattoo-noiva.jpg"
                   className="rounded-[20px]"
@@ -330,11 +354,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 100" : "R$ 500,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/tattoo-noivo.jpg"
                   className="rounded-[20px]"
@@ -349,11 +373,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 105" : "R$ 505,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/show.jpg" className="rounded-[20px]" height={230} />
 
                 <h3 className="font-bold text-left text-earth font-primary">
@@ -364,11 +388,11 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 180" : "R$ 610,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
                   src="/vaquinha.jpg"
                   className="rounded-[20px]"
@@ -383,7 +407,7 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 250" : "R$ 1.234,00"}
                 </p>
 
-                <button className="self-start rounded-full btn">
+                <button className="self-start w-full rounded-full btn lg:w-auto">
                   {t.gift_present}
                 </button>
               </li>

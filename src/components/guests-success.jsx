@@ -45,24 +45,33 @@ export function GuestsSuccess({ step, setStep }) {
                     : t.presence_rejected}
                 </span>
               </div>
-              <div className="flex gap-2 text-sm uppercase font-primary">
-                <span className="capitalize">{t.menu}</span>
-                <span className="font-bold">
-                  {guest.menu === "traditional"
-                    ? t.menu_traditional
-                    : guest.menu === "vegetarian"
-                    ? t.menu_vegetarian
-                    : t.menu_kids}
-                </span>
-              </div>
-              <div className="flex gap-2 text-sm uppercase font-primary">
-                <span className="capitalize">{t.transport}</span>
-                <span className="font-bold">
-                  {guest.transport === "group"
-                    ? t.transport_group
-                    : t.transport_own}
-                </span>
-              </div>
+              {guest.answer === "accepted" && (
+                <>
+                  {guest.menu !== "none" && (
+                    <div className="flex gap-2 text-sm uppercase font-primary">
+                      <span className="capitalize">{t.menu}</span>
+                      <span className="font-bold">
+                        {guest.menu === "traditional"
+                          ? t.menu_traditional
+                          : guest.menu === "vegetarian"
+                          ? t.menu_vegetarian
+                          : t.menu_kids}
+                      </span>
+                    </div>
+                  )}
+
+                  {guest.transport !== "none" && (
+                    <div className="flex gap-2 text-sm uppercase font-primary">
+                      <span className="capitalize">{t.transport}</span>
+                      <span className="font-bold">
+                        {guest.transport === "group"
+                          ? t.transport_group
+                          : t.transport_own}
+                      </span>
+                    </div>
+                  )}
+                </>
+              )}
             </li>
           ))}
         </ul>
@@ -94,7 +103,7 @@ export function GuestsSuccess({ step, setStep }) {
           viewBox="0 0 864 507"
           className="w-full max-w-[864px] mx-auto -mt-10 lg:w-[864px] lg:mx-0"
         >
-          <g clip-path="url(#a)">
+          <g clipPath="url(#a)">
             <path
               fill="#CB9470"
               d="M312.39 168.61a3.16 3.16 0 1 0 0-6.32 3.16 3.16 0 0 0 0 6.32ZM298.85 251.76a3.16 3.16 0 1 0 0-6.32 3.16 3.16 0 0 0 0 6.32ZM566.94 251.76a3.17 3.17 0 1 0 0-6.34 3.17 3.17 0 0 0 0 6.34ZM294.99 108.66a3.16 3.16 0 1 0 0-6.32 3.16 3.16 0 0 0 0 6.32ZM207.26 178.98a3.16 3.16 0 1 0 0-6.32 3.16 3.16 0 0 0 0 6.32ZM662.92 175.82a3.167 3.167 0 0 0-3.786-3.119 3.164 3.164 0 0 0-2.493 2.493 3.172 3.172 0 0 0 1.354 3.256 3.167 3.167 0 0 0 1.765.53c.838 0 1.642-.333 2.235-.925a3.164 3.164 0 0 0 .925-2.235ZM557.27 168.61a3.16 3.16 0 1 0 0-6.32 3.16 3.16 0 0 0 0 6.32ZM567.641 118.33a3.16 3.16 0 1 0 0-6.319 3.16 3.16 0 0 0 0 6.319ZM345.61 457.25l-5.25-2.8.64-5.45-2.38 2.83a6.54 6.54 0 0 1-1.72.74l-4.08-2.17 1.13 2.22a8.994 8.994 0 0 1-4.16-2.46s5.36 5.1.23 10.28a9.552 9.552 0 0 1 2.71-1.64l-.39.45 4.64-.7 2.41 4.71.38-3.43c.268.207.522.43.76.67-.257-.32-.498-.654-.72-1l.16-1.44 5.64-.81Z"

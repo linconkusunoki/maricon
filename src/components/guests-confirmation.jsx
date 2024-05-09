@@ -31,8 +31,22 @@ export function GuestsConfirmation({ step, setStep }) {
       guest[column] = value;
 
       const { name, answer, menu, transport, link } = guest;
-      rows[id] = [id, name, answer, menu, transport, link.join(",")];
+
+      rows[id] = [
+        id,
+        name,
+        answer,
+        answer === "declined" ? "none" : menu === t.menu ? "none" : menu,
+        answer === "declined"
+          ? "none"
+          : transport === t.transport
+          ? "none"
+          : transport,
+        link.join(","),
+      ];
     });
+
+    console.log(JSON.stringify(rows));
 
     Object.keys(rows).forEach((row) => {
       const options = {
@@ -54,6 +68,7 @@ export function GuestsConfirmation({ step, setStep }) {
       )
         .then((response) => response.text())
         .then(() => {
+          setSubmitting(false);
           setStep(4);
         })
         .catch(console.error);
@@ -133,7 +148,6 @@ export function GuestsConfirmation({ step, setStep }) {
                 <select
                   name={`${guest.id}-menu`}
                   className="bg-[#D7D5B4] bg-opacity-50 text-bronze p-4 w-full placeholder-bronze outline-bronze font-primary"
-                  required
                 >
                   <option>{t.menu}</option>
                   <option value="traditional">{t.menu_traditional}</option>
@@ -144,7 +158,6 @@ export function GuestsConfirmation({ step, setStep }) {
                 <select
                   name={`${guest.id}-transport`}
                   className="bg-[#D7D5B4] bg-opacity-50 text-bronze p-4 w-full placeholder-bronze outline-bronze font-primary"
-                  required
                 >
                   <option>{t.transport}</option>
                   <option value="group">{t.transport_group}</option>
@@ -158,7 +171,7 @@ export function GuestsConfirmation({ step, setStep }) {
           <button
             type="submit"
             className="w-full btn md:w-auto disabled:bg-sand"
-            disabled={submitting}
+            // disabled={submitting}
           >
             {t.send_confirmation}
           </button>
