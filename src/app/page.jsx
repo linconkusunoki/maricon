@@ -96,7 +96,7 @@ export default function Home() {
 
       <Faq />
 
-      <section className="flex flex-col items-center gap-10 lg:gap-[70px] px-4 py-16 bg-green">
+      <section className="flex flex-col items-center gap-10 lg:gap-[70px] px-4 py-14 bg-green">
         <div className="flex items-center justify-center">
           <svg
             width="56"
@@ -244,7 +244,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <p className="font-primary text-bronze lg:max-w-[1100px] lg:mx-auto lg:text-center">
+        <p className="font-primary text-bronze lg:max-w-[1100px] lg:mx-auto text-center">
           {t.our_day_p1}
           <a className="font-bold underline" href="tel:1231231323">
             {t.our_day_contact}
