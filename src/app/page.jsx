@@ -151,7 +151,7 @@ export default function Home() {
             </svg>
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
-              <h3 className="text-2xl font-semibold font-secondary">18:00h</h3>
+              <h3 className="text-3xl font-semibold font-secondary">18:00h</h3>
               <p className="text-[12px] font-primary">{t.our_day_arrival}</p>
             </div>
           </li>
@@ -172,7 +172,7 @@ export default function Home() {
             </svg>
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
-              <h3 className="text-2xl font-semibold font-secondary">18:30h</h3>
+              <h3 className="text-3xl font-semibold font-secondary">18:30h</h3>
               <p className="text-[12px] font-primary">{t.our_day_ceremony}</p>
             </div>
           </li>
@@ -193,7 +193,7 @@ export default function Home() {
             </svg>
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
-              <h3 className="text-2xl font-semibold font-secondary">19:30h</h3>
+              <h3 className="text-3xl font-semibold font-secondary">19:30h</h3>
               <p className="text-[12px] font-primary">{t.our_day_cocktails}</p>
             </div>
           </li>
@@ -214,7 +214,7 @@ export default function Home() {
             </svg>
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
-              <h3 className="text-2xl font-semibold font-secondary">21:00h</h3>
+              <h3 className="text-3xl font-semibold font-secondary">21:00h</h3>
               <p className="text-[12px] font-primary">{t.our_day_dinner}</p>
             </div>
           </li>
@@ -235,7 +235,7 @@ export default function Home() {
             </svg>
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
-              <h3 className="text-2xl font-semibold font-secondary">22:30h</h3>
+              <h3 className="text-3xl font-semibold font-secondary">22:30h</h3>
               <p className="text-[12px] font-primary">{t.our_day_party}</p>
             </div>
           </li>
@@ -243,7 +243,6 @@ export default function Home() {
 
         <p className="font-primary text-bronze lg:max-w-[1100px] lg:mx-auto lg:text-center">
           {t.our_day_p1}
-          <br />
           <a className="font-bold underline" href="tel:1231231323">
             {t.our_day_contact}
           </a>
