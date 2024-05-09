@@ -254,7 +254,7 @@ export default function Home() {
         <h2 className="text-3xl text-green font-secondary xl:text-5xl">
           {t.countdown_title}
         </h2>
-        <CountdownTimer futureDate="2024-10-05T12:00:00" />
+        <CountdownTimer futureDate="2024-10-06T18:00:00" />
       </section>
 
       <Footer />
