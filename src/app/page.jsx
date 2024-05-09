@@ -78,8 +78,8 @@ export default function Home() {
 
       <OurHistory />
 
-      <section className="flex flex-col gap-4 py-10 text-center bg-green xl:flex-row xl:justify-center xl:text-left">
-        <div className="px-4 mb-10 xl:w-2/6">
+      <section className="flex flex-col gap-4 py-10 text-center bg-green xl:grid xl:grid-cols-2 xl:text-left">
+        <div className="px-4 mb-10 xl:max-w-[450px] xl:ml-auto">
           <h2
             className="mb-8 text-[32px] font-secondary text-bronze xl:text-5xl"
             style={{ lineHeight: "120%" }}
@@ -89,7 +89,7 @@ export default function Home() {
           <p className="font-primary text-bronze">{t.music_text}</p>
         </div>
 
-        <div className="xl:w-2/5 xl:-mt-28">
+        <div className="xl:-mt-28 xl:w-[120%]">
           <Playlist />
         </div>
       </section>
