@@ -202,7 +202,7 @@ export const translations = {
     dress_inspirations: "Some references",
     guest_search_title: "We foresee you on our day",
     guest_search_p1:
-      'To confirm your attendance at the wedding, simply enter your name and click <span className="font-bold">Search</span>. Your name will appear, and you'll be able to confirm your attendance and that of any guests coming with you :)',
+      "To confirm your attendance at the wedding, simply enter your name and click <span className='font-bold'>Search</span>. Your name will appear, and you'll be able to confirm your attendance and that of any guests coming with you :)",
     name: "Name",
     min_char: "Please type at least 3 characters",
     search: "Search",
