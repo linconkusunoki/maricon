@@ -89,7 +89,7 @@ export default function Home() {
           <p className="font-primary text-bronze">{t.music_text}</p>
         </div>
 
-        <div className="xl:-mt-28 xl:w-[120%]">
+        <div className="xl:-mt-28 xl:w-[120%] 2xl:w-[90%]">
           <Playlist />
         </div>
       </section>
