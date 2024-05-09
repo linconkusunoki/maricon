@@ -193,7 +193,7 @@ export const translations = {
       "During the ceremony, we'd like everyone present, without cell phones in hand. After that, feel free to take photos!",
     q8_title: "I won't be able to attend :( what do I do?",
     q8_answer:
-      'We'll miss you :( If you can't make it, please let us know as soon as possible and confirm 'Will Not Attend' on the RSVP page so we can plan accordingly.',
+      'We'll miss you :( If you can't make it, please let us know as soon as possible and confirm "Will Not Attend" on the RSVP page so we can plan accordingly.',
     dress_title: "Dress code",
     dress_p1:
       "Casual chic, in neutral and earthy tones, without prints. Men can also wear white and beige, just try to avoid green since that's the groom's color. Any shoes are welcome, and no need for a tie.",
