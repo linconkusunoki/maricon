@@ -120,21 +120,33 @@ export function Header({ className, light }) {
 
             <div className="flex gap-1 text-beige text-[12px] lg:hidden lg:ml-4">
               <div
-                onClick={() => setLocale("pt")}
+                onClick={() => {
+                  setLocale("pt")
+                  localStorage.setItem ('locale','pt')
+                }
+                }
                 className={locale === "pt" ? "font-bold" : "cursor-pointer"}
               >
                 PT
               </div>
               |
               <div
-                onClick={() => setLocale("es")}
+                onClick={() => {
+                  setLocale("es")
+                  localStorage.setItem ('locale','es')
+                }
+                }
                 className={locale === "es" ? "font-bold" : "cursor-pointer"}
               >
                 ES
               </div>
               |
               <div
-                onClick={() => setLocale("en")}
+                onClick={() => {
+                  setLocale("en")
+                  localStorage.setItem ('locale','en')
+                }
+                }
                 className={locale === "en" ? "font-bold" : "cursor-pointer"}
               >
                 EN
