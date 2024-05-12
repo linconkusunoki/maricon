@@ -289,8 +289,6 @@ export const translations = {
         home: "Inicio",
         como_chegar: "Cómo llegar",
         o_que_vestir: "Qué vestir",
-    o_dia: "Our day",
-    para_os_viajantes: "For the travelers",
         o_dia: "El día", 
         para_os_viajantes "Para los viajeros",
         lista_presentes: "Lista de regalos",
