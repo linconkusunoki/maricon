@@ -103,7 +103,7 @@ export const translations = {
     gift_heart: "Ganhe um lugar especial no nosso coração",
     gift_honeymoon: "Lua de Mel",
     gift_hotel_coffee: "Café da manhã no hotel",
-    gift_present: "Presentearguest_search_p1",
+    gift_present: "Presentear",
     gift_japan_pics: "Sessão de fotos no Japão",
     gift_iceland_pics: "Sessão de fotos na Islândia",
     gift_scotland_pics: "Sessão de fotos na Escócia",
@@ -139,6 +139,9 @@ export const translations = {
     our_day_p1:
       "Caso queira fazer um brinde ou qualquer outra surpresa para nós, nossa coordenadora, Sandra, vai cuidar de tudo e pode te auxiliar em encontrar o melhor momento pra isso. ",
     our_day_contact: "Entrar em contato →",
+    btn_paypal: "Pagar com PayPal",
+    euro_modal_text:
+      "Para comprar uma foto com o George, envie €60 via PayPal ou Bizum: 677 079 043",
   },
   en: {
     home: "Home",

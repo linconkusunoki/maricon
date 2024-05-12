@@ -8,6 +8,7 @@ import { LanguageProvider } from "@/components/language-context";
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-primary",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const fraunces = Fraunces({

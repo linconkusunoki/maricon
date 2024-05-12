@@ -8,6 +8,7 @@ import React, { useEffect, useState } from "react";
 const ListaPresentes = () => {
   const { t } = useLocale();
   const [isEuro, setEuro] = useState(true);
+  const [modal, setModal] = useState();
 
   useEffect(() => {
     setEuro(localStorage.getItem("currency") === "euro");
@@ -48,6 +49,11 @@ const ListaPresentes = () => {
                   className="self-start w-full rounded-full btn lg:w-auto"
                   onClick={() => {
                     if (isEuro) {
+                      setModal({
+                        img: "/george.jpg",
+                        title: t.gift_pic_george,
+                        price: isEuro ? "€ 60" : "R$ 120,00",
+                      });
                     } else {
                       // nubank
                     }
@@ -67,7 +73,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 50" : "R$ 100,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/jose.jpg",
+                        title: t.gift_pic_jose,
+                        price: isEuro ? "€ 50" : "R$ 100,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.buy}
                 </button>
               </li>
@@ -86,7 +105,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 80" : "R$ 210,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
+                        title: t.gift_lincon,
+                        price: isEuro ? "€ 80" : "R$ 210,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.buy}
                 </button>
               </li>
@@ -105,7 +137,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 85" : "R$ 200,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
+                        title: t.gift_tarot,
+                        price: isEuro ? "€ 85" : "R$ 200,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.buy}
                 </button>
               </li>
@@ -124,7 +169,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 40" : "R$ 80,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
+                        title: t.gift_bouquet,
+                        price: isEuro ? "€ 40" : "R$ 80,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.buy}
                 </button>
               </li>
@@ -143,7 +201,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 75" : "R$ 105,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/madrinha.jpg",
+                        title: t.gift_tinder_w,
+                        price: isEuro ? "€ 75" : "R$ 105,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.buy}
                 </button>
               </li>
@@ -162,7 +233,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 70" : "R$ 103,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/padrinho.jpg",
+                        title: t.gift_tinder_m,
+                        price: isEuro ? "€ 70" : "R$ 103,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.buy}
                 </button>
               </li>
@@ -181,7 +265,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 800" : "R$ 4235,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
+                        title: t.gift_heart,
+                        price: isEuro ? "€ 800" : "R$ 4235,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.buy}
                 </button>
               </li>
@@ -205,7 +302,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 30" : "R$ 50,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/cafe.jpg",
+                        title: t.gift_hotel_coffee,
+                        price: isEuro ? "€ 30" : "R$ 50,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -220,7 +330,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 150" : "R$ 700,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/japao.jpg",
+                        title: t.gift_japan_pics,
+                        price: isEuro ? "€ 150" : "R$ 700,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -239,7 +362,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 155" : "R$ 710,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/islandia.jpg",
+                        title: t.gift_iceland_pics,
+                        price: isEuro ? "€ 155" : "R$ 710,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -258,7 +394,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 160" : "R$ 720,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/escocia.jpg",
+                        title: t.gift_scotland_pics,
+                        price: isEuro ? "€ 160" : "R$ 720,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -277,7 +426,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 170" : "R$ 600,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/nintendo.jpg",
+                        title: t.gift_nintendo,
+                        price: isEuro ? "€ 170" : "R$ 600,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -292,7 +454,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 200" : "R$ 900,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/carro.jpg",
+                        title: t.gift_rent_car,
+                        price: isEuro ? "€ 200" : "R$ 900,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -307,7 +482,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 500" : "R$ 2.000,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/amem.jpg",
+                        title: t.gift_inpired,
+                        price: isEuro ? "€ 500" : "R$ 2.000,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -326,7 +514,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 650" : "R$ 3.000,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/camera.jpg",
+                        title: t.gift_camera,
+                        price: isEuro ? "€ 650" : "R$ 3.000,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -354,7 +555,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 100" : "R$ 500,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/tattoo-noiva.jpg",
+                        title: t.gift_tattoo_her,
+                        price: isEuro ? "€ 100" : "R$ 500,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -373,7 +587,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 105" : "R$ 505,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/tattoo-noivo.jpg",
+                        title: t.gift_tattoo_him,
+                        price: isEuro ? "€ 105" : "R$ 505,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -388,7 +615,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 180" : "R$ 610,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/show.jpg",
+                        title: t.gift_show_ticket,
+                        price: isEuro ? "€ 180" : "R$ 610,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -407,7 +647,20 @@ const ListaPresentes = () => {
                   {isEuro ? "€ 250" : "R$ 1.234,00"}
                 </p>
 
-                <button className="self-start w-full rounded-full btn lg:w-auto">
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/vaquinha.jpg",
+                        title: t.gift_vaquinha,
+                        price: isEuro ? "€ 250" : "R$ 1.234,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
                   {t.gift_present}
                 </button>
               </li>
@@ -474,7 +727,20 @@ const ListaPresentes = () => {
                 {isEuro ? "€ 1.000" : "R$ 5.000,00"}
               </p>
 
-              <button className="w-full rounded-full btn md:w-auto">
+              <button
+                className="w-full rounded-full btn md:w-auto"
+                onClick={() => {
+                  if (isEuro) {
+                    setModal({
+                      img: "/teamamos.jpg",
+                      title: t.gift_divine,
+                      price: isEuro ? "€ 1.000" : "R$ 5.000,00",
+                    });
+                  } else {
+                    // nubank
+                  }
+                }}
+              >
                 {t.gift_ensure_heaven}
               </button>
             </div>
@@ -483,6 +749,53 @@ const ListaPresentes = () => {
       </main>
 
       <Footer className="bg-sand" />
+
+      {modal && (
+        <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full animate-fadeIn">
+          <div
+            className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-75"
+            onClick={() => setModal()}
+          />
+          <div className="bg-[#DFCAB5] text-[#A25A44] rounded-[32px] p-4 w-[310px] flex flex-col gap-5 relative z-10 lg:flex-row-reverse lg:w-[790px] items-center">
+            <div className="relative shrink-0">
+              <img
+                src={modal.img}
+                alt={modal.title}
+                className="rounded-[30px] lg:w-[387px] lg:h-[343px]"
+              />
+              <button
+                onClick={() => setModal()}
+                className="absolute flex items-center justify-center w-8 h-8 rounded-full right-3 top-3 bg-beige"
+              >
+                <svg
+                  width="12"
+                  height="13"
+                  viewBox="0 0 12 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 12.6L5.328 5.688L5.304 6.528L0.24 0H2.16L6.312 5.4L5.592 5.376L9.744 0H11.616L6.504 6.6L6.528 5.688L11.904 12.6H9.96L5.568 6.84L6.24 6.936L1.92 12.6H0Z"
+                    fill="#A25A44"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="flex flex-col lg:gap-[30px] gap-5 font-primary">
+              <div>
+                <h3 className="text-2xl font-bold">{modal.title}</h3>
+                <p className="text-2xl font-semibold">{modal.price}</p>
+              </div>
+              <p className="text-base font-semibold leading-[22px]">
+                {t.euro_modal_text}
+              </p>
+              <button className="w-full rounded-full lg:w-auto lg:self-start btn md:w-auto">
+                {t.btn_paypal}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
