@@ -290,7 +290,7 @@ export const translations = {
         como_chegar: "Cómo llegar",
         o_que_vestir: "Qué vestir",
         o_dia: "El día", 
-        para_os_viajantes "Para los viajeros",
+        para_os_viajantes: "Para los viajeros",
         lista_presentes: "Lista de regalos",
         confirmar_presenca: "Confirmar asistencia",
         history_title: "El amor es libre. En tiempo, en paz.",
