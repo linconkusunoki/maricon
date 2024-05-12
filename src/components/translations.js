@@ -402,6 +402,6 @@ export const translations = {
         our_day_dinner: "Cena y brindis",
         our_day_party: "Fiesta",
         our_day_p1: "Si deseas hacer un brindis o cualquier otra sorpresa para nosotros, nuestra coordinadora, Sandra, se encargará de todo y puede ayudarte a encontrar el mejor momento para ello.",
-        our_day_contact: "Ponte en contacto con Sandra →"
+        our_day_contact: " Ponte en contacto con Sandra →"
     },
 };
