@@ -51,7 +51,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 30" : "R$ 50,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641dc78-adea-46f6-bba2-52e6fd05fe2a", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641dc78-adea-46f6-bba2-52e6fd05fe2a",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -79,7 +82,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 150" : "R$ 700,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641dd0a-18fd-44aa-ab49-9f78f2cfd345", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641dd0a-18fd-44aa-ab49-9f78f2cfd345",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -111,7 +117,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 155" : "R$ 710,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641dd73-681b-4944-9bed-071aae80f551", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641dd73-681b-4944-9bed-071aae80f551",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -143,7 +152,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 160" : "R$ 720,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641ddca-c423-4391-a340-876d026b8431", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641ddca-c423-4391-a340-876d026b8431",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -175,7 +187,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 170" : "R$ 600,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641de15-3948-42f5-8f4c-72628b9fcda0", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641de15-3948-42f5-8f4c-72628b9fcda0",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -203,7 +218,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 200" : "R$ 900,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641de92-4a78-4e5d-9dbc-c84ecc20115f", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641de92-4a78-4e5d-9dbc-c84ecc20115f",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -231,7 +249,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 500" : "R$ 2.000,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641deec-d9c2-4262-9e6e-2c5a093dd458", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641deec-d9c2-4262-9e6e-2c5a093dd458",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -263,7 +284,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 650" : "R$ 3.000,00",
                       });
                     } else {
-                     window.open("https://nubank.com.br/cobrar/3neeb/6641df27-04ee-4320-8aea-6e913a16cb1c", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641df27-04ee-4320-8aea-6e913a16cb1c",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -304,7 +328,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 100" : "R$ 500,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641df9f-5a95-42b2-98a4-df3b02d6c6ba", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641df9f-5a95-42b2-98a4-df3b02d6c6ba",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -336,7 +363,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 105" : "R$ 505,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641e03f-8173-4dc2-a7e4-d2185aff2e0d", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641e03f-8173-4dc2-a7e4-d2185aff2e0d",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -364,7 +394,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 180" : "R$ 610,00",
                       });
                     } else {
-                     window.open("https://nubank.com.br/cobrar/3neeb/6641e0a6-9104-40d2-8ee2-fdddaa758e08", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641e0a6-9104-40d2-8ee2-fdddaa758e08",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -396,7 +429,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 250" : "R$ 1.234,00",
                       });
                     } else {
-                     window.open("https://nubank.com.br/cobrar/3neeb/6641e125-e84f-4ffc-ae48-27c03e0fc81c", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641e125-e84f-4ffc-ae48-27c03e0fc81c",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -437,7 +473,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 60" : "R$ 120,00",
                       });
                     } else {
-                     window.open("https://nubank.com.br/cobrar/3neeb/6641e1c1-032a-4799-b753-5cbb6fe1f8d8", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641e1c1-032a-4799-b753-5cbb6fe1f8d8",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -465,7 +504,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 50" : "R$ 100,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641e207-2833-42c8-b738-d1d434d56d23", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641e207-2833-42c8-b738-d1d434d56d23",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -497,7 +539,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 80" : "R$ 210,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641e23b-fea8-4461-a3df-3e83c3cc5b6e", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641e23b-fea8-4461-a3df-3e83c3cc5b6e",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -529,7 +574,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 85" : "R$ 200,00",
                       });
                     } else {
-                     window.open("https://nubank.com.br/cobrar/3neeb/6641e274-ad2e-476f-9e21-2b350a11c5e6", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641e274-ad2e-476f-9e21-2b350a11c5e6",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -561,7 +609,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 40" : "R$ 80,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641e2b4-278e-493d-b373-9177f30c0ebe", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641e2b4-278e-493d-b373-9177f30c0ebe",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -593,7 +644,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 75" : "R$ 105,00",
                       });
                     } else {
-                      window.open("https://nubank.com.br/cobrar/3neeb/6641e2e2-6f1c-40c7-a392-ed5fee001ebe", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641e2e2-6f1c-40c7-a392-ed5fee001ebe",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -625,7 +679,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 70" : "R$ 103,00",
                       });
                     } else {
-                     window.open("https://nubank.com.br/cobrar/3neeb/6641e318-818f-45e7-9c71-89baf844a846", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641e318-818f-45e7-9c71-89baf844a846",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -657,7 +714,10 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 800" : "R$ 4.235,00",
                       });
                     } else {
-                     window.open("https://nubank.com.br/cobrar/3neeb/6641e35f-cbef-412b-9c02-121e113d7ad8", "_blank");
+                      window.open(
+                        "https://nubank.com.br/cobrar/3neeb/6641e35f-cbef-412b-9c02-121e113d7ad8",
+                        "_blank"
+                      );
                     }
                   }}
                 >
@@ -682,7 +742,7 @@ const ListaPresentes = () => {
                 viewBox="0 0 92 134"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute -bottom-12 -right-8 md:-right-12"
+                className="absolute -bottom-12 -right-12 md:-right-12"
               >
                 <path
                   d="M23.2528 54.806C22.9157 53.854 22.9157 53.221 23.2528 52.901C30.4517 51.635 35.8538 50.204 39.4568 48.608C43.0548 47.022 45.7148 44.32 47.4258 40.507C49.1458 36.694 50.4298 32.644 51.2828 28.355C52.1438 24.065 52.9137 19.703 53.5967 15.249C55.0507 9.90796 54.1097 8.40795 54.1097 0.475952C54.4567 0.163952 55.3178 0 56.6838 0C57.0278 5.086 57.2847 10.172 57.4537 15.25C58.6407 49.181 80.2077 52.666 82.3987 53.852C84.4767 54.626 88.1148 55.757 90.1118 55.757C92.5158 55.757 92.3458 56.079 89.5978 56.711C84.7088 56.711 82.4568 55.842 78.7978 57.188H77.7698C75.7138 58.141 73.1388 60.285 70.0548 63.621C66.9668 66.958 64.2287 72.438 61.8257 80.063C57.4587 100.308 57.1968 100.61 57.1968 103.891C57.1968 105.477 57.0267 107.064 56.6827 108.657H54.1088C54.1088 105.242 53.5958 104.914 53.5958 101.509C52.5838 89.083 53.9688 85.179 51.0248 77.682C48.9668 71.65 45.9698 66.326 42.0248 61.716C38.0878 57.115 31.9958 54.97 23.7668 55.283C23.7668 54.97 23.5968 54.806 23.2528 54.806Z"
@@ -737,7 +797,10 @@ const ListaPresentes = () => {
                       price: isEuro ? "€ 1.000" : "R$ 5.000,00",
                     });
                   } else {
-                   window.open("https://nubank.com.br/cobrar/3neeb/6641e399-dd75-42bc-9366-3d53fd3a4f36", "_blank");
+                    window.open(
+                      "https://nubank.com.br/cobrar/3neeb/6641e399-dd75-42bc-9366-3d53fd3a4f36",
+                      "_blank"
+                    );
                   }
                 }}
               >

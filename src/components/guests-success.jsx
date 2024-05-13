@@ -17,10 +17,10 @@ export function GuestsSuccess({ step, setStep }) {
       <h2 className="text-4xl uppercase lg:text-5xl font-secondary">
         {t.confirmation_sent}
       </h2>
-{/*       <p className="font-primary">{t.confirmation_p1}</p> */}
+      {/*       <p className="font-primary">{t.confirmation_p1}</p> */}
 
       <section className="flex items-center flex-col max-w-[500px] mx-auto gap-10 w-full">
-{/*         <svg
+        {/*         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28"
           height="31"
@@ -45,6 +45,7 @@ export function GuestsSuccess({ step, setStep }) {
                     : t.presence_rejected}
                 </span>
               </div>
+
               {guest.answer === "accepted" && (
                 <>
                   {guest.menu !== "none" && (

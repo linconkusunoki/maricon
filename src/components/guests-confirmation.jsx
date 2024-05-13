@@ -30,23 +30,27 @@ export function GuestsConfirmation({ step, setStep }) {
 
       guest[column] = value;
 
-      const { name, answer, menu, transport, link } = guest;
-
       rows[id] = [
         id,
-        name,
-        answer,
-        answer === "declined" ? "none" : menu === t.menu ? "none" : menu,
-        answer === "declined"
+        guest.name,
+        guest.answer,
+        guest.answer === "declined"
           ? "none"
-          : transport === t.transport
+          : guest.menu === t.menu
           ? "none"
-          : transport,
-        link.join(","),
+          : guest.menu,
+        guest.answer === "declined"
+          ? "none"
+          : guest.transport === t.transport
+          ? "none"
+          : guest.transport,
+        guest.link.join(","),
       ];
-    });
 
-    console.log(JSON.stringify(rows));
+      guest.answer = rows[id][2];
+      guest.menu = rows[id][3];
+      guest.transport = rows[id][4];
+    });
 
     Object.keys(rows).forEach((row) => {
       const options = {
@@ -93,7 +97,7 @@ export function GuestsConfirmation({ step, setStep }) {
       <form
         ref={formRef}
         onSubmit={submitHandler}
-        className="flex items-center flex-col max-w-[500px] mx-auto gap-10 w-full"
+        className="flex items-center flex-col max-w-[800px] mx-auto gap-10"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -119,8 +123,8 @@ export function GuestsConfirmation({ step, setStep }) {
                   {guest.name}
                 </div>
 
-                <div className="flex justify-between sm:justify-between">
-                  <label className="flex items-center gap-2 font-bold uppercase font-primary">
+                <div className="flex justify-between gap-2 lg:gap-4 sm:justify-between">
+                  <label className="flex items-center gap-1 font-bold uppercase font-primary whitespace-nowrap">
                     <input
                       type="radio"
                       className="hidden peer"
@@ -132,7 +136,7 @@ export function GuestsConfirmation({ step, setStep }) {
                     {t.going}
                   </label>
 
-                  <label className="flex items-center gap-2 uppercase font-primary">
+                  <label className="flex items-center gap-2 uppercase font-primary whitespace-nowrap">
                     <input
                       type="radio"
                       className="hidden peer"
@@ -171,7 +175,7 @@ export function GuestsConfirmation({ step, setStep }) {
           <button
             type="submit"
             className="w-full btn md:w-auto disabled:bg-sand"
-            // disabled={submitting}
+            disabled={submitting}
           >
             {t.send_confirmation}
           </button>

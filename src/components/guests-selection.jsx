@@ -86,7 +86,10 @@ export function GuestsSelection({ step, setStep }) {
         {guestsFound.map((guest) => (
           <label
             key={guest.id}
-            className="flex w-full md:w-auto gap-2 uppercase hover:bg-opacity-80 p-4 items-center hover:cursor-pointer min-w-[350px] bg-[#D7D5B4] bg-opacity-50"
+            className={`flex w-full md:w-auto gap-2 uppercase hover:bg-opacity-80 p-4 items-center hover:cursor-pointer min-w-[350px] bg-[#D7D5B4] bg-opacity-50 ${
+              guest.answer === "accepted" &&
+              "hover:bg-opacity-50 hover:cursor-default"
+            }`}
           >
             <input
               type="radio"
