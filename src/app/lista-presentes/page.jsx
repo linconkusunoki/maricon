@@ -51,7 +51,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 30" : "R$ 50,00",
                       });
                     } else {
-                      // nubank
+                      window.open("https://www.nubank.com.br/", "_blank");
                     }
                   }}
                 >
