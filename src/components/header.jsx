@@ -10,6 +10,37 @@ export function Header({ className, light }) {
   const { t, locale, setLocale } = useLocale();
   const [open, setOpen] = useState(false);
 
+  const CustomLink = ({ href, children, target }) => {
+    const active = path === href;
+
+    return (
+      <Link
+        href={href}
+        className={`group relative ${
+          active && `font-bold ${light ? "lg:text-earth" : "lg:text-beige"}`
+        }`}
+        target={target}
+      >
+        {children}
+        <svg
+          width="9"
+          height="11"
+          viewBox="0 0 9 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={`absolute transition-all ease-in -translate-x-1/2 translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 left-1/2 ${
+            active && "opacity-100 translate-y-0"
+          }`}
+        >
+          <path
+            d="M4.66482 0C4.88226 2.34443 6.59826 4.6647 8.62854 5.19642H8.62866V5.22069C6.67095 5.77655 5.02751 8.00013 4.68909 10.248H4.56823C4.18152 7.97598 2.53808 5.8007 0.628662 5.24484V5.22057C2.97309 4.713 4.37482 2.36869 4.61653 0H4.66482Z"
+            fill="currentColor"
+          />
+        </svg>
+      </Link>
+    );
+  };
+
   return (
     <header
       className={`p-4 md:pt-8 xl:p-8 xl:pb-4 ${className} sticky top-0 z-50`}
@@ -63,62 +94,19 @@ export function Header({ className, light }) {
                 alt="logo"
               />
             </Link>
-            <Link
-              href="/"
-              className={`hover:underline ${
-                path === "/" &&
-                `font-bold hover:no-underline ${
-                  className ? "text-earth" : "text-beige"
-                }`
-              }`}
-            >
-              {t.home}
-            </Link>
-            <Link
-              href="/como-chegar"
-              className={`hover:underline ${
-                path === "/como-chegar" &&
-                `font-bold hover:no-underline ${
-                  className ? "text-earth" : "text-beige"
-                }`
-              }`}
-            >
-              {t.como_chegar}
-            </Link>
-            <Link
-              href="/vestimenta"
-              className={`hover:underline ${
-                path === "/vestimenta" &&
-                `font-bold hover:no-underline ${
-                  className ? "text-earth" : "text-beige"
-                }`
-              }`}
-            >
-              {t.o_que_vestir}
-            </Link>
-            <Link
+
+            <CustomLink href="/">{t.home}</CustomLink>
+            <CustomLink href="/como-chegar">{t.como_chegar}</CustomLink>
+            <CustomLink href="/vestimenta">{t.o_que_vestir}</CustomLink>
+            <CustomLink
               href="https://organized-script-04e.notion.site/Bienvenidos-a-Valencia-cd7635a00d6d42818be1532c46dbc709"
               target="_blank"
-              className={`hover:underline ${
-                path === "/viajantes" &&
-                `font-bold hover:no-underline ${
-                  className ? "text-earth" : "text-beige"
-                }`
-              }`}
             >
               {t.para_os_viajantes}
-            </Link>
-            <Link
-              href="/lista-presentes-escolha"
-              className={`hover:underline ${
-                path === "/lista-presentes" &&
-                `font-bold hover:no-underline ${
-                  className ? "text-earth" : "text-beige"
-                }`
-              }`}
-            >
+            </CustomLink>
+            <CustomLink href="/lista-presentes-escolha">
               {t.lista_presentes}
-            </Link>
+            </CustomLink>
 
             <div className="flex gap-1 text-beige text-[12px] lg:hidden lg:ml-4">
               <button
