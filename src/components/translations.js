@@ -251,7 +251,7 @@ export const translations = {
     gift_heart: "Get a special place in our heart",
     gift_honeymoon: "Honeymoon",
     gift_hotel_coffee: "Hotel breakfast",
-    gift_present: "Gift the newlyweds",
+    gift_present: "Send gift",
     gift_japan_pics: "Photoshoot in Japan",
     gift_iceland_pics: "Photoshoot in Iceland",
     gift_scotland_pics: "Photoshoot in Scotland",
