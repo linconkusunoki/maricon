@@ -26,267 +26,6 @@ const ListaPresentes = () => {
 
           <section className="max-w-[1440px] mx-auto w-full">
             <h2 className="text-center mb-5 lg:text-left lg:mb-10 text-[20px] lg:text-3xl font-bold font-primary text-earth">
-              {t.gift_jokes}
-            </h2>
-
-            <ul className="grid grid-cols-2 gap-4 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4">
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/george.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
-
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_pic_george}
-                </h3>
-
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 60" : "R$ 120,00"}
-                </p>
-
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "/george.jpg",
-                        title: t.gift_pic_george,
-                        price: isEuro ? "€ 60" : "R$ 120,00",
-                      });
-                    } else {
-                      // nubank
-                    }
-                  }}
-                >
-                  {t.buy}
-                </button>
-              </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img src="/jose.jpg" className="rounded-[20px]" height={230} />
-
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_pic_jose}
-                </h3>
-
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 50" : "R$ 100,00"}
-                </p>
-
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "/jose.jpg",
-                        title: t.gift_pic_jose,
-                        price: isEuro ? "€ 50" : "R$ 100,00",
-                      });
-                    } else {
-                      // nubank
-                    }
-                  }}
-                >
-                  {t.buy}
-                </button>
-              </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
-                  className="rounded-[20px]"
-                  height={230}
-                />
-
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_lincon}
-                </h3>
-
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 80" : "R$ 210,00"}
-                </p>
-
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
-                        title: t.gift_lincon,
-                        price: isEuro ? "€ 80" : "R$ 210,00",
-                      });
-                    } else {
-                      // nubank
-                    }
-                  }}
-                >
-                  {t.buy}
-                </button>
-              </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
-                  className="rounded-[20px]"
-                  height={230}
-                />
-
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_tarot}
-                </h3>
-
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 85" : "R$ 200,00"}
-                </p>
-
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
-                        title: t.gift_tarot,
-                        price: isEuro ? "€ 85" : "R$ 200,00",
-                      });
-                    } else {
-                      // nubank
-                    }
-                  }}
-                >
-                  {t.buy}
-                </button>
-              </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
-                  className="rounded-[20px]"
-                  height={230}
-                />
-
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_bouquet}
-                </h3>
-
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 40" : "R$ 80,00"}
-                </p>
-
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
-                        title: t.gift_bouquet,
-                        price: isEuro ? "€ 40" : "R$ 80,00",
-                      });
-                    } else {
-                      // nubank
-                    }
-                  }}
-                >
-                  {t.buy}
-                </button>
-              </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/madrinha.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
-
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_tinder_w}
-                </h3>
-
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 75" : "R$ 105,00"}
-                </p>
-
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "/madrinha.jpg",
-                        title: t.gift_tinder_w,
-                        price: isEuro ? "€ 75" : "R$ 105,00",
-                      });
-                    } else {
-                      // nubank
-                    }
-                  }}
-                >
-                  {t.buy}
-                </button>
-              </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/padrinho.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
-
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_tinder_m}
-                </h3>
-
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 70" : "R$ 103,00"}
-                </p>
-
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "/padrinho.jpg",
-                        title: t.gift_tinder_m,
-                        price: isEuro ? "€ 70" : "R$ 103,00",
-                      });
-                    } else {
-                      // nubank
-                    }
-                  }}
-                >
-                  {t.buy}
-                </button>
-              </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
-                  className="rounded-[20px]"
-                  height={230}
-                />
-
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_heart}
-                </h3>
-
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 800" : "R$ 4235,00"}
-                </p>
-
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
-                        title: t.gift_heart,
-                        price: isEuro ? "€ 800" : "R$ 4235,00",
-                      });
-                    } else {
-                      // nubank
-                    }
-                  }}
-                >
-                  {t.buy}
-                </button>
-              </li>
-            </ul>
-          </section>
-
-          <section className="max-w-[1440px] mx-auto w-full">
-            <h2 className="text-center mb-5 lg:text-left lg:mb-10 text-[20px] lg:text-3xl font-bold font-primary text-earth">
               {t.gift_honeymoon}
             </h2>
 
@@ -662,6 +401,267 @@ const ListaPresentes = () => {
                   }}
                 >
                   {t.gift_present}
+                </button>
+              </li>
+            </ul>
+          </section>
+
+          <section className="max-w-[1440px] mx-auto w-full">
+            <h2 className="text-center mb-5 lg:text-left lg:mb-10 text-[20px] lg:text-3xl font-bold font-primary text-earth">
+              {t.gift_jokes}
+            </h2>
+
+            <ul className="grid grid-cols-2 gap-4 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/george.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
+
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_pic_george}
+                </h3>
+
+                <p className="text-sm text-left text-earth font-primary">
+                  {isEuro ? "€ 60" : "R$ 120,00"}
+                </p>
+
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/george.jpg",
+                        title: t.gift_pic_george,
+                        price: isEuro ? "€ 60" : "R$ 120,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
+                  {t.buy}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img src="/jose.jpg" className="rounded-[20px]" height={230} />
+
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_pic_jose}
+                </h3>
+
+                <p className="text-sm text-left text-earth font-primary">
+                  {isEuro ? "€ 50" : "R$ 100,00"}
+                </p>
+
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/jose.jpg",
+                        title: t.gift_pic_jose,
+                        price: isEuro ? "€ 50" : "R$ 100,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
+                  {t.buy}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                  className="rounded-[20px]"
+                  height={230}
+                />
+
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_lincon}
+                </h3>
+
+                <p className="text-sm text-left text-earth font-primary">
+                  {isEuro ? "€ 80" : "R$ 210,00"}
+                </p>
+
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
+                        title: t.gift_lincon,
+                        price: isEuro ? "€ 80" : "R$ 210,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
+                  {t.buy}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                  className="rounded-[20px]"
+                  height={230}
+                />
+
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_tarot}
+                </h3>
+
+                <p className="text-sm text-left text-earth font-primary">
+                  {isEuro ? "€ 85" : "R$ 200,00"}
+                </p>
+
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
+                        title: t.gift_tarot,
+                        price: isEuro ? "€ 85" : "R$ 200,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
+                  {t.buy}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                  className="rounded-[20px]"
+                  height={230}
+                />
+
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_bouquet}
+                </h3>
+
+                <p className="text-sm text-left text-earth font-primary">
+                  {isEuro ? "€ 40" : "R$ 80,00"}
+                </p>
+
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
+                        title: t.gift_bouquet,
+                        price: isEuro ? "€ 40" : "R$ 80,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
+                  {t.buy}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/madrinha.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
+
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_tinder_w}
+                </h3>
+
+                <p className="text-sm text-left text-earth font-primary">
+                  {isEuro ? "€ 75" : "R$ 105,00"}
+                </p>
+
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/madrinha.jpg",
+                        title: t.gift_tinder_w,
+                        price: isEuro ? "€ 75" : "R$ 105,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
+                  {t.buy}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="/padrinho.jpg"
+                  className="rounded-[20px]"
+                  height={230}
+                />
+
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_tinder_m}
+                </h3>
+
+                <p className="text-sm text-left text-earth font-primary">
+                  {isEuro ? "€ 70" : "R$ 103,00"}
+                </p>
+
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "/padrinho.jpg",
+                        title: t.gift_tinder_m,
+                        price: isEuro ? "€ 70" : "R$ 103,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
+                  {t.buy}
+                </button>
+              </li>
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+                <img
+                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                  className="rounded-[20px]"
+                  height={230}
+                />
+
+                <h3 className="font-bold text-left text-earth font-primary">
+                  {t.gift_heart}
+                </h3>
+
+                <p className="text-sm text-left text-earth font-primary">
+                  {isEuro ? "€ 800" : "R$ 4235,00"}
+                </p>
+
+                <button
+                  className="self-start w-full rounded-full btn lg:w-auto"
+                  onClick={() => {
+                    if (isEuro) {
+                      setModal({
+                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
+                        title: t.gift_heart,
+                        price: isEuro ? "€ 800" : "R$ 4235,00",
+                      });
+                    } else {
+                      // nubank
+                    }
+                  }}
+                >
+                  {t.buy}
                 </button>
               </li>
             </ul>
