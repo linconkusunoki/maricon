@@ -7,6 +7,7 @@ export const translations = {
     para_os_viajantes: "Para os viajantes",
     lista_presentes: "Lista de presentes",
     confirmar_presenca: "Confirmar presença",
+    confirmar_presenca_arrow: "Confirmar presença →"
     outubro: "Out",
     history_title: "Love is free. In time, in peace.",
     history_p1:
@@ -29,7 +30,7 @@ export const translations = {
     faq_title: "Perguntas frequentes",
     q1_title: "Como confirmo minha presença?",
     q1_answer:
-      "Na página de confirmação de presença, escreva o seu nome e clique em Buscar. Seu nome aparecerá e você poderá confirmar sua presença e daqueles vindo com você :)",
+      "Na página de confirmação de presença, escreva o seu nome e clique em Buscar. Seu nome aparecerá e você poderá confirmar sua presença e daqueles vindo com você: ",
     q2_title: "Onde será a cerimônia?",
     q2_answer:
       "Cerimônia, recepção e festa seráo na Masía Xamandreu, no pueblo de Godella localizado a 20min do centro de Valencia, na Espanha.",
@@ -174,7 +175,7 @@ export const translations = {
     faq_title: "FAQ",
     q1_title: "How can I RSVP?",
     q1_answer:
-      "On the RSVP page, type your name and click 'Search.' Your name will appear, and you can confirm your attendance and that of those coming with you :)",
+      "On the RSVP page, type your name and click 'Search.' Your name will appear, and you can confirm your attendance and that of those coming with you: ",
     q2_title: "Where will the ceremony take place?",
     q2_answer:
       "Ceremony, reception, and party will take place at Masía Xamandreu, in Godella, located 20 minutes from the center of Valencia, Spain.",
