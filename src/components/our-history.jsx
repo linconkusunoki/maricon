@@ -35,7 +35,7 @@ export function OurHistory() {
         <p className="font-primary text-earth">{t.history_p5}</p>
       </div>
 
-      <Link href="/confirmar-presenca" className="self-center btn">
+      <Link href="/confirmar-presenca" className="self-center btn" target="_blank">
         {t.confirmar_presenca}
       </Link>
     </section>
