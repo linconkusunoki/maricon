@@ -7,7 +7,7 @@ export const translations = {
     para_os_viajantes: "Para os viajantes",
     lista_presentes: "Lista de presentes",
     confirmar_presenca: "Confirmar presença",
-    confirmar_presenca_arrow: "Confirmar presença →"
+    confirmar_presenca_arrow: "Confirmar presença →",
     outubro: "Out",
     history_title: "Love is free. In time, in peace.",
     history_p1:
