@@ -334,7 +334,7 @@ export const translations = {
         q7_title: "¿Puedo tomar y publicar fotos?",
         q7_answer: "Durante la ceremonia, nos gustaría que todos estén presentes, sin teléfonos móviles en la mano. ¡Después de eso, las fotos están permitidas!",
         q8_title: "No podré asistir :( ¿qué debo hacer?",
-        q8_answer: "¡Te extrañaremos! :( Si no puedes venir, avísanos lo antes posible y confirma \"No asistirá\" en la página de confirmación de asistencia para que podamos planificar en consecuencia.",
+        q8_answer: "¡Te extrañaremos! :( Si no puedes venir, avísanos lo antes posible y confirma \"No asistirá\" en la página de confirmación de asistencia para que podamos planificar en consecuencia: ",
         dress_title: "Qué vestir",
         dress_p1: "Informal chic, en tonos neutros y terrosos, sin estampados. Los hombres también pueden usar blanco y beige, solo evita el verde ya que es el color del novio. Todos los zapatos son bienvenidos, y no es necesario llevar corbata :)",
         dress_temperature: "Temperatura",
