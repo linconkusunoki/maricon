@@ -119,67 +119,73 @@ export function Header({ className, light }) {
             </Link>
 
             <div className="flex gap-1 text-beige text-[12px] lg:hidden lg:ml-4">
-              <div
+              <button
                 onClick={() => {
-                  setLocale("pt")
-                  localStorage.setItem ('locale','pt')
-                }
-                }
+                  localStorage.setItem("locale", "pt");
+                  setLocale("pt");
+                }}
                 className={locale === "pt" ? "font-bold" : "cursor-pointer"}
               >
                 PT
-              </div>
+              </button>
               |
-              <div
+              <button
                 onClick={() => {
-                  setLocale("es")
-                  localStorage.setItem ('locale','es')
-                }
-                }
+                  localStorage.setItem("locale", "es");
+                  setLocale("es");
+                }}
                 className={locale === "es" ? "font-bold" : "cursor-pointer"}
               >
                 ES
-              </div>
+              </button>
               |
-              <div
+              <button
                 onClick={() => {
-                  setLocale("en")
-                  localStorage.setItem ('locale','en')
-                }
-                }
+                  localStorage.setItem("locale", "en");
+                  setLocale("en");
+                }}
                 className={locale === "en" ? "font-bold" : "cursor-pointer"}
               >
                 EN
-              </div>
+              </button>
             </div>
           </div>
         </div>
 
-        <a className="btn" href="/confirmar-presenca">
+        <Link className="btn" href="/confirmar-presenca">
           {t.confirmar_presenca}
-        </a>
+        </Link>
 
         <div className="hidden gap-1 text-bronze text-[12px] lg:flex lg:ml-4">
-          <div
-            onClick={() => setLocale("pt")}
+          <button
+            onClick={() => {
+              localStorage.setItem("locale", "pt");
+              setLocale("pt");
+            }}
             className={locale === "pt" ? "font-bold" : "cursor-pointer"}
           >
             PT
-          </div>
+          </button>
           |
-          <div
-            onClick={() => setLocale("es")}
+          <button
+            onClick={() => {
+              localStorage.setItem("locale", "es");
+              setLocale("es");
+            }}
             className={locale === "es" ? "font-bold" : "cursor-pointer"}
           >
             ES
-          </div>
+          </button>
           |
-          <div
-            onClick={() => setLocale("en")}
+          <button
+            onClick={() => {
+              localStorage.setItem("locale", "en");
+              setLocale("en");
+            }}
             className={locale === "en" ? "font-bold" : "cursor-pointer"}
           >
             EN
-          </div>
+          </button>
         </div>
       </nav>
     </header>
