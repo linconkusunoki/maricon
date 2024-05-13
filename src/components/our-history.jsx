@@ -35,7 +35,7 @@ export function OurHistory() {
         <p className="font-primary text-earth">{t.history_p5}</p>
       </div>
 
-      <Link href="/" className="self-center btn">
+      <Link href="https://maricon.netlify.app/confirmar-presenca" className="self-center btn">
         {t.confirmar_presenca}
       </Link>
     </section>
