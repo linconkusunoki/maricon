@@ -18,13 +18,15 @@ export function Faq() {
             <div className="xl:max-w-[417px]">
               <Accordion
                 title={t.q1_title}
-                content={<p className="font-primary">{t.q1_answer}</p>}
+                content={<p className="font-primary">{t.q1_answer}
                 <a
                       href="/confirmar-presenca"
                       className="underline text-earth"
                     >
                       {t.confirmar_presenca_arrow}
                     </a>
+                </p>
+                }
               />
 
               <Accordion
