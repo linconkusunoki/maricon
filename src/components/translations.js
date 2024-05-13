@@ -394,7 +394,7 @@ export const translations = {
         gift_tattoo_her: "Nuevo tatuaje para la novia",
         gift_tattoo_him: "Nuevo tatuaje para el novio",
         gift_show_ticket: "Entradas para disfrutar de un concierto",
-        gift_vaquinha: "Fondo para ayudar a los recién casados, ahora quebrados",
+        gift_vaquinha: "Fondo para ayudar a los recién casados",
         gift_god_bless: "Tienes tu propia categoría por la luz que emanas",
         gift_divine: "Si por intervención divina te sientes tocado",
         gift_ensure_heaven: "Asegura tu lugar en el cielo",
