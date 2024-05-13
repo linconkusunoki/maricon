@@ -20,7 +20,7 @@ const ConfirmarPresenca = () => {
       <Header className="bg-beige" light />
 
       <main
-        className="flex items-center justify-center px-8 py-16 text-center bg-beige"
+        className="flex items-center justify-center px-8 py-32 text-center bg-beige"
         style={{ minHeight: "calc(100vh - 190px)" }}
       >
         <section className="max-w-[888px] mx-auto flex flex-col gap-10 text-earth">
