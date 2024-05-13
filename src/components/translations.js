@@ -21,7 +21,7 @@ export const translations = {
     history_p5: "Dá uma olhada em tudo e a gente se vê em outubro!",
     music_title: "Nós, em músicas e polaroides",
     music_text:
-      "Da primeira música enviada um pro outro, pra cantamos juntos no carro, até a música que ganhou um lugar especial esse ano: todas com alguma foto polaroide dos últimos anos.",
+      "Da primeira música enviada um pro outro até a música que ganhou um lugar especial esse ano; todas com alguma foto polaroide de alguma aventura",
     countdown_title: "Estamos ansiosos pra te ver :)",
     days: "DIAS",
     hours: "HORAS",
@@ -166,7 +166,7 @@ export const translations = {
     history_p5: "Take a look around and we'll see you in October!",
     music_title: "Us, in songs and polaroids",
     music_text:
-      "From the first song we sent each other, to the one we sang together driving, to the song that earned a special place this year: all with a Polaroid photo from the past few years.",
+      "From the first song we sent each other to the song that earned a special place this year; all with a Polaroid photo from an adventure",
     countdown_title: "We can't wait to see you :)",
     days: "DAYS",
     hours: "HOURS",
@@ -307,7 +307,7 @@ export const translations = {
         history_p4: "No olvides, tu confirmación de asistencia es muy importante - cuanto antes, mejor. ¡Nos facilitará mucho la vida, jeje!",
         history_p5: "¡Echa un vistazo y nos vemos en octubre!",
         music_title: "Nosotros, en canciones y polaroids",
-        music_text: "Desde la primera canción que nos enviamos, hasta la que cantamos juntos en el coche, hasta la canción que ganó un lugar especial este año: todas con una foto polaroid de los últimos años.",
+        music_text: "Desde la primera canción que nos enviamos hasta la canción que ganó un lugar especial este año; todas con una foto polaroid de alguna aventura",
         countdown_title: "¡No podemos esperar para verte :)",
         days: "DÍAS",
         hours: "HORAS",
