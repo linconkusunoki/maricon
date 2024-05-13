@@ -141,7 +141,7 @@ export const translations = {
     our_day_contact: "clicando aqui →",
     btn_paypal: "Pagar com PayPal",
     euro_modal_text:
-      "Para comprar uma foto com o George, envie €60 via PayPal ou Bizum: 677 079 043",
+      "Para comprar, envie o valor via PayPal ou Bizum (677 079 043) e nós te enviaremos uma confirmação. Obrigado desde já 🖤",
   },
   en: {
     home: "Home",
@@ -283,6 +283,9 @@ export const translations = {
     our_day_p1:
       "Our coordinator, Sandra, will be able to help with anything related to our day. You can talk to her by ",
     our_day_contact: "clicking here →",
+    btn_paypal: "Pay with PayPal",
+    euro_modal_text:
+      "To purchase, send the amount via PayPal or Bizum (677 079 043) and we will send you a confirmation. Thank you already 🖤",
   },
 
     es: {
@@ -402,6 +405,10 @@ export const translations = {
         our_day_dinner: "Cena y brindis",
         our_day_party: "Fiesta",
         our_day_p1: "Nuestra coordinadora, Sandra, estará disponible para ayudar con cualquier cosa relacionada con nuestro día. Pueden hablar con ella haciendo ",
-        our_day_contact: "clic aquí →"
+        our_day_contact: "clic aquí →",
+      btn_paypal: "Pagar con PayPal",
+    euro_modal_text:
+      "Para comprar, envía el monto a través de PayPal o Bizum (677 079 043) y te enviaremos una confirmación. Gracias de antemano 🖤",
+      
     },
 };
