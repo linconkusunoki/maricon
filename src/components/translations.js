@@ -54,7 +54,7 @@ export const translations = {
       "Durante a cerimônia gostaríamos de todos presentes, sem os celulares na mão. Depois disso, fotos estão liberadas!",
     q8_title: "Não posso ir :( o que eu faço?",
     q8_answer:
-      'Nós vamos sentir sua falta :( Se você não puder ir, deixe a gente saber o mais rápido possível e confirme "NÃO comparecerá" na página de confirmação de presença para que possamos nos planejar de acordo.',
+      'Nós vamos sentir sua falta :( Se você não puder ir, deixe a gente saber o mais rápido possível e confirme "NÃO comparecerá" na página de confirmação de presença para que possamos nos planejar de acordo: ',
     dress_title: "O que vestir",
     dress_p1:
       "Roupas no estilo casual chique, em tons neutros e terrosos, sem estampas. Homens também podem usar branco e bege, só fujam do verde ja que essa é a cor do noivo. Qualquer sapato é bem vindo, e não precisa de gravata :)",
