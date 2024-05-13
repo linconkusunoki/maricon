@@ -21,7 +21,7 @@ export function Faq() {
                 content={<p className="font-primary">{t.q1_answer}
                 <a
                       href="/confirmar-presenca"
-                      className="underline text-earth"
+                      className="underline text-earth" target="_blank"
                     >
                       {t.confirmar_presenca_arrow}
                     </a>
