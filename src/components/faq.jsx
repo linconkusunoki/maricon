@@ -19,6 +19,12 @@ export function Faq() {
               <Accordion
                 title={t.q1_title}
                 content={<p className="font-primary">{t.q1_answer}</p>}
+                <a
+                      href="/confirmar-presenca"
+                      className="underline text-earth"
+                    >
+                      {t.confirmar_presenca_arrow}
+                    </a>
               />
 
               <Accordion
