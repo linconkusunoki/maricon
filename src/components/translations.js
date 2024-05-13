@@ -153,6 +153,7 @@ export const translations = {
     para_os_viajantes: "For the travelers",
     lista_presentes: "Registry",
     confirmar_presenca: "RSVP",
+    confirmar_presenca_arrow: "RSVP →",
     outubro: "Oct",
     history_title: "Love is free. In time, in peace.",
     history_p1:
@@ -299,6 +300,7 @@ export const translations = {
         para_os_viajantes: "Para los viajeros",
         lista_presentes: "Lista de regalos",
         confirmar_presenca: "Confirmar asistencia",
+      confirmar_presenca_arrow: "Confirmar asistencia →",
         outubro: "Oct",
         history_title: "El amor es libre. En tiempo, en paz.",
         history_p1: "Después de 8 años juntos, una mudanza al extranjero, dos gatos y un apartamento, ¡finalmente nos casamos!",
