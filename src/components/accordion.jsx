@@ -1,14 +1,10 @@
 "use client";
 
-import { useState } from "react";
-
-export function Accordion({ title, content }) {
-  const [visible, setVisible] = useState(false);
-
+export function Accordion({ title, content, visible, onClick }) {
   return (
     <div className="font-secondary">
       <div
-        onClick={() => setVisible(!visible)}
+        onClick={onClick}
         className="flex items-center gap-4 py-4 text-xl cursor-pointer"
       >
         <svg
