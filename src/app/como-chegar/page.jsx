@@ -13,7 +13,10 @@ const ListaPresentesEscolha = () => {
     <>
       <Header className="bg-beige" light />
 
-      <main className="flex items-center justify-center px-8 pt-10 pb-32 text-center xl:text-left bg-beige">
+      <main
+        className="flex items-center justify-center px-8 pt-10 pb-32 text-center xl:text-left bg-beige"
+        style={{ minHeight: "calc(100vh - 190px)" }}
+      >
         <div className="xl:max-w-[1200px] xl:mx-auto">
           <div className="xl:flex xl:justify-between xl:gap-10">
             <div className="flex flex-col gap-10">
