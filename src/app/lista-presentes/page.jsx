@@ -232,7 +232,7 @@ const ListaPresentes = () => {
                 <img src="/amem.jpg" className="rounded-[20px]" height={230} />
 
                 <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_inpired}
+                  {t.gift_inspired}
                 </h3>
 
                 <p className="text-sm text-left text-earth font-primary">
@@ -245,7 +245,7 @@ const ListaPresentes = () => {
                     if (isEuro) {
                       setModal({
                         img: "/amem.jpg",
-                        title: t.gift_inpired,
+                        title: t.gift_inspired,
                         price: isEuro ? "€ 500" : "R$ 2.000,00",
                       });
                     } else {
