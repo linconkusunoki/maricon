@@ -317,7 +317,7 @@ export const translations = {
         footer_text: "Por Mari & Lincon, con amor 🖤",
         faq_title: "Preguntas frecuentes",
         q1_title: "¿Cómo puedo confirmar mi asistencia?",
-        q1_answer: "En la página de confirmación de asistencia, escribe tu nombre y haz clic en 'Buscar'. Tu nombre aparecerá y podrás confirmar tu asistencia y la de los que te acompañan :)",
+        q1_answer: "En la página de confirmación de asistencia, escribe tu nombre y haz clic en 'Buscar'. Tu nombre aparecerá y podrás confirmar tu asistencia y la de los que te acompañan: ",
         q2_title: "¿Dónde se llevará a cabo la ceremonia?",
         q2_answer: "La ceremonia, la recepción y la fiesta se llevarán a cabo en Masía Xamandreu, en Godella, a 20 minutos del centro de Valencia, España.",
         open_in_maps: "Abrir en Google Maps →",
