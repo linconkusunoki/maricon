@@ -285,7 +285,7 @@ export const translations = {
     our_day_dinner: "Dinner & toasts",
     our_day_party: "Party",
     our_day_p1:
-      "Our coordinator, Sandra, will be able to help with anything related to our day. You can talk to her by ",
+      "Our coordinator, Sandra, will be able to help with anything related to our day. You can talk to her ",
     our_day_contact: "clicking here →",
     btn_paypal: "Pay with PayPal",
     euro_modal_text:
