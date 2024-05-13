@@ -474,7 +474,7 @@ const ListaPresentes = () => {
               </li>
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img
-                  src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"
+                  src="/lincon-guitar.jpg"
                   className="rounded-[20px]"
                   height={230}
                 />
@@ -492,7 +492,7 @@ const ListaPresentes = () => {
                   onClick={() => {
                     if (isEuro) {
                       setModal({
-                        img: "https://fakeimg.pl/440x320/282828/eae0d0/?retina=1",
+                        img: "/lincon-guitar.jpg",
                         title: t.gift_lincon,
                         price: isEuro ? "€ 80" : "R$ 210,00",
                       });
