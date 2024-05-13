@@ -127,7 +127,7 @@ export const translations = {
     how_to_get_p1:
       "Não queremos que vocês se preocupem em como chegar ou voltar do casamento, por isso",
     how_to_get_p1_b:
-      "estamos buscando um transporte para todos saindo de Valencia até a Masía",
+      "estamos buscando um transporte para todos saindo de Valencia até a Masía.",
     how_to_get_p2:
       "Se preferir, você também pode dirigir ou chamar um Uber, Cabify ou FreeNow. Só nos deixe saber já que temos que organizar o transporte em grupo por número de lugares!",
     how_to_get_more_details_soon: "Mais detalhes em breve!",
