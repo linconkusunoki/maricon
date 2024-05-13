@@ -246,7 +246,7 @@ export default function Home() {
 
         <p className="font-primary text-bronze lg:max-w-[1100px] lg:mx-auto text-center">
           {t.our_day_p1}
-          <a className="font-bold underline" href="tel:1231231323">
+          <a className="font-bold underline" href="wa.link/jkh2p2">
             {t.our_day_contact}
           </a>
         </p>
