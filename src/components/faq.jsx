@@ -62,7 +62,6 @@ export function Faq() {
                 content={
                   <p className="font-primary">
                     {t.q5_answer}
-                    <br />
                     <a href="/vestimenta" className="underline text-earth" target="_blank"> 
                       {t.see_palette}
                     </a>
