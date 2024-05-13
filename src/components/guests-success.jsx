@@ -17,7 +17,7 @@ export function GuestsSuccess({ step, setStep }) {
       <h2 className="text-4xl uppercase lg:text-5xl font-secondary">
         {t.confirmation_sent}
       </h2>
-      <p className="font-primary">{t.confirmation_p1}</p>
+{/*       <p className="font-primary">{t.confirmation_p1}</p> */}
 
       <section className="flex items-center flex-col max-w-[500px] mx-auto gap-10 w-full">
         <svg
