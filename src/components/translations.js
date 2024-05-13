@@ -137,8 +137,8 @@ export const translations = {
     our_day_dinner: "Jantar & Brindes",
     our_day_party: "Festa",
     our_day_p1:
-      "Caso queira fazer um brinde ou qualquer outra surpresa para nós, nossa coordenadora, Sandra, vai cuidar de tudo e pode te auxiliar em encontrar o melhor momento pra isso. ",
-    our_day_contact: "Entrar em contato →",
+      "Nossa coordenadora, Sandra, poderá ajudar com qualquer coisa relacionada ao nosso dia. Vocês podem falar com ela ",
+    our_day_contact: "clicando aqui →",
     btn_paypal: "Pagar com PayPal",
     euro_modal_text:
       "Para comprar uma foto com o George, envie €60 via PayPal ou Bizum: 677 079 043",
@@ -281,8 +281,8 @@ export const translations = {
     our_day_dinner: "Dinner & toasts",
     our_day_party: "Party",
     our_day_p1:
-      "If you'd like to make a toast or any other surprise for us, our coordinator, Sandra, will take care of everything and can assist you in finding the best moment for it. ",
-    our_day_contact: "Get in touch with Sandra →",
+      "Our coordinator, Sandra, will be able to help with anything related to our day. You can talk to her by ",
+    our_day_contact: "clicking here →",
   },
 
     es: {
@@ -401,7 +401,7 @@ export const translations = {
         our_day_cocktails: "Cócteles",
         our_day_dinner: "Cena y brindis",
         our_day_party: "Fiesta",
-        our_day_p1: "Si deseas hacer un brindis o cualquier otra sorpresa para nosotros, nuestra coordinadora, Sandra, se encargará de todo y puede ayudarte a encontrar el mejor momento para ello.",
-        our_day_contact: " Ponte en contacto con Sandra →"
+        our_day_p1: "Nuestra coordinadora, Sandra, estará disponible para ayudar con cualquier cosa relacionada con nuestro día. Pueden hablar con ella haciendo ",
+        our_day_contact: "clic aquí →"
     },
 };
