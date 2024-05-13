@@ -388,7 +388,7 @@ export const translations = {
         gift_scotland_pics: "Sesión de fotos en Escocia",
         gift_nintendo: "Entradas al parque de Nintendo",
         gift_rent_car: "Alquiler de coche para recorrer toda España",
-        gift_inspired: "Te levantaste inspirado y decidiste patrocinar parte del viaje",
+        gift_inpired: "Te has despertado inspirado y decidiste financiar parte del viaje",
         gift_camera: "Una cámara nueva para que los recién casados tomen fotos HD de las auroras boreales",
         gift_our_hapinness: "Para nuestra felicidad",
         gift_tattoo_her: "Nuevo tatuaje para la novia",
