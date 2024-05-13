@@ -63,7 +63,7 @@ export function Faq() {
                   <p className="font-primary">
                     {t.q5_answer}
                     <br />
-                    <a href="#" className="underline text-earth">
+                    <a href="/vestimenta" className="underline text-earth">
                       {t.see_palette}
                     </a>
                   </p>
@@ -82,7 +82,15 @@ export function Faq() {
 
               <Accordion
                 title={t.q8_title}
-                content={<p className="font-primary">{t.q8_answer}</p>}
+                content={<p className="font-primary">{t.q8_answer}
+                <a
+                      href="/confirmar-presenca"
+                      className="underline text-earth"
+                    >
+                      {t.confirmar_presenca_arrow}
+                    </a>
+                </p>
+                }
               />
             </div>
           </div>
