@@ -11,7 +11,9 @@ export function Header({ className, light }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className={`p-4 md:pt-8 xl:p-8 xl:pb-4 ${className}`}>
+    <header
+      className={`p-4 md:pt-8 xl:p-8 xl:pb-4 ${className} sticky top-0 z-50`}
+    >
       <nav className="flex items-center justify-between">
         <Link href="/" className="hidden md:block">
           <img

@@ -8,7 +8,7 @@ const DressingPage = () => {
   const { t } = useLocale();
   return (
     <div className="bg-green">
-      <Header />
+      <Header className="bg-green" />
 
       <main className="grid gap-10 p-5 pb-20 md:gap-20">
         <section className="max-w-[785px] mx-auto">
