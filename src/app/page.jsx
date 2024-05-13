@@ -56,7 +56,7 @@ export default function Home() {
           </h1>
 
           <div className="flex items-center justify-center my-8">
-            <div className="text-2xl font-light md:text-4xl">{t.Outubro}</div>
+            <div className="text-2xl font-light md:text-4xl">{t.outubro}</div>
             <div className="px-4 mx-4 text-5xl font-semibold md:mx-8 md:px-8 border-x border-x-beige md:text-8xl">
               6
             </div>
