@@ -37,7 +37,7 @@ export function Faq() {
                     <br />
                     <a
                       href="https://maps.app.goo.gl/daumZvH3X1AKDk3r7"
-                      className="underline text-earth"
+                      className="underline text-earth" target="_blank"
                     >
                       {t.open_in_maps}
                     </a>
@@ -63,7 +63,7 @@ export function Faq() {
                   <p className="font-primary">
                     {t.q5_answer}
                     <br />
-                    <a href="/vestimenta" className="underline text-earth">
+                    <a href="/vestimenta" className="underline text-earth" target="_blank"> 
                       {t.see_palette}
                     </a>
                   </p>
@@ -85,7 +85,7 @@ export function Faq() {
                 content={<p className="font-primary">{t.q8_answer}
                 <a
                       href="/confirmar-presenca"
-                      className="underline text-earth"
+                      className="underline text-earth" target="_blank"
                     >
                       {t.confirmar_presenca_arrow}
                     </a>
