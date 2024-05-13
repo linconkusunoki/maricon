@@ -89,8 +89,10 @@ export default function Home() {
           <p className="font-primary text-bronze">{t.music_text}</p>
         </div>
 
-        <div className="xl:-mt-28 xl:w-[120%] 2xl:w-[90%]">
-          <Playlist />
+        <div className="overflow-x-hidden xl:-mt-28">
+          <div className="xl:w-[120%] 2xl:w-[90%]">
+            <Playlist />
+          </div>
         </div>
       </section>
 
@@ -246,7 +248,11 @@ export default function Home() {
 
         <p className="font-primary text-bronze lg:max-w-[1100px] lg:mx-auto text-center">
           {t.our_day_p1}
-          <a className="font-bold underline" target="_blank" href="http://wa.link/jkh2p2">
+          <a
+            className="font-bold underline"
+            target="_blank"
+            href="http://wa.link/jkh2p2"
+          >
             {t.our_day_contact}
           </a>
         </p>
