@@ -7,6 +7,7 @@ export const translations = {
     para_os_viajantes: "Para os viajantes",
     lista_presentes: "Lista de presentes",
     confirmar_presenca: "Confirmar presença",
+    outubro: "Out",
     history_title: "Love is free. In time, in peace.",
     history_p1:
       "Depois de 8 anos juntos, uma mudança pro exterior, dois gatos e um apartamento, nós finalmente vamos nos casar!",
@@ -151,6 +152,7 @@ export const translations = {
     para_os_viajantes: "For the travelers",
     lista_presentes: "Registry",
     confirmar_presenca: "RSVP",
+    outubro: "Oct",
     history_title: "Love is free. In time, in peace.",
     history_p1:
       "After 8 years together, a move abroad, two cats, and an apartment, we're finally getting married!",
@@ -296,6 +298,7 @@ export const translations = {
         para_os_viajantes: "Para los viajeros",
         lista_presentes: "Lista de regalos",
         confirmar_presenca: "Confirmar asistencia",
+        outubro: "Oct",
         history_title: "El amor es libre. En tiempo, en paz.",
         history_p1: "Después de 8 años juntos, una mudanza al extranjero, dos gatos y un apartamento, ¡finalmente nos casamos!",
         history_p2: "Estamos preparando una boda íntima en una de las mejores ciudades del mundo que llamamos hogar: Valencia, España.",
