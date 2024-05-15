@@ -29,10 +29,20 @@ module.exports = {
             opacity: 1,
           },
         },
+        pulse: {
+          "0%": {
+            transform: "scale(1.05)",
+          },
+          "100%": {
+            transform: "scale(0.995)",
+          },
+        },
       },
       animation: {
         slideIn: "slideIn 200ms 150ms ease forwards",
         fadeIn: "fadeIn 200ms ease forwards",
+        pulse: "pulse 1s infinite alternate",
+        pulseDelay: "pulse 1s 250ms infinite alternate",
       },
     },
     colors: {
