@@ -24,7 +24,7 @@ const cormorant = Cormorant_Infant({
 });
 
 export const metadata = {
-  title: "Maricon",
+  title: "Mariana & Lincon",
   description: "Our wedding website",
 };
 
