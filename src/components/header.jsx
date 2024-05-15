@@ -3,12 +3,30 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale } from "./language-context";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function Header({ className, light }) {
   const path = usePathname();
   const { t, locale, setLocale } = useLocale();
   const [open, setOpen] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const isScrollingDown = prevScrollPos < currentScrollPos;
+
+      setIsHeaderVisible(!isScrollingDown || window.scrollY < 100);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
 
   const CustomLink = ({ href, children, target }) => {
     const active = path === href;
@@ -43,7 +61,9 @@ export function Header({ className, light }) {
 
   return (
     <header
-      className={`p-4 md:pt-8 xl:p-8 xl:pb-4 ${className} sticky top-0 z-50`}
+      className={`p-4 md:pt-8 xl:p-8 xl:pb-4 transition-all duration-200 sticky ${className} top-0 z-50 ${
+        isHeaderVisible ? "" : "-translate-y-full"
+      }`}
     >
       <nav className="flex items-center justify-between">
         <Link href="/" className="hidden md:block">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState, createContext } from "react";
 import Slider from "react-slick";
 
 const settings = {
@@ -30,20 +30,42 @@ const settings = {
   ],
 };
 
+const MusicContext = createContext();
+
+const MusicProvider = ({ children }) => {
+  const [song, setSong] = useState();
+
+  return (
+    <MusicContext.Provider value={{ song, setSong }}>
+      {children}
+    </MusicContext.Provider>
+  );
+};
+
 const AudioPlayer = ({ url }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const audioRef = useRef(null);
+  const { song, setSong } = useContext(MusicContext);
 
   const togglePlay = () => {
     if (isPlaying) {
       audioRef.current.pause();
     } else {
+      setSong(url);
+      // document.querySelectorAll("audio").forEach((el) => el.pause());
       audioRef.current.play();
     }
     setIsPlaying(!isPlaying);
   };
+
+  useEffect(() => {
+    if (song !== url) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    }
+  }, [song]);
 
   useEffect(() => {
     const audioElement = audioRef.current;
@@ -137,60 +159,62 @@ const AudioPlayer = ({ url }) => {
 
 export function Playlist() {
   return (
-    <Slider {...settings}>
-      <div className="text-left ">
-        <div className="bg-[url('/thinair.jpeg')] aspect-[4/3] bg-cover bg-center" />
-        <h3 className="mt-3 text-bronze font-primary">Thin Air - Anathema</h3>
-        <p className="text-xs font-primary text-bronze">
-          Mari & Lincon / Our main songs
-        </p>
+    <MusicProvider>
+      <Slider {...settings}>
+        <div className="text-left ">
+          <div className="bg-[url('/thinair.jpeg')] aspect-[4/3] bg-cover bg-center" />
+          <h3 className="mt-3 text-bronze font-primary">Thin Air - Anathema</h3>
+          <p className="text-xs font-primary text-bronze">
+            Mari & Lincon / Our main songs
+          </p>
 
-        <AudioPlayer url="thin-air.mp3" />
-      </div>
+          <AudioPlayer url="thin-air.mp3" />
+        </div>
 
-      <div className="text-left ">
-        <div className="bg-[url('/tangerina.jpg')] aspect-[4/3] bg-cover bg-center" />
-        <h3 className="mt-3 text-bronze font-primary">
-          Tangerina - Tiago Iorc
-        </h3>
-        <p className="text-xs font-primary text-bronze">
-          Mari & Lincon / Our main songs
-        </p>
+        <div className="text-left ">
+          <div className="bg-[url('/tangerina.jpg')] aspect-[4/3] bg-cover bg-center" />
+          <h3 className="mt-3 text-bronze font-primary">
+            Tangerina - Tiago Iorc
+          </h3>
+          <p className="text-xs font-primary text-bronze">
+            Mari & Lincon / Our main songs
+          </p>
 
-        <AudioPlayer url="tangerina.mp3" />
-      </div>
+          <AudioPlayer url="tangerina.mp3" />
+        </div>
 
-      <div className="text-left ">
-        <div className="bg-[url('/unfurl.jpg')] aspect-[4/3] bg-cover bg-center" />
-        <h3 className="mt-3 text-bronze font-primary">Unfurl - Katatonia</h3>
-        <p className="text-xs font-primary text-bronze">
-          Mari & Lincon / Our main songs
-        </p>
+        <div className="text-left ">
+          <div className="bg-[url('/unfurl.jpg')] aspect-[4/3] bg-cover bg-center" />
+          <h3 className="mt-3 text-bronze font-primary">Unfurl - Katatonia</h3>
+          <p className="text-xs font-primary text-bronze">
+            Mari & Lincon / Our main songs
+          </p>
 
-        <AudioPlayer url="unfurl.mp3" />
-      </div>
+          <AudioPlayer url="unfurl.mp3" />
+        </div>
 
-      <div className="text-left ">
-        <div className="bg-[url('/sweaterweather.jpg')] aspect-[4/3] bg-cover bg-center" />
-        <h3 className="mt-3 text-bronze font-primary">
-          Sweater Weather - The Neighbourhood
-        </h3>
-        <p className="text-xs font-primary text-bronze">
-          Mari & Lincon / Our main songs
-        </p>
+        <div className="text-left ">
+          <div className="bg-[url('/sweaterweather.jpg')] aspect-[4/3] bg-cover bg-center" />
+          <h3 className="mt-3 text-bronze font-primary">
+            Sweater Weather - The Neighbourhood
+          </h3>
+          <p className="text-xs font-primary text-bronze">
+            Mari & Lincon / Our main songs
+          </p>
 
-        <AudioPlayer url="sweaterweather.mp3" />
-      </div>
+          <AudioPlayer url="sweaterweather.mp3" />
+        </div>
 
-      <div className="text-left ">
-        <div className="bg-[url('/songbird.jpg')] aspect-[4/3] bg-cover bg-center" />
-        <h3 className="mt-3 text-bronze font-primary">Songbird - Oasis</h3>
-        <p className="text-xs font-primary text-bronze">
-          Mari & Lincon / Our main songs
-        </p>
+        <div className="text-left ">
+          <div className="bg-[url('/songbird.jpg')] aspect-[4/3] bg-cover bg-center" />
+          <h3 className="mt-3 text-bronze font-primary">Songbird - Oasis</h3>
+          <p className="text-xs font-primary text-bronze">
+            Mari & Lincon / Our main songs
+          </p>
 
-        <AudioPlayer url="songbird.mp3" />
-      </div>
-    </Slider>
+          <AudioPlayer url="songbird.mp3" />
+        </div>
+      </Slider>
+    </MusicProvider>
   );
 }

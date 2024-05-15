@@ -86,11 +86,13 @@ export function GuestsSelection({ step, setStep }) {
         {guestsFound.map((guest) => (
           <label
             key={guest.id}
-            className={`flex w-full md:w-auto gap-2 uppercase hover:bg-opacity-80 p-4 items-center hover:cursor-pointer min-w-[350px] bg-[#D7D5B4] bg-opacity-50 ${
-              guest.answer === "accepted" &&
-              "hover:bg-opacity-50 hover:cursor-default"
+            className={`flex w-full md:w-auto gap-2 uppercase  p-4 items-center  min-w-[350px] bg-[#D7D5B4] bg-opacity-50 ${
+              Boolean(guest.answer)
+                ? "hover:bg-opacity-50 hover:cursor-default"
+                : "hover:bg-opacity-80 hover:cursor-pointer"
             }`}
           >
+            {console.log(guest)}
             <input
               type="radio"
               className="hidden peer"
@@ -98,15 +100,15 @@ export function GuestsSelection({ step, setStep }) {
               id={`${guest.id}`}
               value={guest.id}
               onChange={handleChange}
-              disabled={guest.answer === "accepted"}
+              disabled={Boolean(guest.answer)}
               required
             />
             <div
               className={`flex items-center justify-center w-4 h-4 border rounded-full border-earth peer-checked:before:w-2 peer-checked:before:h-2 peer-checked:before:bg-earth peer-checked:before:block peer-checked:before:rounded-full ${
-                guest.answer === "accepted" && "border-sand"
+                Boolean(guest.answer) && "border-sand"
               }`}
             />
-            <div className={`${guest.answer === "accepted" && "text-sand"}`}>
+            <div className={`${Boolean(guest.answer) && "text-sand"}`}>
               {guest.name}
             </div>
           </label>
