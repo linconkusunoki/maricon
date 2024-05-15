@@ -35,7 +35,7 @@ export function GuestsSuccess({ step, setStep }) {
 
         <ul className="flex flex-wrap gap-6 justify-center lg:w-[1072px]">
           {confirmationList.map((guest) => (
-            <li className="flex-1 p-4 text-left border border-earth max-w-[250px] flex flex-col gap-1">
+            <li className="flex flex-col flex-1 w-full gap-1 p-4 text-left lg:max-w-[300px] border border-earth">
               <h3 className="text-xl font-bold font-primary">{guest.name}</h3>
               <div className="flex gap-2 text-sm uppercase font-primary">
                 {t.presence}
