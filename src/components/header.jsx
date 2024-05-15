@@ -10,7 +10,9 @@ export function Header({ className, light }) {
   const { t, locale, setLocale } = useLocale();
   const [open, setOpen] = useState(false);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
-  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  const [prevScrollPos, setPrevScrollPos] = useState(
+    typeof window !== "undefined" && window.scrollY
+  );
 
   useEffect(() => {
     const handleScroll = () => {
