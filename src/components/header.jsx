@@ -28,7 +28,7 @@ export function Header({ className, light }) {
           viewBox="0 0 9 11"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className={`absolute transition-all ease-in -translate-x-1/2 translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 left-1/2 ${
+          className={`absolute transition-all ease-in -translate-x-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 left-1/2 ${
             active && "opacity-100 translate-y-0"
           }`}
         >

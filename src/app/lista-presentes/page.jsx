@@ -856,9 +856,10 @@ const ListaPresentes = () => {
               <p className="text-base font-semibold leading-[22px]">
                 {t.euro_modal_text}
               </p>
+              <a href="https://www.paypal.com/paypalme/maripng/" target="_blank">
               <button className="w-full rounded-full lg:w-auto lg:self-start btn md:w-auto">
                 {t.btn_paypal}
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
