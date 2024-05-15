@@ -86,7 +86,7 @@ export const translations = {
     send_confirmation: "Enviar confirmação",
     confirmation_sent: "Confirmação enviada",
     confirmation_p1: "Você pode ver os detalhes da sua confirmação abaixo:",
-    presence: "Presença:",
+    presence: "Presença",
     presence_confirmed: "Confirmada",
     presence_rejected: "Não vou :(",
     see_gift_list: "Ver lista de presentes",
@@ -139,7 +139,7 @@ export const translations = {
     our_day_dinner: "Jantar & Brindes",
     our_day_party: "Festa",
     our_day_p1:
-      "Nossa coordenadora, Sandra, poderá ajudar com qualquer coisa relacionada ao nosso dia. Vocês podem falar com ela ",
+      "Caso tenha algo planejado para nós, nossa coordenadora, Sandra, poderá ajudar com qualquer coisa relacionada ao nosso dia. Ela fala Inglês e Espanhol, mas está preparada para receber mensagens em português! Vocês podem falar com ela ",
     our_day_contact: "clicando aqui →",
     btn_paypal: "Pagar com PayPal",
     euro_modal_text:
@@ -232,7 +232,7 @@ export const translations = {
     send_confirmation: "Confirm RSVP",
     confirmation_sent: "Confirmation sent",
     confirmation_p1: "You can review the details of your confirmation below:",
-    presence: "RSVP:",
+    presence: "RSVP",
     presence_confirmed: "Gladly accepts",
     presence_rejected: "Regretfully declines",
     see_gift_list: "See registry",
@@ -380,7 +380,7 @@ export const translations = {
     confirmation_sent: "Confirmación enviada",
     confirmation_p1:
       "Puedes revisar los detalles de tu confirmación a continuación:",
-    presence: "Asistencia:",
+    presence: "Asistencia",
     presence_confirmed: "Confirmada",
     presence_rejected: "No estaré :(",
     see_gift_list: "Ver lista de regalos",
