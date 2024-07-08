@@ -20,9 +20,7 @@ const ListaPresentes = () => {
 
       <main className="flex items-center justify-center px-4 pt-10 pb-32 overflow-x-hidden text-center lg:px-8 bg-beige">
         <div className="flex flex-col w-full gap-10 lg:gap-16">
-          <h1 className="text-earth text-[32px] lg:text-[54px] uppercase text-center font-secondary">
-            {t.gift_title}
-          </h1>
+          <h1 className="text-earth text-[32px] lg:text-[54px] uppercase text-center font-secondary">{t.gift_title}</h1>
 
           <section className="max-w-[1440px] mx-auto w-full">
             <h2 className="text-center mb-5 lg:text-left lg:mb-10 text-[20px] lg:text-3xl font-bold font-primary text-earth">
@@ -33,13 +31,9 @@ const ListaPresentes = () => {
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/cafe.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_hotel_coffee}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_hotel_coffee}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 30" : "R$ 50,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 30" : "R$ 50,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -51,10 +45,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 30" : "R$ 50,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641dc78-adea-46f6-bba2-52e6fd05fe2a",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641dc78-adea-46f6-bba2-52e6fd05fe2a", "_blank");
                     }
                   }}
                 >
@@ -64,13 +55,9 @@ const ListaPresentes = () => {
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/japao.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_japan_pics}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_japan_pics}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 150" : "R$ 700,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 150" : "R$ 700,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -82,10 +69,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 150" : "R$ 700,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641dd0a-18fd-44aa-ab49-9f78f2cfd345",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641dd0a-18fd-44aa-ab49-9f78f2cfd345", "_blank");
                     }
                   }}
                 >
@@ -93,19 +77,11 @@ const ListaPresentes = () => {
                 </button>
               </li>
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/islandia.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+                <img src="/islandia.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_iceland_pics}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_iceland_pics}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 155" : "R$ 710,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 155" : "R$ 710,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -117,10 +93,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 155" : "R$ 710,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641dd73-681b-4944-9bed-071aae80f551",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641dd73-681b-4944-9bed-071aae80f551", "_blank");
                     }
                   }}
                 >
@@ -128,19 +101,11 @@ const ListaPresentes = () => {
                 </button>
               </li>
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/escocia.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+                <img src="/escocia.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_scotland_pics}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_scotland_pics}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 160" : "R$ 720,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 160" : "R$ 720,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -152,61 +117,30 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 160" : "R$ 720,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641ddca-c423-4391-a340-876d026b8431",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641ddca-c423-4391-a340-876d026b8431", "_blank");
                     }
                   }}
                 >
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/nintendo.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between opacity-50">
+                <img src="/nintendo.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_nintendo}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_nintendo}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 170" : "R$ 600,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 170" : "R$ 600,00"}</p>
 
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "/nintendo.jpg",
-                        title: t.gift_nintendo,
-                        price: isEuro ? "€ 170" : "R$ 600,00",
-                      });
-                    } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641de15-3948-42f5-8f4c-72628b9fcda0",
-                        "_blank"
-                      );
-                    }
-                  }}
-                >
-                  {t.gift_present}
+                <button className="self-start w-full rounded-full btn lg:w-auto" disabled>
+                  {t.gift_soldout}
                 </button>
               </li>
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/carro.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_rent_car}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_rent_car}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 200" : "R$ 900,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 200" : "R$ 900,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -218,10 +152,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 200" : "R$ 900,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641de92-4a78-4e5d-9dbc-c84ecc20115f",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641de92-4a78-4e5d-9dbc-c84ecc20115f", "_blank");
                     }
                   }}
                 >
@@ -231,13 +162,9 @@ const ListaPresentes = () => {
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/amem.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_inspired}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_inspired}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 500" : "R$ 2.000,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 500" : "R$ 2.000,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -249,49 +176,22 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 500" : "R$ 2.000,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641deec-d9c2-4262-9e6e-2c5a093dd458",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641deec-d9c2-4262-9e6e-2c5a093dd458", "_blank");
                     }
                   }}
                 >
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/camera.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between opacity-50">
+                <img src="/camera.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_camera}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_camera}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 650" : "R$ 3.000,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 650" : "R$ 3.000,00"}</p>
 
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "/camera.jpg",
-                        title: t.gift_camera,
-                        price: isEuro ? "€ 650" : "R$ 3.000,00",
-                      });
-                    } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641df27-04ee-4320-8aea-6e913a16cb1c",
-                        "_blank"
-                      );
-                    }
-                  }}
-                >
-                  {t.gift_present}
+                <button className="self-start w-full rounded-full btn lg:w-auto" disabled>
+                  {t.gift_soldout}
                 </button>
               </li>
             </ul>
@@ -304,19 +204,11 @@ const ListaPresentes = () => {
 
             <ul className="grid grid-cols-2 gap-4 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4">
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/tattoo-noiva.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+                <img src="/tattoo-noiva.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_tattoo_her}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_tattoo_her}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 100" : "R$ 500,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 100" : "R$ 500,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -328,10 +220,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 100" : "R$ 500,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641df9f-5a95-42b2-98a4-df3b02d6c6ba",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641df9f-5a95-42b2-98a4-df3b02d6c6ba", "_blank");
                     }
                   }}
                 >
@@ -339,19 +228,11 @@ const ListaPresentes = () => {
                 </button>
               </li>
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/tattoo-noivo.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+                <img src="/tattoo-noivo.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_tattoo_him}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_tattoo_him}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 105" : "R$ 505,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 105" : "R$ 505,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -363,10 +244,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 105" : "R$ 505,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641e03f-8173-4dc2-a7e4-d2185aff2e0d",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641e03f-8173-4dc2-a7e4-d2185aff2e0d", "_blank");
                     }
                   }}
                 >
@@ -376,13 +254,9 @@ const ListaPresentes = () => {
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/show.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_show_ticket}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_show_ticket}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 180" : "R$ 610,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 180" : "R$ 610,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -394,49 +268,22 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 180" : "R$ 610,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641e0a6-9104-40d2-8ee2-fdddaa758e08",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641e0a6-9104-40d2-8ee2-fdddaa758e08", "_blank");
                     }
                   }}
                 >
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/vaquinha.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between opacity-50">
+                <img src="/vaquinha.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_vaquinha}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_vaquinha}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 250" : "R$ 1.234,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 250" : "R$ 1.234,00"}</p>
 
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "/vaquinha.jpg",
-                        title: t.gift_vaquinha,
-                        price: isEuro ? "€ 250" : "R$ 1.234,00",
-                      });
-                    } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641e125-e84f-4ffc-ae48-27c03e0fc81c",
-                        "_blank"
-                      );
-                    }
-                  }}
-                >
-                  {t.gift_present}
+                <button className="self-start w-full rounded-full btn lg:w-auto" disabled>
+                  {t.gift_soldout}
                 </button>
               </li>
             </ul>
@@ -449,19 +296,11 @@ const ListaPresentes = () => {
 
             <ul className="grid grid-cols-2 gap-4 lg:gap-8 lg:grid-cols-3 xl:grid-cols-4">
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/george.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+                <img src="/george.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_pic_george}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_pic_george}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 60" : "R$ 120,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 60" : "R$ 120,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -473,10 +312,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 60" : "R$ 120,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641e1c1-032a-4799-b753-5cbb6fe1f8d8",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641e1c1-032a-4799-b753-5cbb6fe1f8d8", "_blank");
                     }
                   }}
                 >
@@ -486,13 +322,9 @@ const ListaPresentes = () => {
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
                 <img src="/jose.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_pic_jose}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_pic_jose}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 50" : "R$ 100,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 50" : "R$ 100,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -504,10 +336,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 50" : "R$ 100,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641e207-2833-42c8-b738-d1d434d56d23",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641e207-2833-42c8-b738-d1d434d56d23", "_blank");
                     }
                   }}
                 >
@@ -515,19 +344,11 @@ const ListaPresentes = () => {
                 </button>
               </li>
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/lincon-guitar.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+                <img src="/lincon-guitar.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_lincon}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_lincon}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 80" : "R$ 210,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 80" : "R$ 210,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -539,10 +360,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 80" : "R$ 210,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641e23b-fea8-4461-a3df-3e83c3cc5b6e",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641e23b-fea8-4461-a3df-3e83c3cc5b6e", "_blank");
                     }
                   }}
                 >
@@ -550,19 +368,11 @@ const ListaPresentes = () => {
                 </button>
               </li>
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/gift_tarot.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+                <img src="/gift_tarot.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_tarot}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_tarot}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 85" : "R$ 200,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 85" : "R$ 200,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -574,10 +384,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 85" : "R$ 200,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641e274-ad2e-476f-9e21-2b350a11c5e6",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641e274-ad2e-476f-9e21-2b350a11c5e6", "_blank");
                     }
                   }}
                 >
@@ -585,19 +392,11 @@ const ListaPresentes = () => {
                 </button>
               </li>
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/gift_bouquet.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+                <img src="/gift_bouquet.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_bouquet}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_bouquet}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 40" : "R$ 80,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 40" : "R$ 80,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -609,10 +408,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 40" : "R$ 80,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641e2b4-278e-493d-b373-9177f30c0ebe",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641e2b4-278e-493d-b373-9177f30c0ebe", "_blank");
                     }
                   }}
                 >
@@ -620,19 +416,11 @@ const ListaPresentes = () => {
                 </button>
               </li>
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/madrinha.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+                <img src="/madrinha.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_tinder_w}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_tinder_w}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 75" : "R$ 105,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 75" : "R$ 105,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -644,10 +432,7 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 75" : "R$ 105,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641e2e2-6f1c-40c7-a392-ed5fee001ebe",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641e2e2-6f1c-40c7-a392-ed5fee001ebe", "_blank");
                     }
                   }}
                 >
@@ -655,19 +440,11 @@ const ListaPresentes = () => {
                 </button>
               </li>
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/padrinho.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+                <img src="/padrinho.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_tinder_m}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_tinder_m}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 70" : "R$ 103,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 70" : "R$ 103,00"}</p>
 
                 <button
                   className="self-start w-full rounded-full btn lg:w-auto"
@@ -679,49 +456,22 @@ const ListaPresentes = () => {
                         price: isEuro ? "€ 70" : "R$ 103,00",
                       });
                     } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641e318-818f-45e7-9c71-89baf844a846",
-                        "_blank"
-                      );
+                      window.open("https://nubank.com.br/cobrar/3neeb/6641e318-818f-45e7-9c71-89baf844a846", "_blank");
                     }
                   }}
                 >
                   {t.buy}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
-                <img
-                  src="/gift-heart.jpg"
-                  className="rounded-[20px]"
-                  height={230}
-                />
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between opacity-50">
+                <img src="/gift-heart.jpg" className="rounded-[20px]" height={230} />
 
-                <h3 className="font-bold text-left text-earth font-primary">
-                  {t.gift_heart}
-                </h3>
+                <h3 className="font-bold text-left text-earth font-primary">{t.gift_heart}</h3>
 
-                <p className="text-sm text-left text-earth font-primary">
-                  {isEuro ? "€ 800" : "R$ 4.235,00"}
-                </p>
+                <p className="text-sm text-left text-earth font-primary">{isEuro ? "€ 800" : "R$ 4.235,00"}</p>
 
-                <button
-                  className="self-start w-full rounded-full btn lg:w-auto"
-                  onClick={() => {
-                    if (isEuro) {
-                      setModal({
-                        img: "/gift-heart.jpg",
-                        title: t.gift_heart,
-                        price: isEuro ? "€ 800" : "R$ 4.235,00",
-                      });
-                    } else {
-                      window.open(
-                        "https://nubank.com.br/cobrar/3neeb/6641e35f-cbef-412b-9c02-121e113d7ad8",
-                        "_blank"
-                      );
-                    }
-                  }}
-                >
-                  {t.buy}
+                <button className="self-start w-full rounded-full btn lg:w-auto" disabled>
+                  {t.gift_soldout}
                 </button>
               </li>
             </ul>
@@ -776,20 +526,11 @@ const ListaPresentes = () => {
                 />
               </svg>
 
-              <img
-                src="/teamamos.jpg"
-                className="rounded-[20px]"
-                height={360}
-                width={480}
-              />
+              <img src="/teamamos.jpg" className="rounded-[20px]" height={360} width={480} />
 
-              <h3 className="font-bold text-earth font-primary text-[21px]">
-                {t.gift_divine}
-              </h3>
+              <h3 className="font-bold text-earth font-primary text-[21px]">{t.gift_divine}</h3>
 
-              <p className="text-sm text-earth font-primary text-[18px]">
-                {isEuro ? "€ 1.000" : "R$ 5.000,00"}
-              </p>
+              <p className="text-sm text-earth font-primary text-[18px]">{isEuro ? "€ 1.000" : "R$ 5.000,00"}</p>
 
               <button
                 className="w-full rounded-full btn md:w-auto"
@@ -801,10 +542,7 @@ const ListaPresentes = () => {
                       price: isEuro ? "€ 1.000" : "R$ 5.000,00",
                     });
                   } else {
-                    window.open(
-                      "https://nubank.com.br/cobrar/3neeb/6641e399-dd75-42bc-9366-3d53fd3a4f36",
-                      "_blank"
-                    );
+                    window.open("https://nubank.com.br/cobrar/3neeb/6641e399-dd75-42bc-9366-3d53fd3a4f36", "_blank");
                   }
                 }}
               >
@@ -819,28 +557,15 @@ const ListaPresentes = () => {
 
       {modal && (
         <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full animate-fadeIn">
-          <div
-            className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-75"
-            onClick={() => setModal()}
-          />
+          <div className="absolute top-0 left-0 z-0 w-full h-full bg-black bg-opacity-75" onClick={() => setModal()} />
           <div className="bg-[#DFCAB5] text-[#A25A44] rounded-[32px] p-4 w-[310px] flex flex-col gap-5 relative z-10 lg:flex-row-reverse lg:w-[790px] items-center">
             <div className="relative shrink-0">
-              <img
-                src={modal.img}
-                alt={modal.title}
-                className="rounded-[30px] lg:w-[387px] lg:h-[343px]"
-              />
+              <img src={modal.img} alt={modal.title} className="rounded-[30px] lg:w-[387px] lg:h-[343px]" />
               <button
                 onClick={() => setModal()}
                 className="absolute flex items-center justify-center w-8 h-8 rounded-full right-3 top-3 bg-beige"
               >
-                <svg
-                  width="12"
-                  height="13"
-                  viewBox="0 0 12 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0 12.6L5.328 5.688L5.304 6.528L0.24 0H2.16L6.312 5.4L5.592 5.376L9.744 0H11.616L6.504 6.6L6.528 5.688L11.904 12.6H9.96L5.568 6.84L6.24 6.936L1.92 12.6H0Z"
                     fill="#A25A44"
@@ -853,13 +578,10 @@ const ListaPresentes = () => {
                 <h3 className="text-2xl font-bold">{modal.title}</h3>
                 <p className="text-2xl font-semibold">{modal.price}</p>
               </div>
-              <p className="text-base font-semibold leading-[22px]">
-                {t.euro_modal_text}
-              </p>
+              <p className="text-base font-semibold leading-[22px]">{t.euro_modal_text}</p>
               <a href="https://www.paypal.com/paypalme/maripng/" target="_blank">
-              <button className="w-full rounded-full lg:w-auto lg:self-start btn md:w-auto">
-                {t.btn_paypal}
-              </button></a>
+                <button className="w-full rounded-full lg:w-auto lg:self-start btn md:w-auto">{t.btn_paypal}</button>
+              </a>
             </div>
           </div>
         </div>
