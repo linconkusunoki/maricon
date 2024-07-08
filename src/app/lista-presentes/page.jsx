@@ -162,7 +162,7 @@ const ListaPresentes = () => {
                   {t.gift_present}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between opacity-50">
                 <img
                   src="/nintendo.jpg"
                   className="rounded-[20px]"
@@ -194,7 +194,7 @@ const ListaPresentes = () => {
                     }
                   }}
                 >
-                  {t.gift_present}
+                  {t.gift_soldout}
                 </button>
               </li>
               <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
@@ -689,7 +689,7 @@ const ListaPresentes = () => {
                   {t.buy}
                 </button>
               </li>
-              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between">
+              <li className="bg-[#DFCAB5] p-2.5 lg:p-4 rounded-[26px] flex flex-col gap-[14px] justify-between opacity-50">
                 <img
                   src="/gift-heart.jpg"
                   className="rounded-[20px]"
@@ -721,7 +721,7 @@ const ListaPresentes = () => {
                     }
                   }}
                 >
-                  {t.buy}
+                  {t.gift_soldout}
                 </button>
               </li>
             </ul>
