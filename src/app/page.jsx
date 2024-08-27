@@ -177,7 +177,7 @@ export default function Home() {
             </svg>
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
-              <h3 className="text-4xl font-semibold font-secondary">18h30</h3>
+              <h3 className="text-4xl font-semibold font-secondary">18h15</h3>
               <p className="text-[12px] font-primary">{t.our_day_ceremony}</p>
             </div>
           </li>
