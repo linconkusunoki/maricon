@@ -44,7 +44,7 @@ export const translations = {
       "Nossa cerimônia começará às 18:15h, e pedimos que os convidados cheguem de 15 a 30 minutos antes do horário de início da cerimônia. Isso te dará tempo suficiente para tomar uma bebida e escolher seu lugar!",
     q5_title: "O que eu devo vestir?",
     q5_answer:
-      "Roupas no estilo casual chique, em tons neutros e terrosos, sem estampas. Homens também podem usar branco e bege, só fujam do verde ja que essa é a cor do noivo. Qualquer sapato é bem vindo e não precisa de gravata. ",
+      "Roupas no estilo casual chique, em tons neutros e terrosos, sem estampas. Homens também podem usar branco e bege, só fujam do vermelho ja que essa é a cor do noivo. Qualquer sapato é bem vindo e não precisa de gravata. ",
     see_palette: "Ver paleta de cores e referências →",
     q6_title: "Posso trazer um acompanhante?",
     q6_answer:
@@ -57,7 +57,7 @@ export const translations = {
       'Nós vamos sentir sua falta :( Se você não puder ir, deixe a gente saber o mais rápido possível e confirme "NÃO comparecerá" na página de confirmação de presença para que possamos nos planejar de acordo: ',
     dress_title: "O que vestir",
     dress_p1:
-      "Roupas no estilo casual chique, em tons neutros e terrosos, sem estampas. Homens também podem usar branco e bege, só fujam do verde ja que essa é a cor do noivo. Qualquer sapato é bem vindo, e não precisa de gravata :)",
+      "Roupas no estilo casual chique, em tons neutros e terrosos, sem estampas. Homens também podem usar branco e bege, só fujam do vermelho ja que essa é a cor do noivo. Qualquer sapato é bem vindo, e não precisa de gravata :)",
     dress_temperature: "Temperatura",
     dress_palette: "Paleta de cores",
     dress_inspirations: "Inspirações",
@@ -191,7 +191,7 @@ export const translations = {
       "Our ceremony will begin at 6:15 PM, and we ask that guests arrive 15 to 30 minutes before the start time. This will give you enough time to grab a drink and choose your seat",
     q5_title: "Is there a dress code?",
     q5_answer:
-      "Casual chic, in neutral and earthy tones, without prints. Men can also wear white and beige, just try to avoid green since that's the groom's color. Any shoes are welcome, and no need for a tie. ",
+      "Casual chic, in neutral and earthy tones, without prints. Men can also wear white and beige, just try to avoid red since that's the groom's color. Any shoes are welcome, and no need for a tie. ",
     see_palette: "See color palette and references →",
     q6_title: "Can I bring a plus one?",
     q6_answer:
@@ -204,7 +204,7 @@ export const translations = {
       "We'll miss you :( If you can't make it, please let us know as soon as possible and confirm \"Will Not Attend\" on the RSVP page so we can plan accordingly.",
     dress_title: "Dress code",
     dress_p1:
-      "Casual chic, in neutral and earthy tones, without prints. Men can also wear white and beige, just try to avoid green since that's the groom's color. Any shoes are welcome, and no need for a tie.",
+      "Casual chic, in neutral and earthy tones, without prints. Men can also wear white and beige, just try to avoid red since that's the groom's color. Any shoes are welcome, and no need for a tie.",
     dress_temperature: "Weather",
     dress_palette: "Color palette",
     dress_inspirations: "Some references",
@@ -339,7 +339,7 @@ export const translations = {
       "Nuestra ceremonia comenzará a las 18:15h, y pedimos que los invitados lleguen 15 a 30 minutos antes de la hora de inicio. Esto te dará suficiente tiempo para tomar una bebida y elegir tu asiento.",
     q5_title: "¿Hay un código de vestimenta?",
     q5_answer:
-      "Informal chic, en tonos neutros y terrosos, sin estampados. Los hombres también pueden usar blanco y beige, solo evita el verde ya que es el color del novio. Todos los zapatos son bienvenidos, y no es necesario llevar corbata. ",
+      "Informal chic, en tonos neutros y terrosos, sin estampados. Los hombres también pueden usar blanco y beige, solo evita el rojo ya que es el color del novio. Todos los zapatos son bienvenidos, y no es necesario llevar corbata. ",
     see_palette: "Ver paleta de colores y referencias →",
     q6_title: "¿Puedo llevar acompañante?",
     q6_answer:
@@ -352,7 +352,7 @@ export const translations = {
       '¡Te extrañaremos! :( Si no puedes venir, avísanos lo antes posible y confirma "No asistirá" en la página de confirmación de asistencia para que podamos planificar en consecuencia: ',
     dress_title: "Qué vestir",
     dress_p1:
-      "Informal chic, en tonos neutros y terrosos, sin estampados. Los hombres también pueden usar blanco y beige, solo evita el verde ya que es el color del novio. Todos los zapatos son bienvenidos, y no es necesario llevar corbata :)",
+      "Informal chic, en tonos neutros y terrosos, sin estampados. Los hombres también pueden usar blanco y beige, solo evita el rojo ya que es el color del novio. Todos los zapatos son bienvenidos, y no es necesario llevar corbata :)",
     dress_temperature: "Temperatura",
     dress_palette: "Paleta de colores",
     dress_inspirations: "Inspiraciones",
