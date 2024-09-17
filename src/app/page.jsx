@@ -198,7 +198,7 @@ export default function Home() {
             </svg>
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
-              <h3 className="text-4xl font-semibold font-secondary">19h30</h3>
+              <h3 className="text-4xl font-semibold font-secondary">19h15</h3>
               <p className="text-[12px] font-primary">{t.our_day_cocktails}</p>
             </div>
           </li>
@@ -219,7 +219,7 @@ export default function Home() {
             </svg>
 
             <div className="flex flex-col lg:text-center text-bronze lg:flex-col-reverse">
-              <h3 className="text-4xl font-semibold font-secondary">21h</h3>
+              <h3 className="text-4xl font-semibold font-secondary">20h30</h3>
               <p className="text-[12px] font-primary">{t.our_day_dinner}</p>
             </div>
           </li>
