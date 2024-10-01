@@ -38,7 +38,7 @@ export const translations = {
     see_in_maps: "Ver no Google Maps",
     q3_title: "Como eu chego lá?",
     q3_answer:
-      "Estamos trabalhando para conseguir um serviço de transporte do centro da cidade até o casamento para todos os convidados, porém você também pode dirigir ou agendar um Uber, Cabify ou FreeNow. Só nos deixe saber já que temos que organizar o transporte em grupo por número de lugares!",
+      "Para aqueles que selecionaram transporte em grupo, você já deve ter um grupo de transporte assignado à você, no WhatsApp. Caso você não tenha, fala com a gente e vamos resolver o mais rápido possível. Para aqueles que querem ir sozinhos, recomendamos chamar um Uber ou um taxi da empresa Ecotaxi: +34 960 300 300. Aconselhamos que peçam o taxi/Uber com pelo menos 10 minutos de antecedencia além do tempo de trajeto, já que ele pode demorar um pouco pra chegar na sua localização e gostaríamos de todos lá quando a cerimônia começar 🖤",
     q4_title: "Que horas eu devo chegar?",
     q4_answer:
       "Nossa cerimônia começará às 18:15h, e pedimos que os convidados cheguem de 15 a 30 minutos antes do horário de início da cerimônia. Isso te dará tempo suficiente para tomar uma bebida e escolher seu lugar!",
@@ -126,13 +126,13 @@ export const translations = {
     gift_ensure_heaven: "Garanta seu lugar no céu",
     how_to_get: "COMO CHEGAR",
     how_to_get_p1:
-      "Não queremos que vocês se preocupem em como chegar ou voltar do casamento, por isso",
+      "Para aqueles que selecionaram transporte em grupo, você já deve ter um grupo de transporte assignado à você, no WhatsApp. Caso você não tenha, fala com a gente e vamos resolver o mais rápido possível. ",
     how_to_get_p1_b:
-      "estamos buscando um transporte para todos saindo de Valencia até a Masía.",
+      "Para aqueles que querem ir sozinhos, recomendamos chamar um Uber ou um taxi da empresa Ecotaxi: +34 960 300 300",
     how_to_get_p2:
-      "Se preferir, você também pode dirigir ou chamar um Uber, Cabify ou FreeNow. Só nos deixe saber já que temos que organizar o transporte em grupo por número de lugares!",
-    how_to_get_more_details_soon: "Mais detalhes em breve!",
-    how_to_get_hour_title: "Horário e ponto de encontro",
+      "Recomendamos que peçam o taxi/Uber com pelo menos 10 minutos de antecedencia além do tempo de trajeto, já que ele pode demorar um pouco pra chegar na sua localização e gostaríamos de todos lá quando a cerimônia começar 🖤",
+    how_to_get_more_details_soon: " ",
+    how_to_get_hour_title: " ",
     our_day: "Nosso dia",
     our_day_arrival: "Chegada dos convidados",
     our_day_ceremony: "Cerimônia",
