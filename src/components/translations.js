@@ -185,7 +185,7 @@ export const translations = {
     see_in_maps: "See on Google Maps",
     q3_title: "How can I get there?",
     q3_answer:
-      "We're working on arranging transportation from the city center to the wedding for all guests. However, you can also drive or schedule an Uber, Cabify, or FreeNow. Just let us know, as we need to organize group transportation based on the number of seats!",
+      "For those who selected group transportation, you should already have a transportation group assigned to you on WhatsApp. If you don't, just let us know and we'll sort it out as soon as possible.For those who want to go on their own, we recommend calling an Uber or a taxi from the company Ecotaxi: +34 960 300 300. We suggest ordering the taxi/Uber at least 10 minutes ahead of the travel time, since it might take a little while to arrive at your location, and we’d love to have everyone there when the ceremony starts 🖤",
     q4_title: "At what time should I be there?",
     q4_answer:
       "Our ceremony will begin at 6:15 PM, and we ask that guests arrive 15 to 30 minutes before the start time. This will give you enough time to grab a drink and choose your seat",
@@ -273,13 +273,13 @@ export const translations = {
     gift_ensure_heaven: "Secure your place in heaven",
     how_to_get: "HOW TO GET THERE",
     how_to_get_p1:
-      "We don't want you to worry about how to get to or from the wedding, so",
+      "For those who selected group transportation, you should already have a transportation group assigned to you on WhatsApp. If you don't, just let us know and we'll sort it out as soon as possible. ",
     how_to_get_p1_b:
-      "we're arranging transportation for everyone from Valencia to the Masía.",
+      "For those who want to go on their own, we recommend calling an Uber or a taxi from the company Ecotaxi: +34 960 300 300.",
     how_to_get_p2:
-      "However, if you prefer, you can also drive or call an Uber, Cabify, or FreeNow. Just let us know, as we need to organize the group transportation based on the number of seats!",
-    how_to_get_more_details_soon: "More details coming soon!",
-    how_to_get_hour_title: "Time and meeting point",
+      "We suggest ordering the taxi/Uber at least 10 minutes ahead of the travel time, since it might take a little while to arrive at your location, and we’d love to have everyone there when the ceremony starts 🖤",
+    how_to_get_more_details_soon: " ",
+    how_to_get_hour_title: " ",
     our_day: "Our day",
     our_day_arrival: "Guests arrival",
     our_day_ceremony: "Ceremony",
